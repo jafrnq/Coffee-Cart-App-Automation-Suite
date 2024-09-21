@@ -7,23 +7,30 @@ import static org.testng.Assert.assertTrue;
 
 
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.Arrays;
 
 import org.openqa.selenium.By;
-
 import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
+
+
 public class menuPage extends cofeeCartAppUtilityMethods{
+    //#region GLOBAL ELEMENT  VARIABLES======================================================================================================================================
+
+    //Parent divs of menu page
+    protected By appdiv = By.id("app");
+    protected By topMenu = By.cssSelector("#app ul");
+    protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
+    protected By payContainer = By.cssSelector("#app .pay-container"); 
 
     
+    
+    
+    //#endregion
     @Test
-    public void test(){
+    public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
     }
-
-
-
 
     //#region PERFORM METHODS
     public void performAddItemToCart(String item){}
@@ -32,15 +39,10 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     //#region ASSERT MTHODS 
     public void assertMenuPageElements(){
-        WebElement appdiv = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("app")));// Gets the parent div for all elements inside the page
-        WebElement topMenuBar = appdiv.findElement(By.tagName("ul"));
-        WebElement menuItemsDiv = appdiv.findElement(By.cssSelector("div[data-v-a9662a08]"));
-        WebElement payContainerDiv =appdiv.findElement(By.className("pay-container"));
-        
-        assertTopMenuBar(topMenuBar); //Done and working
-        assertMenuItems(menuItemsDiv); //Done and working
-        assertBuyButton(payContainerDiv);//Currently working on
-    
+        wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));
+        assertTopMenuBar(driver.findElement(topMenu)); //Done and working
+        assertMenuItems(driver.findElement(menuItems)); //Done and working
+        assertBuyButton(driver.findElement(payContainer));//Currently working on
     }   
 
 
@@ -82,13 +84,37 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         }
     }
 
-    public void assertBuyButton(WebElement payContainerDiv){
-        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainerDiv.findElement(By.className("pay"))));
-        checkoutButton.click();
+    public void assertBuyButton(WebElement payContainer){
+        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer.findElement(By.className("pay"))));
+        WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
 
-        
+        //asserting modal elements 
+        WebElement nameField = paymentDetailsModal.findElement(By.cssSelector("input[id='name']"));
+        WebElement emailField = paymentDetailsModal.findElement(By.cssSelector("input[id='email']"));
+        WebElement promotionCheckbox = paymentDetailsModal.findElement(By.cssSelector("div input[id='promotion']"));
+        WebElement submitButton = paymentDetailsModal.findElement(By.id("submit-payment"));
+        assertTrue(nameField.isDisplayed() 
+                && emailField.isDisplayed() 
+                && promotionCheckbox.isDisplayed()
+                && submitButton.isDisplayed(), "Payment modal elements not found");
+
+        inputStringToField(nameField, "John Doe");
+        inputStringToField(emailField, "exampleEmail@gmail.com");
+        promotionCheckbox.click();
+        submitButton.click();
+        waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
+
     }
+
+    // public void assertCartUsingHoverButton(WebElement checkoutButton){} //Later after asseting buy elemnt
     
+    // public void assertassertClickBuyButton(WebElement checkoutButton){
+    //     checkoutButton.click();
+    //     WebElement 
+    // } //Later for actual operation
+
+
+    // public void assertActualCartPage(){} 
     //#endregion
 
     
