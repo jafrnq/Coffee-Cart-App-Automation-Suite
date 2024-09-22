@@ -21,6 +21,15 @@ public class cofeeCartAppUtilityMethods {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
+    
+    //Parent divs of menu page
+    protected By appdiv = By.id("app");
+    protected By topMenu = By.cssSelector("#app ul");
+    protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
+    protected By payContainer = By.cssSelector("#app .pay-container"); 
+
+
+
 
 
     //#region GLOBAL VARIABLES================================================================================================
@@ -120,6 +129,16 @@ public class cofeeCartAppUtilityMethods {
     public void inputStringToField(WebElement inputFieldElement, String inputString ){
         inputFieldElement.sendKeys(inputString);
     }
+
+    //#region PAY CONTAINER METHODS
+    public float getPayContainerPriceText(){
+        WebElement payContainerButton = driver.findElement(payContainer);
+        float payContainerText = extractFloatFromString(payContainerButton.findElement(By.tagName("button")).getText());
+
+        System.out.println("Curent cart container price: " + payContainerText);
+        return payContainerText;
+    }
+    //#endregion
 
 
     //#endregion

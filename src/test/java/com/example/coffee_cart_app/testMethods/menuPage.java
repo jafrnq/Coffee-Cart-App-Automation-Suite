@@ -15,25 +15,35 @@ import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
 
 public class menuPage extends cofeeCartAppUtilityMethods{
-    //#region GLOBAL ELEMENT  VARIABLES======================================================================================================================================
 
-    //Parent divs of menu page
-    protected By appdiv = By.id("app");
-    protected By topMenu = By.cssSelector("#app ul");
-    protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
-    protected By payContainer = By.cssSelector("#app .pay-container"); 
 
-    
-    
-    
-    //#endregion
     @Test
     public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
     }
 
+    @Test
+    public void pickASingleItem(){
+        performAddItemToCart("Mocha");
+    }
+
+    
+    
     //#region PERFORM METHODS
-    public void performAddItemToCart(String item){}
+    public void performAddItemToCart(String item){
+        float oldTotalCartPrice = getPayContainerPriceText();
+        String stringItem = item + " ";
+        
+        WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
+        WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+        itemCupIconToClick.click();        
+        
+        System.out.println("Item added to cart: " + itemDivName.getText());
+        float newTotalCartPrice = getPayContainerPriceText();
+        //For tomorrow, fix the java.lang.numberformatexceptionerro above.
+    }
+
+    public void performMultipleItemsToCart(int numberOfItems, String item){}
     //#endregion
 
 
