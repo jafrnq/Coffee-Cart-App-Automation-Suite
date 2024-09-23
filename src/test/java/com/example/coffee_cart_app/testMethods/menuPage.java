@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 
-import static org.testng.Assert.assertNotEquals;
+// import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
 
@@ -28,60 +28,96 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     @Test //Done and working
     public void pickASingleItem(){
-        performAddItemToCart("Cappuccino");
-
-        float currentPrice = extractFloatFromString(getPayContainerPriceText());
-
-        assertTrue(currentPrice != 0.00f, "New price matches the old price, Add to cart not working");
-    }
-
-    @Test //Currently working on
-    public void pickMultipleOfTheSameItem(){
+        float totalOrderPrice = 0;
         
-        performAddItemToCart("Mocha");
-        performAddItemToCart("Mocha");
-        performAddItemToCart("Mocha");
-        performAddItemToCart("Mocha");
+        //Adds item to cart and updates the totalOrderPrice
+        totalOrderPrice = performAddItemToCart("Cappuccino", totalOrderPrice);
 
-        float currentPrice = extractFloatFromString(getPayContainerPriceText());
-        assertTrue(currentPrice == 32.00, "Current price: " + currentPrice + " does not match with expected 32.00 float...");
+        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+    }
 
+    @Test //Done and working
+    public void pickMultipleOfTheSameItem(){
+        float totalOrderPrice = 0;
+        
+        //Orders the same item multiple times and assigns the total value on totalOrderPrice
+        totalOrderPrice = performAddSingleItemToCartMultipleTimes("Mocha", 5, totalOrderPrice);
+
+        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+    }
+
+    @Test 
+    public void pickDifferentItems(){
+        List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
+        float totalOrderPrice = 0;
+
+        totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice);
+        
+    }
+
+   
+    //#region PERFORM METHODS
+    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
+
+        for (int i = 0; i<ordersList.size() ; i++ ){
+
+
+            //Finish tomorrow
+
+
+            
+        }
+        return totalOrderPrice;
     }
 
 
+    public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
 
+        for (int i = 0; i < orderCount; i++){
+            totalOrderPrice =  performAddItemToCart("Mocha", totalOrderPrice);
+        }
 
+        System.out.println("Successfully ordered: " + orderCount + " " + itemName);
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
+        return totalOrderPrice;
+    }
     
-    
-    //#region PERFORM METHODS
-    public void performAddItemToCart(String item){
+ 
+    public float performAddItemToCart(String item, float totalOrderPrice){
+        
         try {
             String stringItem = item + " ";
             WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
             WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+            float itemPrice = extractFloatFromString(itemDivName.getText());
             
             itemCupIconToClick.click();
+
+            totalOrderPrice += itemPrice;
+            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
+            System.out.println("Item Price: " + itemPrice);
+            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
 
             if (driver.findElement(promoContainer).isDisplayed()){
                 performPromoControls("Reject");
             }
-            System.out.println("Item added to cart: " + itemDivName.getText());
 
         }catch(NoSuchElementException e){
-            System.out.println("Promo Element not visible as expected... ");
+            System.out.println("Promo Element not visible as expected...");
         }
+        return totalOrderPrice;
     }
-
-    public void performMultipleItemsToCart(int numberOfItems, String item){}
     //#endregion
 
 
     //#region ASSERT MTHODS 
     public void assertMenuPageElements(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));
-        assertTopMenuBar(driver.findElement(topMenu)); //Done and working
-        assertMenuItems(driver.findElement(menuItems)); //Done and working
-        assertBuyButton(driver.findElement(payContainerButton));//Currently working on
+        assertTopMenuBar(driver.findElement(topMenu)); 
+        assertMenuItems(driver.findElement(menuItems)); 
+        assertBuyButton(driver.findElement(payContainerButton));
     }   
 
 
