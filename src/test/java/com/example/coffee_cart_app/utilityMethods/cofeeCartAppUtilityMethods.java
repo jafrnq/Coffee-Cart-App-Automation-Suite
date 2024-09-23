@@ -26,7 +26,8 @@ public class cofeeCartAppUtilityMethods {
     protected By appdiv = By.id("app");
     protected By topMenu = By.cssSelector("#app ul");
     protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
-    protected By payContainer = By.cssSelector("#app .pay-container"); 
+    protected By payContainerButton = By.cssSelector("#app .pay-container button.pay"); 
+    protected By promoContainer = By.cssSelector("#app .promo");
 
 
 
@@ -37,6 +38,8 @@ public class cofeeCartAppUtilityMethods {
 
     //#endregion
 
+
+    //#region SETUP METHODS
     @BeforeTest
     public void beforeTest(){
         insertHeadiingLines("STARTING TEST");
@@ -58,6 +61,7 @@ public class cofeeCartAppUtilityMethods {
     public void tearDown(){
         driver.quit();
     }
+    //#endregion
 
     //#region SWITCH TO ()METHODS==============================================================================================================
     public WebElement switchToAndAssertModalHeader(WebElement button, String expectedModalHeader){
@@ -81,8 +85,8 @@ public class cofeeCartAppUtilityMethods {
     }
     
     
-    public void implicitWait(int milliseconds){
-        //implicitly waits with defined value
+    public void explicitWait(int milliseconds){
+        //explicitly waits with defined value
         try {
             System.out.println("Will pause for: " + milliseconds + "ms.");
             Thread.sleep(milliseconds); 
@@ -93,9 +97,9 @@ public class cofeeCartAppUtilityMethods {
 
     }
 
-    public void implicitWait(){
-        //implicityly waits for default value of 500
-        implicitWait(500);
+    public void explicitWait(){
+        //explicitly waits for default value of 500
+        explicitWait(500);
     }
 
 
@@ -129,18 +133,52 @@ public class cofeeCartAppUtilityMethods {
     public void inputStringToField(WebElement inputFieldElement, String inputString ){
         inputFieldElement.sendKeys(inputString);
     }
+    
 
-    //#region PAY CONTAINER METHODS
-    public float getPayContainerPriceText(){
-        WebElement payContainerButton = driver.findElement(payContainer);
-        float payContainerText = extractFloatFromString(payContainerButton.findElement(By.tagName("button")).getText());
+    //#region MENU PAGE CONTROLS
 
+    //Used for gets the paycontainerbutton text which is the total price
+    public String getPayContainerPriceText(){
+        String payContainerText;
+        WebElement payContainerButtonDiv = driver.findElement(payContainerButton);
+        payContainerText = payContainerButtonDiv.getText();
+        
         System.out.println("Curent cart container price: " + payContainerText);
         return payContainerText;
     }
-    //#endregion
-
-
-    //#endregion
     
+    public void performPromoControls(String performMethod){
+        WebElement promoContainerDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(promoContainer));
+        String promoText = promoContainerDiv.findElement(By.tagName("span")).getText();
+        
+        System.out.println("Promo Appeared =>>>");
+        System.out.println(promoText); 
+
+        switch (performMethod.toLowerCase()){
+            case "accept":
+                WebElement yesButton = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#app div.promo button:nth-of-type(1)"))));
+                yesButton.click();
+                System.out.println("PROMO ACCEPTED");
+            break;
+            
+            case "reject":
+                WebElement noButton= wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#app div.promo button:nth-of-type(2)"))));
+                noButton.click();
+                System.out.println("PROMO REJECTED");
+            break;
+            
+            default:
+                System.out.println("Perform Method does not match any case");
+            break;
+        }
+    }
+    
+
+
+    
+
+
 }
+
+
+    //#endregion

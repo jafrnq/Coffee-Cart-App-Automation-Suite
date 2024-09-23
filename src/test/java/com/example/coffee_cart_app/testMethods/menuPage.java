@@ -3,10 +3,14 @@ package com.example.coffee_cart_app.testMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
+import org.openqa.selenium.NoSuchElementException;
+
+import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
 
 import java.util.List;
+
 import java.util.Arrays;
 
 import org.openqa.selenium.By;
@@ -17,30 +21,55 @@ import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 public class menuPage extends cofeeCartAppUtilityMethods{
 
 
-    @Test
+    @Test //Done and working
     public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
     }
 
-    @Test
+    @Test //Done and working
     public void pickASingleItem(){
-        performAddItemToCart("Mocha");
+        performAddItemToCart("Cappuccino");
+
+        float currentPrice = extractFloatFromString(getPayContainerPriceText());
+
+        assertTrue(currentPrice != 0.00f, "New price matches the old price, Add to cart not working");
     }
+
+    @Test //Currently working on
+    public void pickMultipleOfTheSameItem(){
+        
+        performAddItemToCart("Mocha");
+        performAddItemToCart("Mocha");
+        performAddItemToCart("Mocha");
+        performAddItemToCart("Mocha");
+
+        float currentPrice = extractFloatFromString(getPayContainerPriceText());
+        assertTrue(currentPrice == 32.00, "Current price: " + currentPrice + " does not match with expected 32.00 float...");
+
+    }
+
+
+
 
     
     
     //#region PERFORM METHODS
     public void performAddItemToCart(String item){
-        float oldTotalCartPrice = getPayContainerPriceText();
-        String stringItem = item + " ";
-        
-        WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
-        WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
-        itemCupIconToClick.click();        
-        
-        System.out.println("Item added to cart: " + itemDivName.getText());
-        float newTotalCartPrice = getPayContainerPriceText();
-        //For tomorrow, fix the java.lang.numberformatexceptionerro above.
+        try {
+            String stringItem = item + " ";
+            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
+            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+            
+            itemCupIconToClick.click();
+
+            if (driver.findElement(promoContainer).isDisplayed()){
+                performPromoControls("Reject");
+            }
+            System.out.println("Item added to cart: " + itemDivName.getText());
+
+        }catch(NoSuchElementException e){
+            System.out.println("Promo Element not visible as expected... ");
+        }
     }
 
     public void performMultipleItemsToCart(int numberOfItems, String item){}
@@ -52,7 +81,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));
         assertTopMenuBar(driver.findElement(topMenu)); //Done and working
         assertMenuItems(driver.findElement(menuItems)); //Done and working
-        assertBuyButton(driver.findElement(payContainer));//Currently working on
+        assertBuyButton(driver.findElement(payContainerButton));//Currently working on
     }   
 
 
@@ -95,7 +124,8 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
 
     public void assertBuyButton(WebElement payContainer){
-        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer.findElement(By.className("pay"))));
+        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
+        //Clicks and asserts the popup modal
         WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
 
         //asserting modal elements 
@@ -116,6 +146,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     }
 
+    
     // public void assertCartUsingHoverButton(WebElement checkoutButton){} //Later after asseting buy elemnt
     
     // public void assertassertClickBuyButton(WebElement checkoutButton){
