@@ -2,11 +2,15 @@ package com.example.coffee_cart_app.utilityMethods;
 
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -16,6 +20,7 @@ import org.testng.annotations.BeforeTest;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en_old.Ac;
 import io.cucumber.java.en.Then;
 
 import static org.testng.Assert.assertEquals;
@@ -25,6 +30,7 @@ import static org.testng.Assert.assertTrue;
 public class cofeeCartAppUtilityMethods {
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected Actions actions;
 
     //Global Variables
     float totalOrderPrice = 0;
@@ -51,6 +57,7 @@ public class cofeeCartAppUtilityMethods {
         insertHeadiingLines("STARTING TEST");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        actions = new Actions(driver);
     }
 
 
@@ -124,6 +131,12 @@ public class cofeeCartAppUtilityMethods {
 
     public String extractTextFromString(String string){
         return string.replaceAll("[^a-zA-Z]", "").trim();
+        // return string.replaceAll("[^a-zA-Zx]", "");
+    }
+
+    public String removeSpacesBetweenWords(String string){
+        String formattedItem = string.replaceAll("\\s+", ""); // Remove all spaces
+        return formattedItem;
     }
 
     //Extracts int from string
@@ -160,6 +173,8 @@ public class cofeeCartAppUtilityMethods {
         return payContainerText;
     }
     
+    @Then("The promo amount should not be added to total order price")
+    @Then("The promo amount should be added to total order price")
     public float performPromoControls(String performMethod, float totalOrderPrice){
         WebElement promoContainerDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(promoContainer));
         String promoText = promoContainerDiv.findElement(By.tagName("span")).getText();
@@ -187,6 +202,7 @@ public class cofeeCartAppUtilityMethods {
         }
         return totalOrderPrice;
     }
+
     @Then ("All items should be recorded in the cart with its total cost")
     public void assertTotalPriceAndTotalBasedOnSite(float totalOrderPrice, float currentPriceBasedOnSite){
         insertHeadiingLines("assertThuotalPriceAndTotalBasedOnSite");
@@ -195,11 +211,28 @@ public class cofeeCartAppUtilityMethods {
         assertTrue(currentPriceBasedOnSite == totalOrderPrice, "TotalOrderPRice and PriceBasedOnSite does not match,");
 
     }
-    ////#region Pay Container Methods
-
+    //#region Pay Container Methods
+    //Currently working on
     public void hoverOverPayContainer(){
         WebElement payContainerDiv = driver.findElement(payContainerButton);
+        actions.moveToElement(payContainerDiv).perform();
     }
+
+    public List<String> getItemListFromCart(){
+        WebElement ordersListPopup = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#app ul.cart-preview.show")));
+
+        List<WebElement> cartItemsDiv = ordersListPopup.findElements(By.cssSelector("li.list-item div span"));
+        List<String> cartItems = new ArrayList<>();
+
+        for (WebElement item : cartItemsDiv){
+            String itemName = item.getText();
+            cartItems.add(itemName.replaceAll("[^a-zA-Z]", "").trim());
+            // cartItems.add(itemName.replaceAll("[^a-zA-Z]|[xX]", "").trim());
+        }
+        return cartItems;
+    }
+
+
 
 
     

@@ -36,14 +36,14 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
 
     //Test Methods
-    @When ("I check the visibility of main Menu page elements")
     @Test //Done and working
+    @When ("I check the visibility of main Menu page elements")
     public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
     }
 
-    @When("I pick a single item")
     @Test //Done and working
+    @When("I pick a single item")
     public void pickASingleItem(){
         //Adds item to cart and updates the totalOrderPrice
         totalOrderPrice = performAddItemToCart("Cappuccino", totalOrderPrice);
@@ -52,8 +52,8 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
-    @When("Order the same item multiple times")
     @Test //Done and working
+    @When("Order the same item multiple times")
     public void pickMultipleOfTheSameItem(){
         
         //Orders the same item multiple times and assigns the total value on totalOrderPrice
@@ -63,8 +63,8 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
-    @When("I add three or more items in the cart")
     @Test //Done and working
+    @When("I add three or more items in the cart")
     public void pickDifferentItems(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
 
@@ -72,11 +72,11 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
     }
 
-    @When ("I add three or more items in the cart")
-    @Then ("I accept the promo offer")
     @Test //Done and working
+    @Then ("I accept the promo offer")
     public void acceptPromo(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
         
@@ -84,11 +84,11 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
     }
 
-    @When ("I add three or more items in the cart")
+    @Test 
     @Then ("I Reject the promo offer")
-    @Test //Done and working
     public void rejectPromo(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
 
@@ -96,10 +96,11 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
    }
 
-   @When ("I add all items to cart")
    @Test
+   @When ("I add all items to cart")
    public void addAllItemsToCart(){
     float totalOrderPrice = 0;
     List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");
@@ -108,8 +109,8 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
     assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-
-   } 
+    assertCompareCartListfromManualOrdersList(allMenuItems);
+   }
     
     
     
@@ -203,7 +204,18 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
 
     //#region ASSERT MTHODS 
-    public void assertCompareCartListfromManualOrdersList(){}
+    
+    public void assertCompareCartListfromManualOrdersList(List<String> ordersList){
+        hoverOverPayContainer();
+        
+        List<String> itemsFromSiteCart = getItemListFromCart();
+        
+        for (String item: ordersList){
+            item = removeSpacesBetweenWords(item);//Formats the string to remove spaces between words
+            assertTrue(itemsFromSiteCart.contains(item));
+        }
+        System.out.println("Cart list verified and matches the manual order list");
+    }
     
     
     @Then("The main menu elements should be visible")
