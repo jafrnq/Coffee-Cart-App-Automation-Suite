@@ -6,6 +6,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
 // import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -33,11 +36,13 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
 
     //Test Methods
+    @When ("I check the visibility of main Menu page elements")
     @Test //Done and working
     public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
     }
 
+    @When("I pick a single item")
     @Test //Done and working
     public void pickASingleItem(){
         //Adds item to cart and updates the totalOrderPrice
@@ -47,6 +52,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
+    @When("Order the same item multiple times")
     @Test //Done and working
     public void pickMultipleOfTheSameItem(){
         
@@ -57,6 +63,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
+    @When("I add three or more items in the cart")
     @Test //Done and working
     public void pickDifferentItems(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
@@ -67,16 +74,20 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
-   @Test //Done and working
-   public void acceptPromo(){
-     List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
-     
-     totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice, "Accept");
-
-     float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
-     assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+    @When ("I add three or more items in the cart")
+    @Then ("I accept the promo offer")
+    @Test //Done and working
+    public void acceptPromo(){
+        List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
+        
+        totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice, "Accept");
+        
+        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
-    
+
+    @When ("I add three or more items in the cart")
+    @Then ("I Reject the promo offer")
     @Test //Done and working
     public void rejectPromo(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
@@ -87,6 +98,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
    }
 
+   @When ("I add all items to cart")
    @Test
    public void addAllItemsToCart(){
     float totalOrderPrice = 0;
@@ -110,6 +122,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         System.out.println("Order total based on manual count: " + totalOrderPrice);
         return totalOrderPrice;
     }
+
     //Override method of addToCartFunction (Adds option to accept or reject promo)
     public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice, String promoChoice){
         for (String item : ordersList){
@@ -120,7 +133,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         return totalOrderPrice;
     }
 
-
+    @When("I add an item to cart multiple times")
     public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
 
         for (int i = 0; i < orderCount; i++){
@@ -133,6 +146,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
     
     //Default addtoCartFunction, rejects the promo
+    @When ("I click an item")
     public float performAddItemToCart(String item, float totalOrderPrice){
         
         try {
@@ -159,6 +173,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
 
     //Override method of addToCartFunction, accepts the promo
+    @When ("I click an item")
     public float performAddItemToCart(String item, float totalOrderPrice, String promoChoice){
         
         try {
@@ -188,6 +203,10 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
 
     //#region ASSERT MTHODS 
+    public void assertCompareCartListfromManualOrdersList(){}
+    
+    
+    @Then("The main menu elements should be visible")
     public void assertMenuPageElements(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));
         assertTopMenuBar(driver.findElement(topMenu)); 
@@ -195,7 +214,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertBuyButton(driver.findElement(payContainerButton));
     }   
 
-
+    @When("I observe the elements in the page")
     public void assertTopMenuBar(WebElement topMenuBar){
         insertHeadiingLines("Starting assertMenuTopBar");
         List<String> expectedTopMenuBarElements = Arrays.asList("menu", "cart", "github");
@@ -209,7 +228,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         System.out.println("All top menu bar elements Verified");
     }
 
-
+    @When("I observe the elements in the page")
     public void assertMenuItems(WebElement menuItemsDiv){
         insertHeadiingLines("Starting assertMenuItems");
         List<String> expectedMenuItems = Arrays.asList("Espresso", "EspressoMacchiato", "Cappuccino", "Mocha", "FlatWhite", "Americano", "CafeLatte", "CafeBreve", "EspressoConPanna");
@@ -234,6 +253,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         }
     }
 
+    @When("I observe the elements in the page")
     public void assertBuyButton(WebElement payContainer){
         WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
         //Clicks and asserts the popup modal

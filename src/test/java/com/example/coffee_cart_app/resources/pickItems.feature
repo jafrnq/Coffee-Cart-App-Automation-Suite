@@ -3,27 +3,48 @@ Feature: Pick Items Functionality
     As a valid shop customer
     I want to add to card my preferred items 
 
-Scenario: Picking a Single Item
+Scenario: I check the visibility of main Menu page elements
+    Given I am in the menu page of the shop
+    When  I observe the elements in the page
+    Then The main menu elements should be visible
+
+Scenario: I pick a Single Item
     Given I am in the menu page of the shop
     When I click an item
-    Then that item should be added to the cart
+    Then All items should be recorded in the cart with its total cost
 
-# FOR FIRST TEST CLASS MENU PAGE
-Scenario: Picking multiple order of the same item 
-Scenario: Picking multiple order of more than one item(3)
+Scenario: Order the same item multiple times
+    Given I am in the menu page of the shop
+    When I add an item to cart multiple times
+    Then All items should be recorded in the cart with its total cost
+
 Scenario: Picking three Items but refusing to accept promo
+    Given I am in the menu page of the shop
+    When I add three or more items in the cart
+    And I Reject the promo offer
+    Then The promo amount should not be added to total order price
+
 Scenario: Picking three Items and to accept promo
-Scenario: Picking more than three Items
+    Given I am in the menu page of the shop
+    When I add three or more items in the cart
+    And I accept the promo offer
+    Then The promo amount should be added to total order price
+
 Scenario: Picking All Items
+    Given I am in the menu page of the shop
+    When I add all items to cart
+    Then All items should be recorded in the cart and its total amount
 
 
 
+#Disregard this
+# #FOR 2ND TEST CLASS (MAKE NEW FEATURE FILE NAMED "Check out using hover feature")
+# Scenario: Checking Cart items using hover payContainer Div
+# Scenario: Checking Cart items using going to cart page
 
-#FOR 2ND TEST CLASS (MAKE NEW FEATURE FILE NAMED "Check out using hover feature")
-Scenario: Checking Cart items using hover payContainer Div
-Scenario: Checking Cart items using going to cart page
+
+# #FOR THIRD TEST CLASS (MAKE NEW FEATURE FILE NAMED "check out by going to actual cart page")
+# Scenario: Properly Checking out using hover payContainer Div
+# Scenario: Properly checking out using cart page 
 
 
-#FOR THIRD TEST CLASS (MAKE NEW FEATURE FILE NAMED "check out by going to actual cart page")
-Scenario: Properly Checking out using hover payContainer Div
-Scenario: Properly checking out using cart page 

@@ -14,6 +14,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -51,6 +55,7 @@ public class cofeeCartAppUtilityMethods {
 
 
     @BeforeMethod
+    @Given("I am in the menu page of the shop")
     public void setUp(){
         insertHeadiingLines("STARTING NEW TEST");
         driver.manage().deleteAllCookies();
@@ -182,7 +187,7 @@ public class cofeeCartAppUtilityMethods {
         }
         return totalOrderPrice;
     }
-
+    @Then ("All items should be recorded in the cart with its total cost")
     public void assertTotalPriceAndTotalBasedOnSite(float totalOrderPrice, float currentPriceBasedOnSite){
         insertHeadiingLines("assertThuotalPriceAndTotalBasedOnSite");
         System.out.println("Total value based on manualCounter: " + totalOrderPrice);
@@ -190,7 +195,11 @@ public class cofeeCartAppUtilityMethods {
         assertTrue(currentPriceBasedOnSite == totalOrderPrice, "TotalOrderPRice and PriceBasedOnSite does not match,");
 
     }
-    
+    ////#region Pay Container Methods
+
+    public void hoverOverPayContainer(){
+        WebElement payContainerDiv = driver.findElement(payContainerButton);
+    }
 
 
     
