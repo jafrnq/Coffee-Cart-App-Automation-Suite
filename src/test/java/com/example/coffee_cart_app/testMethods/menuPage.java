@@ -2,6 +2,7 @@ package com.example.coffee_cart_app.testMethods;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 
@@ -19,8 +20,19 @@ import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
 
 public class menuPage extends cofeeCartAppUtilityMethods{
+    //Global Variables
+    float totalOrderPrice = 0;
 
+    //Setup Methods
+    @Override
+    @AfterMethod
+    public void tearDown(){
+        insertHeadiingLines("Test Method completed");
+        driver.manage().deleteAllCookies();
+        totalOrderPrice = 0;
+    }
 
+    //Test Methods
     @Test //Done and working
     public void testMenuPageElementsVisibility(){
         assertMenuPageElements();
@@ -28,8 +40,6 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     @Test //Done and working
     public void pickASingleItem(){
-        float totalOrderPrice = 0;
-        
         //Adds item to cart and updates the totalOrderPrice
         totalOrderPrice = performAddItemToCart("Cappuccino", totalOrderPrice);
 
@@ -39,7 +49,6 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     @Test //Done and working
     public void pickMultipleOfTheSameItem(){
-        float totalOrderPrice = 0;
         
         //Orders the same item multiple times and assigns the total value on totalOrderPrice
         totalOrderPrice = performAddSingleItemToCartMultipleTimes("Mocha", 5, totalOrderPrice);
@@ -48,27 +57,66 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
-    @Test 
+    @Test //Done and working
     public void pickDifferentItems(){
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
-        float totalOrderPrice = 0;
 
         totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice);
-        
+
+        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
-   
-    //#region PERFORM METHODS
+   @Test //Done and working
+   public void acceptPromo(){
+     List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
+     
+     totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice, "Accept");
+
+     float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+     assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+    }
+    
+    @Test //Done and working
+    public void rejectPromo(){
+        List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
+
+        totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice, "Reject");
+
+        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+   }
+
+   @Test
+   public void addAllItemsToCart(){
+    float totalOrderPrice = 0;
+    List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");
+
+    totalOrderPrice = performAddDifferentItemsToCart(allMenuItems, totalOrderPrice);
+
+    float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+    assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
+
+   } 
+    
+    
+    
+    //#region PERFORM METHODS====================================================================================================
     public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
-
-        for (int i = 0; i<ordersList.size() ; i++ ){
-
-
-            //Finish tomorrow
-
-
-            
+        for (String item : ordersList){
+            totalOrderPrice = performAddItemToCart(item, totalOrderPrice);
         }
+
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
+        return totalOrderPrice;
+    }
+    //Override method of addToCartFunction (Adds option to accept or reject promo)
+    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice, String promoChoice){
+        for (String item : ordersList){
+            totalOrderPrice = performAddItemToCart(item, totalOrderPrice, promoChoice);
+        }
+
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
         return totalOrderPrice;
     }
 
@@ -84,7 +132,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         return totalOrderPrice;
     }
     
- 
+    //Default addtoCartFunction, rejects the promo
     public float performAddItemToCart(String item, float totalOrderPrice){
         
         try {
@@ -101,7 +149,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
             System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
 
             if (driver.findElement(promoContainer).isDisplayed()){
-                performPromoControls("Reject");
+                performPromoControls("Reject", totalOrderPrice);
             }
 
         }catch(NoSuchElementException e){
@@ -109,6 +157,33 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         }
         return totalOrderPrice;
     }
+
+    //Override method of addToCartFunction, accepts the promo
+    public float performAddItemToCart(String item, float totalOrderPrice, String promoChoice){
+        
+        try {
+            String stringItem = item + " ";
+            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
+            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+            float itemPrice = extractFloatFromString(itemDivName.getText());
+            
+            itemCupIconToClick.click();
+
+            totalOrderPrice += itemPrice;
+            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
+            System.out.println("Item Price: " + itemPrice);
+            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
+
+            if (driver.findElement(promoContainer).isDisplayed()){
+                totalOrderPrice =  performPromoControls(promoChoice, totalOrderPrice); //Reject or Accept
+            }
+
+        }catch(NoSuchElementException e){
+            System.out.println("Promo Element not visible as expected...");
+        }
+        return totalOrderPrice;
+    }
+
     //#endregion
 
 
@@ -183,16 +258,5 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     }
 
     
-    // public void assertCartUsingHoverButton(WebElement checkoutButton){} //Later after asseting buy elemnt
-    
-    // public void assertassertClickBuyButton(WebElement checkoutButton){
-    //     checkoutButton.click();
-    //     WebElement 
-    // } //Later for actual operation
-
-
-    // public void assertActualCartPage(){} 
-    //#endregion
-
     
 }

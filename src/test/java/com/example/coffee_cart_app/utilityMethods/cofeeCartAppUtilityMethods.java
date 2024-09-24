@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -21,7 +22,8 @@ public class cofeeCartAppUtilityMethods {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    
+    //Global Variables
+    float totalOrderPrice = 0;
     //Parent divs of menu page
     protected By appdiv = By.id("app");
     protected By topMenu = By.cssSelector("#app ul");
@@ -55,10 +57,17 @@ public class cofeeCartAppUtilityMethods {
         driver.get("https://coffee-cart.app/");
         wait.until(ExpectedConditions.titleIs("Coffee cart"));
         assertTrue(driver.getTitle().equals("Coffee cart"));
+        ;
     }
 
     @AfterMethod
     public void tearDown(){
+        insertHeadiingLines("Test Method completed");
+        driver.manage().deleteAllCookies();
+    }
+    
+    @AfterTest
+    public void afterTest(){
         driver.quit();
     }
     //#endregion
@@ -105,7 +114,7 @@ public class cofeeCartAppUtilityMethods {
 
 
     public void insertHeadiingLines(String customString){
-        System.out.println("(" + customString + ")" + "=========================================================================================== \n");
+        System.out.println("\n(" + customString + ")" + "=========================================================================================== ");
     }
 
     public String extractTextFromString(String string){
@@ -120,7 +129,6 @@ public class cofeeCartAppUtilityMethods {
     }
     //Extracts float from string
     public float extractFloatFromString(String string){
-        // return Integer.parseInt(string, )
         String cleanedString = string.replaceAll("[^\\d.]", "");
         return Float.parseFloat(cleanedString);
     }
@@ -147,7 +155,7 @@ public class cofeeCartAppUtilityMethods {
         return payContainerText;
     }
     
-    public void performPromoControls(String performMethod){
+    public float performPromoControls(String performMethod, float totalOrderPrice){
         WebElement promoContainerDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(promoContainer));
         String promoText = promoContainerDiv.findElement(By.tagName("span")).getText();
         
@@ -158,6 +166,7 @@ public class cofeeCartAppUtilityMethods {
             case "accept":
                 WebElement yesButton = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#app div.promo button:nth-of-type(1)"))));
                 yesButton.click();
+                totalOrderPrice += extractFloatFromString(promoText);
                 System.out.println("PROMO ACCEPTED");
             break;
             
@@ -171,6 +180,15 @@ public class cofeeCartAppUtilityMethods {
                 System.out.println("Perform Method does not match any case");
             break;
         }
+        return totalOrderPrice;
+    }
+
+    public void assertTotalPriceAndTotalBasedOnSite(float totalOrderPrice, float currentPriceBasedOnSite){
+        insertHeadiingLines("assertThuotalPriceAndTotalBasedOnSite");
+        System.out.println("Total value based on manualCounter: " + totalOrderPrice);
+        System.out.println("Total value based on site: " + currentPriceBasedOnSite);
+        assertTrue(currentPriceBasedOnSite == totalOrderPrice, "TotalOrderPRice and PriceBasedOnSite does not match,");
+
     }
     
 
