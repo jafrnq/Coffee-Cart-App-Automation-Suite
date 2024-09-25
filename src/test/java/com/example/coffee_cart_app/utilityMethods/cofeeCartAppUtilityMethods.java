@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +21,6 @@ import org.testng.annotations.BeforeTest;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en_old.Ac;
 import io.cucumber.java.en.Then;
 
 import static org.testng.Assert.assertEquals;
@@ -40,6 +40,7 @@ public class cofeeCartAppUtilityMethods {
     protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
     protected By payContainerButton = By.cssSelector("#app .pay-container button.pay"); 
     protected By promoContainer = By.cssSelector("#app .promo");
+    protected By cartItems = By.cssSelector("#app div ul[data-v-8965af83]");
 
 
 
@@ -69,7 +70,7 @@ public class cofeeCartAppUtilityMethods {
         driver.get("https://coffee-cart.app/");
         wait.until(ExpectedConditions.titleIs("Coffee cart"));
         assertTrue(driver.getTitle().equals("Coffee cart"));
-        ;
+        
     }
 
     @AfterMethod
@@ -84,7 +85,7 @@ public class cofeeCartAppUtilityMethods {
     }
     //#endregion
 
-    //#region SWITCH TO ()METHODS==============================================================================================================
+    //#region PAGE NAVIGATION ()METHODS==============================================================================================================
     public WebElement switchToAndAssertModalHeader(WebElement button, String expectedModalHeader){
         button.click();
         WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("modal")));
@@ -94,6 +95,15 @@ public class cofeeCartAppUtilityMethods {
         assertEquals(modalHeadingText, expectedModalHeader,"Modal header and expected header does not match");
         return modal;
     }
+    @Given("I am in the the cart page of the shop after picking items")    
+    public void performNavigateToCartPage(){
+        WebElement topMenuDiv = driver.findElement(topMenu);
+        WebElement cartButton = wait.until(ExpectedConditions.visibilityOf(topMenuDiv.findElement(By.cssSelector("li:nth-of-type(2)"))));
+        cartButton.click();
+
+        wait.until(ExpectedConditions.urlToBe("https://coffee-cart.app/cart"));
+    }
+
 
 
     //#endregion
@@ -212,7 +222,7 @@ public class cofeeCartAppUtilityMethods {
 
     }
     //#region Pay Container Methods
-    //Currently working on
+    
     public void hoverOverPayContainer(){
         WebElement payContainerDiv = driver.findElement(payContainerButton);
         actions.moveToElement(payContainerDiv).perform();
@@ -230,15 +240,97 @@ public class cofeeCartAppUtilityMethods {
             // cartItems.add(itemName.replaceAll("[^a-zA-Z]|[xX]", "").trim());
         }
         return cartItems;
+    } 
+
+    public void performInsertCheckoutCredentials(){}
+    //#endregion
+
+    //#region MENU PERFORM METHODS====================================================================================================
+    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
+        for (String item : ordersList){
+            totalOrderPrice = performAddItemToCart(item, totalOrderPrice);
+        }
+
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
+        return totalOrderPrice;
     }
 
+    //Override method of addToCartFunction (Adds option to accept or reject promo)
+    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice, String promoChoice){
+        for (String item : ordersList){
+            totalOrderPrice = performAddItemToCart(item, totalOrderPrice, promoChoice);
+        }
 
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
+        return totalOrderPrice;
+    }
 
+    @When("I add an item to cart multiple times")
+    public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
 
+        for (int i = 0; i < orderCount; i++){
+            totalOrderPrice =  performAddItemToCart("Mocha", totalOrderPrice);
+        }
+
+        System.out.println("Successfully ordered: " + orderCount + " " + itemName);
+        System.out.println("Order total based on manual count: " + totalOrderPrice);
+        return totalOrderPrice;
+    }
     
+    //Default addtoCartFunction, rejects the promo
+    @When ("I click an item")
+    public float performAddItemToCart(String item, float totalOrderPrice){
+        
+        try {
+            String stringItem = item + " ";
+            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
+            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+            float itemPrice = extractFloatFromString(itemDivName.getText());
+            
+            itemCupIconToClick.click();
 
+            totalOrderPrice += itemPrice;
+            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
+            System.out.println("Item Price: " + itemPrice);
+            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
 
-}
+            if (driver.findElement(promoContainer).isDisplayed()){
+                performPromoControls("Reject", totalOrderPrice);
+            }
 
+        }catch(NoSuchElementException e){
+            System.out.println("Promo Element not visible as expected...");
+        }
+        return totalOrderPrice;
+    }
 
+    //Override method of addToCartFunction, accepts the promo
+    @When ("I click an item")
+    public float performAddItemToCart(String item, float totalOrderPrice, String promoChoice){
+        
+        try {
+            String stringItem = item + " ";
+            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
+            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
+            float itemPrice = extractFloatFromString(itemDivName.getText());
+            
+            itemCupIconToClick.click();
+
+            totalOrderPrice += itemPrice;
+            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
+            System.out.println("Item Price: " + itemPrice);
+            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
+
+            if (driver.findElement(promoContainer).isDisplayed()){
+                totalOrderPrice =  performPromoControls(promoChoice, totalOrderPrice); //Reject or Accept
+            }
+
+        }catch(NoSuchElementException e){
+            System.out.println("Promo Element not visible as expected...");
+        }
+        return totalOrderPrice;
+    }
     //#endregion
+
+    //#region CART PERFORM ACTIONS
+}//END OF CLASS

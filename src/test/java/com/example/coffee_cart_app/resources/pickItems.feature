@@ -43,8 +43,5 @@ Scenario: Picking All Items
 # Scenario: Checking Cart items using going to cart page
 
 
-# #FOR THIRD TEST CLASS (MAKE NEW FEATURE FILE NAMED "check out by going to actual cart page")
-# Scenario: Properly Checking out using hover payContainer Div
-# Scenario: Properly checking out using cart page 
 
 

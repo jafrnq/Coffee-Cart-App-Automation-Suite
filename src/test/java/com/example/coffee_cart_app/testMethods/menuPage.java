@@ -26,7 +26,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     //Global Variables
     float totalOrderPrice = 0;
 
-    //Setup Methods
+    // Setup Methods
     @Override
     @AfterMethod
     public void tearDown(){
@@ -35,7 +35,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         totalOrderPrice = 0;
     }
 
-    //Test Methods
+    ////#region TEST METHODS=======================================================================================
     @Test //Done and working
     @When ("I check the visibility of main Menu page elements")
     public void testMenuPageElementsVisibility(){
@@ -111,100 +111,11 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     assertCompareCartListfromManualOrdersList(allMenuItems);
    }
-    
-    
-    
-    //#region PERFORM METHODS====================================================================================================
-    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
-        for (String item : ordersList){
-            totalOrderPrice = performAddItemToCart(item, totalOrderPrice);
-        }
-
-        System.out.println("Order total based on manual count: " + totalOrderPrice);
-        return totalOrderPrice;
-    }
-
-    //Override method of addToCartFunction (Adds option to accept or reject promo)
-    public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice, String promoChoice){
-        for (String item : ordersList){
-            totalOrderPrice = performAddItemToCart(item, totalOrderPrice, promoChoice);
-        }
-
-        System.out.println("Order total based on manual count: " + totalOrderPrice);
-        return totalOrderPrice;
-    }
-
-    @When("I add an item to cart multiple times")
-    public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
-
-        for (int i = 0; i < orderCount; i++){
-            totalOrderPrice =  performAddItemToCart("Mocha", totalOrderPrice);
-        }
-
-        System.out.println("Successfully ordered: " + orderCount + " " + itemName);
-        System.out.println("Order total based on manual count: " + totalOrderPrice);
-        return totalOrderPrice;
-    }
-    
-    //Default addtoCartFunction, rejects the promo
-    @When ("I click an item")
-    public float performAddItemToCart(String item, float totalOrderPrice){
-        
-        try {
-            String stringItem = item + " ";
-            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
-            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
-            float itemPrice = extractFloatFromString(itemDivName.getText());
-            
-            itemCupIconToClick.click();
-
-            totalOrderPrice += itemPrice;
-            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
-            System.out.println("Item Price: " + itemPrice);
-            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
-
-            if (driver.findElement(promoContainer).isDisplayed()){
-                performPromoControls("Reject", totalOrderPrice);
-            }
-
-        }catch(NoSuchElementException e){
-            System.out.println("Promo Element not visible as expected...");
-        }
-        return totalOrderPrice;
-    }
-
-    //Override method of addToCartFunction, accepts the promo
-    @When ("I click an item")
-    public float performAddItemToCart(String item, float totalOrderPrice, String promoChoice){
-        
-        try {
-            String stringItem = item + " ";
-            WebElement itemDivName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//h4[text()='" + stringItem + "']")));
-            WebElement itemCupIconToClick = driver.findElement(By.xpath("//div[@id='app']//div[@data-v-a9662a08]//div[@class='cup']//div[@aria-label='"+item+"']"));
-            float itemPrice = extractFloatFromString(itemDivName.getText());
-            
-            itemCupIconToClick.click();
-
-            totalOrderPrice += itemPrice;
-            System.out.println("Item added to cart: " + extractTextFromString(itemDivName.getText()));
-            System.out.println("Item Price: " + itemPrice);
-            System.out.println("Total spending: " + totalOrderPrice + "\n"); //To be removed once method is successfully working
-
-            if (driver.findElement(promoContainer).isDisplayed()){
-                totalOrderPrice =  performPromoControls(promoChoice, totalOrderPrice); //Reject or Accept
-            }
-
-        }catch(NoSuchElementException e){
-            System.out.println("Promo Element not visible as expected...");
-        }
-        return totalOrderPrice;
-    }
 
     //#endregion
+    //#region ASSERT METHODS==============================================================================================================
 
-
-    //#region ASSERT MTHODS 
-    
+    @Then ("All items should be recorded in the cart and its total amount")
     public void assertCompareCartListfromManualOrdersList(List<String> ordersList){
         hoverOverPayContainer();
         
