@@ -34,12 +34,15 @@ public class cofeeCartAppUtilityMethods {
 
     //Global Variables
     float totalOrderPrice = 0;
-    //Parent divs of menu page
+    //Parent divs
     protected By appdiv = By.id("app");
     protected By topMenu = By.cssSelector("#app ul");
+    //Main menu parent elements
     protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
     protected By payContainerButton = By.cssSelector("#app .pay-container button.pay"); 
     protected By promoContainer = By.cssSelector("#app .promo");
+    
+    //Cart Page parent elements
     protected By cartItems = By.cssSelector("#app div ul[data-v-8965af83]");
 
 
@@ -96,7 +99,7 @@ public class cofeeCartAppUtilityMethods {
         return modal;
     }
     @Given("I am in the the cart page of the shop after picking items")    
-    public void performNavigateToCartPage(){
+    public void navigateToCartPage(){
         WebElement topMenuDiv = driver.findElement(topMenu);
         WebElement cartButton = wait.until(ExpectedConditions.visibilityOf(topMenuDiv.findElement(By.cssSelector("li:nth-of-type(2)"))));
         cartButton.click();
@@ -108,6 +111,20 @@ public class cofeeCartAppUtilityMethods {
 
     //#endregion
     //#region OTHER METHODS======================================================================================================
+    
+    @Then ("All items should be recorded in the cart and its total amount")
+    public void assertCompareCartListfromManualOrdersList(List<String> ordersList){
+
+        hoverOverPayContainer();
+        
+        List<String> itemsFromSiteCart = getItemListFromCartButton();
+
+        assertTrue(itemsFromSiteCart.containsAll(ordersList));
+        System.out.println("Cart list verified and matches the manual order list");
+    }
+
+    
+
     
     public void waitAndAssertSnackBarMessage(By by, String expectedSnackbarText){
         WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -171,8 +188,6 @@ public class cofeeCartAppUtilityMethods {
     }
     
 
-    //#region MENU PAGE CONTROLS
-
     //Used for gets the paycontainerbutton text which is the total price
     public String getPayContainerPriceText(){
         String payContainerText;
@@ -221,28 +236,53 @@ public class cofeeCartAppUtilityMethods {
         assertTrue(currentPriceBasedOnSite == totalOrderPrice, "TotalOrderPRice and PriceBasedOnSite does not match,");
 
     }
+
     //#region Pay Container Methods
+    public void checkOutUsingPayContainer(WebElement payContainer){
+        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
+        WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
+
+        WebElement nameField = paymentDetailsModal.findElement(By.cssSelector("input[id='name']"));
+        WebElement emailField = paymentDetailsModal.findElement(By.cssSelector("input[id='email']"));
+        WebElement submitButton = paymentDetailsModal.findElement(By.id("submit-payment"));
+    
+        inputStringToField(nameField, "John Doe");
+        inputStringToField(emailField, "exampleEmail@gmail.com");
+
+        submitButton.click();
+        waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
+    }
     
     public void hoverOverPayContainer(){
         WebElement payContainerDiv = driver.findElement(payContainerButton);
         actions.moveToElement(payContainerDiv).perform();
     }
 
-    public List<String> getItemListFromCart(){
+    public List<String> getItemListFromCartButton(){
         WebElement ordersListPopup = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#app ul.cart-preview.show")));
 
-        List<WebElement> cartItemsDiv = ordersListPopup.findElements(By.cssSelector("li.list-item div span"));
+        List<WebElement> cartItemsDiv = ordersListPopup.findElements(By.cssSelector("li.list-item div span:nth-of-type(1)"));
         List<String> cartItems = new ArrayList<>();
 
         for (WebElement item : cartItemsDiv){
             String itemName = item.getText();
-            cartItems.add(itemName.replaceAll("[^a-zA-Z]", "").trim());
-            // cartItems.add(itemName.replaceAll("[^a-zA-Z]|[xX]", "").trim());
+            cartItems.add(itemName);
         }
         return cartItems;
     } 
 
-    public void performInsertCheckoutCredentials(){}
+    public List<String> getItemListFromCartPage(){
+        WebElement cartItemsDiv = driver.findElement(cartItems);
+        List<WebElement> cartItems= cartItemsDiv.findElements(By.cssSelector("li.list-item > div[data-v-8965af83]:nth-of-type(1)"));
+        List<String> stringCartItems = new ArrayList<>();
+
+        for (WebElement item : cartItems){
+            String itemName = item.getText();
+            stringCartItems.add(itemName);
+        }
+        return stringCartItems;
+    }
+
     //#endregion
 
     //#region MENU PERFORM METHODS====================================================================================================

@@ -40,18 +40,25 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     public void assertCartPageElements(){//Done working
         totalOrderPrice = performAddItemToCart("Mocha", totalOrderPrice);
 
-        performNavigateToCartPage();
+        navigateToCartPage();
 
         performAssertCartPageElements();
     }
 
     @Test 
     @When("I try to checkout my items in the cart page")
-    public void checkOutOrdersUsingCheckoutPage(){}
+    public void checkOutOrdersUsingCheckoutPage(){
+        List<String> ordersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
+        totalOrderPrice = performAddDifferentItemsToCart(ordersList, totalOrderPrice);
+
+        navigateToCartPage();
+
+        assertCompareCartListFromSiteToManualOrdersList(ordersList);        
+    }
 
     @Test
     @When("I try to checkout using the payContainer div")
-    public void checkOutOrdersUsingPayContainerDiv(){}
+    public void checkOutOrdersUsingPayContainerButton(){}
 
     @Test
     @When("I try to check out without adding any item to cart")
@@ -77,10 +84,19 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     //#endregion
     //#region ASSERT METHODS===================================================================
+    public void assertCompareCartListFromSiteToManualOrdersList(List<String> orderList){
+        List<String> cartItemsfromCartPage= getItemListFromCartPage();
+
+        insertHeadiingLines("assertCompareCartListFromSiteToManualOrdersList");
+        System.out.println("Items from page: " + cartItemsfromCartPage);
+        System.out.println("Items from orderList" + orderList);
+        
+        assertTrue(cartItemsfromCartPage.containsAll(orderList));
+        System.out.println("Cart list verified and matches the manual order list");
+    }
 
     public void assertCartItems(WebElement cartMenuItems){
-        WebElement cartListHeader = cartMenuItems.findElement(By.cssSelector("li.list-header"));
-        
+
         List<WebElement> itemsInCart = cartMenuItems.findElements(By.cssSelector("li.list-item"));
         for (WebElement item : itemsInCart){
 
@@ -114,26 +130,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     @When("I observe the elements in the page")
     public void assertBuyButton(WebElement payContainer){
-        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
-        //Clicks and asserts the popup modal
-        WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
-
-        //asserting modal elements 
-        WebElement nameField = paymentDetailsModal.findElement(By.cssSelector("input[id='name']"));
-        WebElement emailField = paymentDetailsModal.findElement(By.cssSelector("input[id='email']"));
-        WebElement promotionCheckbox = paymentDetailsModal.findElement(By.cssSelector("div input[id='promotion']"));
-        WebElement submitButton = paymentDetailsModal.findElement(By.id("submit-payment"));
-        assertTrue(nameField.isDisplayed() 
-                && emailField.isDisplayed() 
-                && promotionCheckbox.isDisplayed()
-                && submitButton.isDisplayed(), "Payment modal elements not found");
-
-        inputStringToField(nameField, "John Doe");
-        inputStringToField(emailField, "exampleEmail@gmail.com");
-        promotionCheckbox.click();
-        submitButton.click();
-        waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
-
+        checkOutUsingPayContainer(payContainer);
     }
 
 

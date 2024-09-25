@@ -114,19 +114,6 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
     //#endregion
     //#region ASSERT METHODS==============================================================================================================
-
-    @Then ("All items should be recorded in the cart and its total amount")
-    public void assertCompareCartListfromManualOrdersList(List<String> ordersList){
-        hoverOverPayContainer();
-        
-        List<String> itemsFromSiteCart = getItemListFromCart();
-        
-        for (String item: ordersList){
-            item = removeSpacesBetweenWords(item);//Formats the string to remove spaces between words
-            assertTrue(itemsFromSiteCart.contains(item));
-        }
-        System.out.println("Cart list verified and matches the manual order list");
-    }
     
     
     @Then("The main menu elements should be visible")
