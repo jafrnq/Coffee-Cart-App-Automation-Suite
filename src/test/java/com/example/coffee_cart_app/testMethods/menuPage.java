@@ -30,8 +30,11 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     @Override
     @AfterMethod
     public void tearDown(){
+        
         insertHeadiingLines("Test Method completed");
+        
         driver.manage().deleteAllCookies();
+        
         totalOrderPrice = 0;
     }
 
@@ -39,16 +42,18 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     @Test //Done and working
     @When ("I check the visibility of main Menu page elements")
     public void testMenuPageElementsVisibility(){
+        
         assertMenuPageElements();
     }
 
     @Test //Done and working
     @When("I pick a single item")
     public void pickASingleItem(){
-        //Adds item to cart and updates the totalOrderPrice
+
         totalOrderPrice = performAddItemToCart("Cappuccino", totalOrderPrice);
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
@@ -56,23 +61,25 @@ public class menuPage extends cofeeCartAppUtilityMethods{
     @When("Order the same item multiple times")
     public void pickMultipleOfTheSameItem(){
         
-        //Orders the same item multiple times and assigns the total value on totalOrderPrice
         totalOrderPrice = performAddSingleItemToCartMultipleTimes("Mocha", 5, totalOrderPrice);
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
     }
 
     @Test //Done and working
     @When("I add three or more items in the cart")
     public void pickDifferentItems(){
+        
         List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
 
         totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice);
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
+        
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
+        assertCompareCartListfromPayContainerToManualOrdersList(preDefinedOrdersList);
     }
 
     @Test //Done and working
@@ -84,7 +91,7 @@ public class menuPage extends cofeeCartAppUtilityMethods{
         
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
+        assertCompareCartListfromPayContainerToManualOrdersList(preDefinedOrdersList);
     }
 
     @Test 
@@ -96,26 +103,24 @@ public class menuPage extends cofeeCartAppUtilityMethods{
 
         float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
         assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-        assertCompareCartListfromManualOrdersList(preDefinedOrdersList);
+        assertCompareCartListfromPayContainerToManualOrdersList(preDefinedOrdersList);
    }
 
    @Test
    @When ("I add all items to cart")
    public void addAllItemsToCart(){
-    float totalOrderPrice = 0;
+
     List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");
 
     totalOrderPrice = performAddDifferentItemsToCart(allMenuItems, totalOrderPrice);
 
     float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
     assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-    assertCompareCartListfromManualOrdersList(allMenuItems);
+    assertCompareCartListfromPayContainerToManualOrdersList(allMenuItems);
    }
 
     //#endregion
     //#region ASSERT METHODS==============================================================================================================
-    
-    
     @Then("The main menu elements should be visible")
     public void assertMenuPageElements(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));

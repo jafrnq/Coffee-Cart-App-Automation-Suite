@@ -43,6 +43,8 @@ public class cartPage extends cofeeCartAppUtilityMethods {
         navigateToCartPage();
 
         performAssertCartPageElements();
+        
+        System.out.println("Cart page elements verified");
     }
 
     @Test 
@@ -53,20 +55,47 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
         navigateToCartPage();
 
-        assertCompareCartListFromSiteToManualOrdersList(ordersList);        
+        assertCompareCartListFromSiteToManualOrdersList(ordersList);    
+        
+        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+        
+        System.out.println("Checking out using cart page verified");
     }
 
     @Test
     @When("I try to checkout using the payContainer div")
-    public void checkOutOrdersUsingPayContainerButton(){}
+    public void checkOutOrdersUsingPayContainerButton(){
+        List<String> ordersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
+        
+        totalOrderPrice = performAddDifferentItemsToCart(ordersList, totalOrderPrice);
+        
+        hoverOverPayContainer();
+
+        assertCompareCartListfromPayContainerToManualOrdersList(ordersList);    
+
+        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+    }
 
     @Test
     @When("I try to check out without adding any item to cart")
-    public void checkOutWithNoItemInCart(){}
+    public void checkOutWithNoItemInCart(){
+        navigateToCartPage(); //Automatically locates the No Order message
+    }
 
     @Test
     @When("I try to add all items in cart and check them out")
-    public void checkOutAllItemsInMenu(){}
+    public void checkOutAllItemsInMenu(){
+
+        List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");
+
+        totalOrderPrice = performAddDifferentItemsToCart(allMenuItems, totalOrderPrice);
+
+        navigateToCartPage();
+
+        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+        
+        System.out.println("Checking out all items verified");
+    }
 
 
 
@@ -130,7 +159,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     @When("I observe the elements in the page")
     public void assertBuyButton(WebElement payContainer){
-        checkOutUsingPayContainer(payContainer);
+        performCheckOutOnPayContainer(payContainer);
     }
 
 

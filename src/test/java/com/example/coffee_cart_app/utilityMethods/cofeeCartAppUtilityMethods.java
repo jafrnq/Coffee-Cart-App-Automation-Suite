@@ -99,12 +99,25 @@ public class cofeeCartAppUtilityMethods {
         return modal;
     }
     @Given("I am in the the cart page of the shop after picking items")    
+    @Then("The system should let me know that there's no any item in the cart")
     public void navigateToCartPage(){
+        
         WebElement topMenuDiv = driver.findElement(topMenu);
         WebElement cartButton = wait.until(ExpectedConditions.visibilityOf(topMenuDiv.findElement(By.cssSelector("li:nth-of-type(2)"))));
         cartButton.click();
-
+        
         wait.until(ExpectedConditions.urlToBe("https://coffee-cart.app/cart"));
+        
+        try{
+            WebElement listDiv = driver.findElement(By.xpath("//div[@class='list']//p[text()='No coffee, go add some.']"));
+                if(listDiv.isDisplayed()){
+                    System.out.println(listDiv.getText());
+                }
+        } catch(NoSuchElementException e){
+            insertHeadiingLines("navigateToCartPage");
+            System.out.println("Orders recognized, proceed");
+        }
+        
     }
 
 
@@ -113,7 +126,7 @@ public class cofeeCartAppUtilityMethods {
     //#region OTHER METHODS======================================================================================================
     
     @Then ("All items should be recorded in the cart and its total amount")
-    public void assertCompareCartListfromManualOrdersList(List<String> ordersList){
+    public void assertCompareCartListfromPayContainerToManualOrdersList(List<String> ordersList){
 
         hoverOverPayContainer();
         
@@ -238,7 +251,10 @@ public class cofeeCartAppUtilityMethods {
     }
 
     //#region Pay Container Methods
-    public void checkOutUsingPayContainer(WebElement payContainer){
+    @Then("I should be able to check out my orders without going to the cart page")
+    @Then("I should be able to check out my orders successfully")
+    @Then("I should be able to checkout all of the items succesfully")
+    public void performCheckOutOnPayContainer(WebElement payContainer){
         WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
         WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
 
@@ -286,6 +302,8 @@ public class cofeeCartAppUtilityMethods {
     //#endregion
 
     //#region MENU PERFORM METHODS====================================================================================================
+    @Given("I am in the the menu page of the shop after picking items")
+    
     public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
         for (String item : ordersList){
             totalOrderPrice = performAddItemToCart(item, totalOrderPrice);
