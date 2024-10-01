@@ -4,7 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import org.openqa.selenium.NoSuchElementException;
+
+import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -18,7 +19,6 @@ import java.util.List;
 import java.util.Arrays;
 
 import org.openqa.selenium.By;
-import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
 
 

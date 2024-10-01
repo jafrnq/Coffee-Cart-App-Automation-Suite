@@ -3,7 +3,6 @@ package com.example.coffee_cart_app.utilityMethods;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.Arrays;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
@@ -44,6 +43,7 @@ public class cofeeCartAppUtilityMethods {
     
     //Cart Page parent elements
     protected By cartItems = By.cssSelector("#app div ul[data-v-8965af83]");
+    
 
 
 
@@ -99,7 +99,6 @@ public class cofeeCartAppUtilityMethods {
         return modal;
     }
     @Given("I am in the the cart page of the shop after picking items")    
-    @Then("The system should let me know that there's no any item in the cart")
     public void navigateToCartPage(){
         
         WebElement topMenuDiv = driver.findElement(topMenu);
@@ -108,6 +107,15 @@ public class cofeeCartAppUtilityMethods {
         
         wait.until(ExpectedConditions.urlToBe("https://coffee-cart.app/cart"));
         
+        verifyCartMessage();//Checks if the cart is empty
+    }
+
+
+
+    //#endregion
+    //#region OTHER METHODS======================================================================================================
+    @Then("The system should let me know that there's no any item in the cart")
+    public void verifyCartMessage(){
         try{
             WebElement listDiv = driver.findElement(By.xpath("//div[@class='list']//p[text()='No coffee, go add some.']"));
                 if(listDiv.isDisplayed()){
@@ -117,13 +125,7 @@ public class cofeeCartAppUtilityMethods {
             insertHeadiingLines("navigateToCartPage");
             System.out.println("Orders recognized, proceed");
         }
-        
     }
-
-
-
-    //#endregion
-    //#region OTHER METHODS======================================================================================================
     
     @Then ("All items should be recorded in the cart and its total amount")
     public void assertCompareCartListfromPayContainerToManualOrdersList(List<String> ordersList){
@@ -200,16 +202,6 @@ public class cofeeCartAppUtilityMethods {
         inputFieldElement.sendKeys(inputString);
     }
     
-
-    //Used for gets the paycontainerbutton text which is the total price
-    public String getPayContainerPriceText(){
-        String payContainerText;
-        WebElement payContainerButtonDiv = driver.findElement(payContainerButton);
-        payContainerText = payContainerButtonDiv.getText();
-        
-        System.out.println("Curent cart container price: " + payContainerText);
-        return payContainerText;
-    }
     
     @Then("The promo amount should not be added to total order price")
     @Then("The promo amount should be added to total order price")
@@ -390,5 +382,69 @@ public class cofeeCartAppUtilityMethods {
     }
     //#endregion
 
-    //#region CART PERFORM ACTIONS
+    public int modifyOrderQuantity(String method, int quantity){
+        int quantityAfterOperation = 0;
+        //WebElement orderItemSpanElement
+        //WebElement plusbutton
+        //WebElement minusButton
+        
+        switch(method.toLowerCase()){
+            case "add":
+                quantityAfterOperation += quantity;
+                break;
+            
+            case "minus":
+                quantityAfterOperation -= quantity;
+                break;
+        }
+        return quantityAfterOperation;
+    }
+
+    public WebElement getCartItemDiv(String itemToFind){
+
+        WebElement cartItemsDiv = driver.findElement(cartItems);
+        List<WebElement> cartItems = cartItemsDiv.findElements(By.className("list-item"));
+        WebElement cartItem = null;
+
+        for(WebElement item : cartItems){
+            String itemName = item.findElement(By.cssSelector("div:nth-of-type(1)")).getText();
+            System.out.println("Item name: " + itemName);
+            
+            if (itemName.equals(itemToFind)){
+                cartItem = item;
+            }
+        }
+            return cartItem;
+    }
+
+
+    public String getPayContainerPriceText(){
+        String payContainerText;
+        WebElement payContainerButtonDiv = driver.findElement(payContainerButton);
+        payContainerText = payContainerButtonDiv.getText();
+        
+        System.out.println("Curent cart container price: " + payContainerText);
+        return payContainerText;
+    }
+
+    public int getItemQuantity(String itemName){
+
+        WebElement itemDiv = getCartItemDiv(itemName);
+
+        String itemPriceAndQuantityString = itemDiv.findElement(By.cssSelector("div:nth-of-type(2)")).getText();
+
+        int itemQuantity = extractQuantityValueFromString(itemPriceAndQuantityString);
+        
+        System.out.println("Item quantity: " + itemQuantity);
+
+        return itemQuantity;
+    } 
+
+    public int extractQuantityValueFromString(String stringtoModify){
+        String[] parts = stringtoModify.split("x");  
+        String quantityPart = parts[1].trim();  
+        
+        return Integer.parseInt(quantityPart);  
+    }
+
 }//END OF CLASS

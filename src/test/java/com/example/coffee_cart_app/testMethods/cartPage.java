@@ -1,8 +1,8 @@
 package com.example.coffee_cart_app.testMethods;
 
-import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
-
 import org.testng.annotations.Test;
+
+import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
 
 import static org.testng.Assert.assertTrue;
 
@@ -80,6 +80,21 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     @When("I try to check out without adding any item to cart")
     public void checkOutWithNoItemInCart(){
         navigateToCartPage(); //Automatically locates the No Order message
+    }
+
+    @Test
+    @When("I try to increase the quantity of the item")
+    public void addToCartThenModifyQuantity(){
+
+        String itemToOrder = "Mocha";
+        totalOrderPrice = performAddSingleItemToCartMultipleTimes(itemToOrder, 10, totalOrderPrice);
+
+        navigateToCartPage();
+
+        String currentPrice = getPayContainerPriceText();
+        int currentItemQuantity = getItemQuantity(itemToOrder);
+        
+        //Increase Quantity 
     }
 
     @Test

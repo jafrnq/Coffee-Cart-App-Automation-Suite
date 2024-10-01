@@ -23,6 +23,12 @@ Scenario: Checking out without adding any items to cart
     When I try to check out without adding any item to cart
     Then The system should let me know that there's no any item in the cart
 
+Scenario: Checking out then modifying its quantity in the cart page
+    Given I am in the the cart page of the shop after picking items
+    When I try to increase the quantity of the item
+    And I try to decrease the quantity of the item
+    Then The changes should be reflected in the item count and total price
+
 Scenario: Checking out all items
     Given I am in the the cart page of the shop after picking items
     When I try to add all items in cart and check them out
