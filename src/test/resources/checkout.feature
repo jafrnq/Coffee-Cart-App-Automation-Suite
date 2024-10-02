@@ -27,7 +27,7 @@ Scenario: Checking out then modifying its quantity in the cart page
     Given I am in the the cart page of the shop after picking items
     When I try to increase the quantity of the item
     And I try to decrease the quantity of the item
-    Then The changes should be reflected in the item count and total price
+    Then The changes should be reflected in the item count
 
 Scenario: Checking out all items
     Given I am in the the cart page of the shop after picking items

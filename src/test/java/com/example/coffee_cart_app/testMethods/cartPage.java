@@ -84,17 +84,41 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     @Test
     @When("I try to increase the quantity of the item")
-    public void addToCartThenModifyQuantity(){
+    public void addToCartThenIncreaseQuantity(){
 
         String itemToOrder = "Mocha";
         totalOrderPrice = performAddSingleItemToCartMultipleTimes(itemToOrder, 10, totalOrderPrice);
 
         navigateToCartPage();
 
-        String currentPrice = getPayContainerPriceText();
-        int currentItemQuantity = getItemQuantity(itemToOrder);
+        String preTotalPrice= getPayContainerPriceText();
+    
+        //modify Order Quantity
+        int postItemQuantity = modifyOrderQuantity("add", 10, itemToOrder);
+        String postTotalPrice= getPayContainerPriceText();
         
-        //Increase Quantity 
+        assertItemQuantity(itemToOrder, postItemQuantity);
+        assertTrue(!preTotalPrice.equals(postTotalPrice), "The total price did not change");
+    }
+
+    @Test
+    @When("I try to decrease the quantity of the item")
+    public void addToCartThenDecreaseQuantity(){
+        String itemToOrder = "Cafe Latte";
+        totalOrderPrice = performAddSingleItemToCartMultipleTimes(itemToOrder, 20, totalOrderPrice);
+        
+        navigateToCartPage();
+
+        String preTotalPrice= getPayContainerPriceText();
+    
+        //modify Order Quantity
+        int postItemQuantity = modifyOrderQuantity("minus", 10, itemToOrder);
+        String postTotalPrice= getPayContainerPriceText();
+        
+        // @Then("The changes should be reflected in the item count and total price")
+        assertItemQuantity(itemToOrder, postItemQuantity);
+        assertTrue(!preTotalPrice.equals(postTotalPrice), "The total price did not change");
+
     }
 
     @Test
@@ -176,6 +200,12 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     public void assertBuyButton(WebElement payContainer){
         performCheckOutOnPayContainer(payContainer);
     }
+
+    @Then("The changes should be reflected in the item count")
+    public void assertItemQuantity(String itemName, int actualQuantity){
+        assertTrue(actualQuantity == getItemQuantity(itemName), "Item quantity did not match");
+    }
+
 
 
 }

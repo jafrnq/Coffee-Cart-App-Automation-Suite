@@ -319,7 +319,7 @@ public class cofeeCartAppUtilityMethods {
     public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
 
         for (int i = 0; i < orderCount; i++){
-            totalOrderPrice =  performAddItemToCart("Mocha", totalOrderPrice);
+            totalOrderPrice =  performAddItemToCart(itemName, totalOrderPrice);
         }
 
         System.out.println("Successfully ordered: " + orderCount + " " + itemName);
@@ -382,23 +382,40 @@ public class cofeeCartAppUtilityMethods {
     }
     //#endregion
 
-    public int modifyOrderQuantity(String method, int quantity){
-        int quantityAfterOperation = 0;
-        //WebElement orderItemSpanElement
+    public int modifyOrderQuantity(String method, int quantity, String itemName){
+        int quantityAfterOperation = getItemQuantity(itemName);
+
         //WebElement plusbutton
         //WebElement minusButton
+        WebElement itemDiv = getCartItemDiv(itemName);
+        WebElement itemUnitController = itemDiv.findElement(By.cssSelector("div:nth-of-type(2) div.unit-controller"));
         
         switch(method.toLowerCase()){
             case "add":
+                WebElement plusButton = itemUnitController.findElement(By.cssSelector("button:nth-of-type(1)"));
+
+                for (int i = 0; i < quantity; i++) {
+                    plusButton.click();
+                }
+
                 quantityAfterOperation += quantity;
                 break;
-            
+                
             case "minus":
+                WebElement minusButton = itemUnitController.findElement(By.cssSelector("button:nth-of-type(2)"));
+
+                for (int i = 0; i < quantity; i++) {
+                    minusButton.click();
+                }
+
                 quantityAfterOperation -= quantity;
                 break;
         }
+        
+        System.out.println("Order quantity after operation: " + quantityAfterOperation);
         return quantityAfterOperation;
     }
+
 
     public WebElement getCartItemDiv(String itemToFind){
 
@@ -431,7 +448,7 @@ public class cofeeCartAppUtilityMethods {
 
         WebElement itemDiv = getCartItemDiv(itemName);
 
-        String itemPriceAndQuantityString = itemDiv.findElement(By.cssSelector("div:nth-of-type(2)")).getText();
+        String itemPriceAndQuantityString = itemDiv.findElement(By.cssSelector("div:nth-of-type(2) span")).getText();
 
         int itemQuantity = extractQuantityValueFromString(itemPriceAndQuantityString);
         
