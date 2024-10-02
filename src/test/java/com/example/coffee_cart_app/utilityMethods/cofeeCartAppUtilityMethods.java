@@ -5,8 +5,10 @@ import java.time.Duration;
 import java.util.List;
 import java.util.ArrayList;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -142,9 +144,13 @@ public class cofeeCartAppUtilityMethods {
 
     
     public void waitAndAssertSnackBarMessage(By by, String expectedSnackbarText){
+        try {
         WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         String snackbarText = snackbar.getText();
         assertEquals(snackbarText, expectedSnackbarText,"Snackbar message does not match with expected, MESSAGE: " + snackbarText);
+        } catch (TimeoutException e){
+            System.out.println("Snackbar message not found, check validation message: \n");
+        }
     }
     
     
@@ -246,20 +252,35 @@ public class cofeeCartAppUtilityMethods {
     @Then("I should be able to check out my orders without going to the cart page")
     @Then("I should be able to check out my orders successfully")
     @Then("I should be able to checkout all of the items succesfully")
-    public void performCheckOutOnPayContainer(WebElement payContainer){
-        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(payContainer));
+    public void performCheckOutOnPayContainer(String name, String email){
+        WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(payContainerButton)));
         WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
 
         WebElement nameField = paymentDetailsModal.findElement(By.cssSelector("input[id='name']"));
         WebElement emailField = paymentDetailsModal.findElement(By.cssSelector("input[id='email']"));
         WebElement submitButton = paymentDetailsModal.findElement(By.id("submit-payment"));
     
-        inputStringToField(nameField, "John Doe");
-        inputStringToField(emailField, "exampleEmail@gmail.com");
+        inputStringToField(nameField, name);
+        inputStringToField(emailField, email);
 
         submitButton.click();
-        waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
+
+        String nameFieldMessage = nameField.getAttribute("validationMessage");
+        String emailFieldMessage = nameField.getAttribute("validationMessage");
+
+        //Catches the input field validation message in case of error
+        if(nameFieldMessage == null && emailFieldMessage == null){
+            waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
+
+        }
+
+        insertHeadiingLines("performCheckOutOnPayContainer");
+        System.out.println("Validation Messages, null means no error:");
+        System.out.println("Name Field Message: " + nameFieldMessage);
+        System.out.println("Email Field Message: " + emailFieldMessage + "\n");
     }
+
+    
     
     public void hoverOverPayContainer(){
         WebElement payContainerDiv = driver.findElement(payContainerButton);

@@ -58,7 +58,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
         assertCompareCartListFromSiteToManualOrdersList(ordersList);    
         
-        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
         
         System.out.println("Checking out using cart page verified");
     }
@@ -74,7 +74,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
         assertCompareCartListfromPayContainerToManualOrdersList(ordersList);    
 
-        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
     }
 
     @Test
@@ -132,17 +132,24 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
         navigateToCartPage();
 
-        performCheckOutOnPayContainer(driver.findElement(payContainerButton));
+        performCheckOutOnPayContainer("John Doe", "example123@gmail.com");
         
         System.out.println("Checking out all items verified");
     }
 
     @Test
     @When("I am checking out in the cart page and filling up the Payment Details Modal")
-    public void checkOutWithEmptyPaymentDetails(){}
+    public void checkOutWithEmptyPaymentDetails(){
+
+        performAddItemToCart("Mocha", totalOrderPrice);
+
+        navigateToCartPage();
+
+        performCheckOutOnPayContainer("", "");
+    }
 
     @Test
-    @When("Given I am checking out in the cart page and filling up the Paymenet Details Modal")
+    @When("Given I am checking out in the cart page and filling up the Payment Details Modal")
     public void checkOutWithIncompletePaymentDetails(){
     }
 
@@ -206,7 +213,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     @When("I observe the elements in the page")
     public void assertBuyButton(WebElement payContainer){
-        performCheckOutOnPayContainer(payContainer);
+        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
     }
 
     @Then("The changes should be reflected in the item count")

@@ -35,12 +35,12 @@ Scenario: Checking out all items
     Then I should be able to checkout all of the items succesfully
 
 Scenario: Checkout with empty credentials
-    Given I am checking out in the cart page and filling up the Paymenet Details Modal
+    Given I am checking out in the cart page and filling up the Payment Details Modal
     When I try to check out without inputting any credentials
     Then I should be notified to fill up the fields
 
 Scenario:Checkout with incomplete email address
-    Given I am checking out in the cart page and filling up the Paymenet Details Modal
+    Given I am checking out in the cart page and filling up the Payment Details Modal
     When I try to check out without inputting any credentials
     Then I should be notified to fill up the email field
 
