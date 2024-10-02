@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 
+import io.cucumber.java.bm.Tetapi;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -136,6 +137,15 @@ public class cartPage extends cofeeCartAppUtilityMethods {
         System.out.println("Checking out all items verified");
     }
 
+    @Test
+    @When("I am checking out in the cart page and filling up the Payment Details Modal")
+    public void checkOutWithEmptyPaymentDetails(){}
+
+    @Test
+    @When("Given I am checking out in the cart page and filling up the Paymenet Details Modal")
+    public void checkOutWithIncompletePaymentDetails(){
+    }
+
 
 
 
@@ -178,9 +188,7 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
             System.out.println("Items in cart");
             System.out.println("Item: " + itemName + ", Price and quantity: " + itemPrice + ", TOTAL: " + itemTotalPrice);
-
         }
-        
     }
 
     public void assertTopMenuBar(WebElement topMenuBar){
