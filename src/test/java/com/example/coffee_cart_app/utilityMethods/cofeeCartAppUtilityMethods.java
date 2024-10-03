@@ -5,9 +5,9 @@ import java.time.Duration;
 import java.util.List;
 import java.util.ArrayList;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -249,10 +249,12 @@ public class cofeeCartAppUtilityMethods {
     }
 
     //#region Pay Container Methods
+    @Given("I am checking out in the cart page and filling up the Payment Details Modal")
     @Then("I should be able to check out my orders without going to the cart page")
     @Then("I should be able to check out my orders successfully")
     @Then("I should be able to checkout all of the items succesfully")
-    public void performCheckOutOnPayContainer(String name, String email){
+    public String performCheckOutOnPayContainer(String name, String email){
+        String validationMessage = null;
         WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(payContainerButton)));
         WebElement paymentDetailsModal = switchToAndAssertModalHeader(checkoutButton, "Payment details");
 
@@ -262,24 +264,32 @@ public class cofeeCartAppUtilityMethods {
     
         inputStringToField(nameField, name);
         inputStringToField(emailField, email);
-
         submitButton.click();
 
-        String nameFieldMessage = nameField.getAttribute("validationMessage");
-        String emailFieldMessage = nameField.getAttribute("validationMessage");
-
-        //Catches the input field validation message in case of error
-        if(nameFieldMessage == null && emailFieldMessage == null){
-            waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
-
+        try {
+            validationMessage = (nameField.getAttribute("validationMessage") != null || emailField.getAttribute("validationMessage") != null) 
+            ? (nameField.getAttribute("validationMessage") + emailField.getAttribute("validationMessage")).trim()
+            : null;
+        
+            if(validationMessage == null){// Valid Scenario
+                waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
+            
+            } else { //Invalid Scenario
+                insertHeadiingLines("performCheckOutOnPayContainer");
+                System.out.println("Validation Error: " + validationMessage);
+            }
+        } catch (StaleElementReferenceException e){
+            System.out.println("No Validation Error found as expected...");
         }
-
-        insertHeadiingLines("performCheckOutOnPayContainer");
-        System.out.println("Validation Messages, null means no error:");
-        System.out.println("Name Field Message: " + nameFieldMessage);
-        System.out.println("Email Field Message: " + emailFieldMessage + "\n");
+        return validationMessage;
     }
 
+    @Then("I should be notified to fill up the email field")
+    @Then("I should be notified to fill up the fields")
+    public String getValidationMessage(WebElement field){
+        String validationMessage = field.getAttribute("validationMessage"); 
+        return validationMessage;
+    }
     
     
     public void hoverOverPayContainer(){
@@ -299,6 +309,9 @@ public class cofeeCartAppUtilityMethods {
         }
         return cartItems;
     } 
+
+
+    
 
     public List<String> getItemListFromCartPage(){
         WebElement cartItemsDiv = driver.findElement(cartItems);

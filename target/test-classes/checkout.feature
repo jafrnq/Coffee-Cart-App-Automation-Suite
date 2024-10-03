@@ -41,7 +41,7 @@ Scenario: Checkout with empty credentials
 
 Scenario:Checkout with incomplete email address
     Given I am checking out in the cart page and filling up the Payment Details Modal
-    When I try to check out without inputting any credentials
+    When I try to check out with incomplete email address
     Then I should be notified to fill up the email field
 
 

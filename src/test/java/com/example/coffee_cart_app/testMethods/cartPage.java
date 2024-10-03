@@ -138,23 +138,30 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     }
 
     @Test
-    @When("I am checking out in the cart page and filling up the Payment Details Modal")
+    @When("I try to check out without inputting any credentials")
     public void checkOutWithEmptyPaymentDetails(){
 
         performAddItemToCart("Mocha", totalOrderPrice);
 
         navigateToCartPage();
 
-        performCheckOutOnPayContainer("", "");
+        String validationMesasge = performCheckOutOnPayContainer("", "");
+        
+        assertTrue(validationMesasge.equals("Please fill out this field.Please fill out this field."));
     }
 
     @Test
-    @When("Given I am checking out in the cart page and filling up the Payment Details Modal")
+    @When("I try to check out with incomplete email address")
     public void checkOutWithIncompletePaymentDetails(){
+
+        performAddItemToCart("Mocha", totalOrderPrice);
+
+        navigateToCartPage();
+        
+        String validationMesasge =  performCheckOutOnPayContainer("John", "sampleEmail");
+        
+        assertTrue(validationMesasge.equals("Please include an '@' in the email address. 'sampleEmail' is missing an '@'."));
     }
-
-
-
 
 
     //#region PERFORM METHODS===================================================================
