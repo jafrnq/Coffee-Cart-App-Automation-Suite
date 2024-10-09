@@ -1,5 +1,12 @@
 {
     "java.compile.nullAnalysis.mode": "disabled",
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    
+        // "cucumber-quick": {
+        //       "tool": "tool-name",
+        //       "script": "npx tool-name relative-path/to/configurations"
+        //   }
+      
 }
+

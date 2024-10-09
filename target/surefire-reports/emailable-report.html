@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">123</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.example.coffee_cart_app.testMethods.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1728447000036</td><td rowspan="1">106</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.example.coffee_cart_app.testMethods.TestRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@2ca26d77</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.cucumber.java.InvalidMethodException: You&apos;re not allowed to extend classes that define Step Definitions or hooks. class com.example.coffee_cart_app.testMethods.menuPage extends class com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods
+	at io.cucumber.java.InvalidMethodException.createInvalidMethodException(InvalidMethodException.java:16)
+	at io.cucumber.java.MethodScanner.validateMethod(MethodScanner.java:76)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:66)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:58)
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
+	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:41)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:807)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:294)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:56)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
+	at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:357)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:225)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:194)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

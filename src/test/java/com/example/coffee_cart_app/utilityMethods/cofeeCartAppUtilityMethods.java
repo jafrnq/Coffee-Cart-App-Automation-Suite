@@ -35,16 +35,16 @@ public class cofeeCartAppUtilityMethods {
 
     //Global Variables
     float totalOrderPrice = 0;
-    //Parent divs
-    protected By appdiv = By.id("app");
-    protected By topMenu = By.cssSelector("#app ul");
+    //Parent divss
+    public By appdiv = By.id("app");
+    public By topMenu = By.cssSelector("#app ul");
     //Main menu parent elements
-    protected By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
-    protected By payContainerButton = By.cssSelector("#app .pay-container button.pay"); 
-    protected By promoContainer = By.cssSelector("#app .promo");
+    public By menuItems = By.cssSelector("#app div[data-v-a9662a08]");
+    public By payContainerButton = By.cssSelector("#app .pay-container button.pay"); 
+    public By promoContainer = By.cssSelector("#app .promo");
     
     //Cart Page parent elements
-    protected By cartItems = By.cssSelector("#app div ul[data-v-8965af83]");
+    public By cartItems = By.cssSelector("#app div ul[data-v-8965af83]");
     
 
 
@@ -52,7 +52,7 @@ public class cofeeCartAppUtilityMethods {
 
 
     //#region GLOBAL VARIABLES================================================================================================
-    protected By snackbarMessageElement = By.cssSelector(".snackbar");
+    public By snackbarMessageElement = By.cssSelector(".snackbar");
 
     //#endregion
 
