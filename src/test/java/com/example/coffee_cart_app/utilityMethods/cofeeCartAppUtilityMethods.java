@@ -29,9 +29,9 @@ import static org.testng.Assert.assertTrue;
 
 
 public class cofeeCartAppUtilityMethods {
-    protected WebDriver driver;
-    protected WebDriverWait wait;
-    protected Actions actions;
+    public WebDriver driver;
+    public WebDriverWait wait;
+    public Actions actions;
 
     //Global Variables
     float totalOrderPrice = 0;
@@ -78,16 +78,11 @@ public class cofeeCartAppUtilityMethods {
         
     }
 
-    @AfterMethod
-    public void tearDown(){
-        insertHeadiingLines("Test Method completed");
-        driver.manage().deleteAllCookies();
-    }
-    
     @AfterTest
     public void afterTest(){
         driver.quit();
     }
+
     //#endregion
 
     //#region PAGE NAVIGATION ()METHODS==============================================================================================================

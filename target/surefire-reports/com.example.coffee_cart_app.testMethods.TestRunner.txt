@@ -1,7 +1,46 @@
 -------------------------------------------------------------------------------
 Test set: com.example.coffee_cart_app.testMethods.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.363 s <<< FAILURE! - in com.example.coffee_cart_app.testMethods.TestRunner
-setUpClass(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.288 s  <<< FAILURE!
-io.cucumber.java.InvalidMethodException: You're not allowed to extend classes that define Step Definitions or hooks. class com.example.coffee_cart_app.testMethods.menuPage extends class com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods
+Tests run: 14, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 4.041 s <<< FAILURE! - in com.example.coffee_cart_app.testMethods.TestRunner
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.043 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
+
+runScenario(com.example.coffee_cart_app.testMethods.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertBuyButton(org.openqa.selenium.WebElement) and com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements()
 

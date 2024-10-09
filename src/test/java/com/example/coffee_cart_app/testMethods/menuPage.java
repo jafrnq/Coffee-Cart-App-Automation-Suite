@@ -23,25 +23,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-
 public class menuPage {
     //Global Variables
     float totalOrderPrice = 0;
     cofeeCartAppUtilityMethods utilityMethods = new cofeeCartAppUtilityMethods();
-     WebDriver driver; // Declare WebDriver
-     WebDriverWait wait; // Declare WebDriverWait
-
-
-    // Setup Methods
-    @AfterMethod
-    public void tearDown(){
-        
-        utilityMethods.insertHeadiingLines("Test Method completed");
-        
-        driver.manage().deleteAllCookies();
-        
-        totalOrderPrice = 0;
-    }
+    WebDriver driver; // Declare WebDriver
+    WebDriverWait wait; // Declare WebDriverWait
 
     ////#region TEST METHODS=======================================================================================
     @Test //Done and working

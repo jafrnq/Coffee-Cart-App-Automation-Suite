@@ -10,36 +10,29 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.AfterMethod;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 
 
 
-public class cartPage extends cofeeCartAppUtilityMethods {
+public class cartPage{
+    cofeeCartAppUtilityMethods utilityMethods = new cofeeCartAppUtilityMethods();
     //Global Variables
+    WebDriver driver; // Declare WebDriver
+    WebDriverWait wait; // Declare WebDriverWait
     float totalOrderPrice = 0;
-
-    //Setup Methods
-    @Override
-    @AfterMethod
-    public void tearDown(){
-        insertHeadiingLines("Test Method completed");
-        driver.manage().deleteAllCookies();
-        totalOrderPrice = 0;
-    }
-
 
     //TEST METHODS=================================================================================
     @Test
     @When("I observe the elements in the page")
     public void assertCartPageElements(){//Done working
-        totalOrderPrice = performAddItemToCart("Mocha", totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddItemToCart("Mocha", totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
         performAssertCartPageElements();
         
@@ -50,13 +43,13 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     @When("I try to checkout my items in the cart page")
     public void checkOutOrdersUsingCheckoutPage(){
         List<String> ordersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
-        totalOrderPrice = performAddDifferentItemsToCart(ordersList, totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddDifferentItemsToCart(ordersList, totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
         assertCompareCartListFromSiteToManualOrdersList(ordersList);    
         
-        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
+        utilityMethods.performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
         
         System.out.println("Checking out using cart page verified");
     }
@@ -66,19 +59,19 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     public void checkOutOrdersUsingPayContainerButton(){
         List<String> ordersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte", "Espresso Con Panna", "Cafe Breve");
         
-        totalOrderPrice = performAddDifferentItemsToCart(ordersList, totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddDifferentItemsToCart(ordersList, totalOrderPrice);
         
-        hoverOverPayContainer();
+        utilityMethods.hoverOverPayContainer();
 
-        assertCompareCartListfromPayContainerToManualOrdersList(ordersList);    
+        utilityMethods.assertCompareCartListfromPayContainerToManualOrdersList(ordersList);    
 
-        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
+        utilityMethods.performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
     }
 
     @Test
     @When("I try to check out without adding any item to cart")
     public void checkOutWithNoItemInCart(){
-        navigateToCartPage(); //Automatically locates the No Order message
+        utilityMethods.navigateToCartPage(); //Automatically locates the No Order message
     }
 
     @Test
@@ -86,15 +79,15 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     public void addToCartThenIncreaseQuantity(){
 
         String itemToOrder = "Mocha";
-        totalOrderPrice = performAddSingleItemToCartMultipleTimes(itemToOrder, 10, totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddSingleItemToCartMultipleTimes(itemToOrder, 10, totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
-        String preTotalPrice= getPayContainerPriceText();
+        String preTotalPrice= utilityMethods.getPayContainerPriceText();
     
         //modify Order Quantity
-        int postItemQuantity = modifyOrderQuantity("add", 10, itemToOrder);
-        String postTotalPrice= getPayContainerPriceText();
+        int postItemQuantity = utilityMethods.modifyOrderQuantity("add", 10, itemToOrder);
+        String postTotalPrice= utilityMethods.getPayContainerPriceText();
         
         assertItemQuantity(itemToOrder, postItemQuantity);
         assertTrue(!preTotalPrice.equals(postTotalPrice), "The total price did not change");
@@ -104,15 +97,15 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     @When("I try to decrease the quantity of the item")
     public void addToCartThenDecreaseQuantity(){
         String itemToOrder = "Cafe Latte";
-        totalOrderPrice = performAddSingleItemToCartMultipleTimes(itemToOrder, 20, totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddSingleItemToCartMultipleTimes(itemToOrder, 20, totalOrderPrice);
         
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
-        String preTotalPrice= getPayContainerPriceText();
+        String preTotalPrice= utilityMethods.getPayContainerPriceText();
     
         //modify Order Quantity
-        int postItemQuantity = modifyOrderQuantity("minus", 10, itemToOrder);
-        String postTotalPrice= getPayContainerPriceText();
+        int postItemQuantity = utilityMethods.modifyOrderQuantity("minus", 10, itemToOrder);
+        String postTotalPrice= utilityMethods.getPayContainerPriceText();
         
         // @Then("The changes should be reflected in the item count and total price")
         assertItemQuantity(itemToOrder, postItemQuantity);
@@ -126,11 +119,11 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
         List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");
 
-        totalOrderPrice = performAddDifferentItemsToCart(allMenuItems, totalOrderPrice);
+        totalOrderPrice = utilityMethods.performAddDifferentItemsToCart(allMenuItems, totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
-        performCheckOutOnPayContainer("John Doe", "example123@gmail.com");
+        utilityMethods.performCheckOutOnPayContainer("John Doe", "example123@gmail.com");
         
         System.out.println("Checking out all items verified");
     }
@@ -139,11 +132,11 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     @When("I try to check out without inputting any credentials")
     public void checkOutWithEmptyPaymentDetails(){
 
-        performAddItemToCart("Mocha", totalOrderPrice);
+        utilityMethods.performAddItemToCart("Mocha", totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
 
-        String validationMesasge = performCheckOutOnPayContainer("", "");
+        String validationMesasge = utilityMethods.performCheckOutOnPayContainer("", "");
         
         assertTrue(validationMesasge.equals("Please fill out this field.Please fill out this field."));
     }
@@ -152,11 +145,11 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     @When("I try to check out with incomplete email address")
     public void checkOutWithIncompletePaymentDetails(){
 
-        performAddItemToCart("Mocha", totalOrderPrice);
+        utilityMethods.performAddItemToCart("Mocha", totalOrderPrice);
 
-        navigateToCartPage();
+        utilityMethods.navigateToCartPage();
         
-        String validationMesasge =  performCheckOutOnPayContainer("John", "sampleEmail");
+        String validationMesasge =  utilityMethods.performCheckOutOnPayContainer("John", "sampleEmail");
         
         assertTrue(validationMesasge.equals("Please include an '@' in the email address. 'sampleEmail' is missing an '@'."));
     }
@@ -165,19 +158,19 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     //#region PERFORM METHODS===================================================================
     @Then("The cart page elements should be visible")
     public void performAssertCartPageElements(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(appdiv));
-        assertTopMenuBar(driver.findElement(topMenu)); 
-        assertCartItems(driver.findElement(cartItems)); 
-        assertBuyButton(driver.findElement(payContainerButton));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(utilityMethods.appdiv));
+        assertTopMenuBar(driver.findElement(utilityMethods.topMenu)); 
+        assertCartItems(driver.findElement(utilityMethods.cartItems)); 
+        assertBuyButton(driver.findElement(utilityMethods.payContainerButton));
 
     }
 
     //#endregion
     //#region ASSERT METHODS===================================================================
     public void assertCompareCartListFromSiteToManualOrdersList(List<String> orderList){
-        List<String> cartItemsfromCartPage= getItemListFromCartPage();
+        List<String> cartItemsfromCartPage= utilityMethods.getItemListFromCartPage();
 
-        insertHeadiingLines("assertCompareCartListFromSiteToManualOrdersList");
+        utilityMethods.insertHeadiingLines("assertCompareCartListFromSiteToManualOrdersList");
         System.out.println("Items from page: " + cartItemsfromCartPage);
         System.out.println("Items from orderList" + orderList);
         
@@ -204,13 +197,13 @@ public class cartPage extends cofeeCartAppUtilityMethods {
     }
 
     public void assertTopMenuBar(WebElement topMenuBar){
-        insertHeadiingLines("Starting assertMenuTopBar");
+        utilityMethods.insertHeadiingLines("Starting assertMenuTopBar");
         List<String> expectedTopMenuBarElements = Arrays.asList("menu", "cart", "github");
         List <WebElement> topBarHeaderElements = topMenuBar.findElements(By.tagName("li"));
         
         for (WebElement element : topBarHeaderElements){
             wait.until(ExpectedConditions.elementToBeClickable(element));
-            String  elementText = extractTextFromString(element.findElement(By.tagName("a")).getText());
+            String  elementText = utilityMethods.extractTextFromString(element.findElement(By.tagName("a")).getText());
             assertTrue(expectedTopMenuBarElements.contains(elementText), "Element not found: " + elementText);
         }
         System.out.println("All top menu bar elements Verified");
@@ -218,12 +211,12 @@ public class cartPage extends cofeeCartAppUtilityMethods {
 
     @When("I observe the elements in the page")
     public void assertBuyButton(WebElement payContainer){
-        performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
+        utilityMethods.performCheckOutOnPayContainer("John Doe", "exampleemail@gmailcom");
     }
 
     @Then("The changes should be reflected in the item count")
     public void assertItemQuantity(String itemName, int actualQuantity){
-        assertTrue(actualQuantity == getItemQuantity(itemName), "Item quantity did not match");
+        assertTrue(actualQuantity == utilityMethods.getItemQuantity(itemName), "Item quantity did not match");
     }
 
 
