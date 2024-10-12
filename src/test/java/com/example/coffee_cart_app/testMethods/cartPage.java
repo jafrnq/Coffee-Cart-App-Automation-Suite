@@ -1,5 +1,7 @@
 package com.example.coffee_cart_app.testMethods;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
@@ -25,6 +27,16 @@ public class cartPage{
     WebDriver driver; // Declare WebDriver
     WebDriverWait wait; // Declare WebDriverWait
     float totalOrderPrice = 0;
+
+    @BeforeMethod
+    public void setUp(){
+        utilityMethods.setUp();
+    }
+
+    @AfterMethod
+    public void tearDown(){
+        utilityMethods.tearDown();
+    }
 
     //TEST METHODS=================================================================================
     @Test

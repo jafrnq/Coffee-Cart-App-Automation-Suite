@@ -44,27 +44,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         actions = new Actions(driver);
     }
 
-
-    @BeforeMethod
-    @Given("I am in the menu page of the shop")
-    public void setUp(){
-        utilityMethods.insertHeadiingLines("STARTING NEW TEST");
-        driver.manage().deleteAllCookies();
-        driver.get("https://coffee-cart.app/");
-        wait.until(ExpectedConditions.titleIs("Coffee cart"));
-        assertTrue(driver.getTitle().equals("Coffee cart"));
-        
-    }
-    @AfterMethod
-    public void tearDown(){
-        utilityMethods.insertHeadiingLines("Test Method completed");
-        
-        driver.manage().deleteAllCookies();
-        
-        totalOrderPrice = 0;
-    }
-
-
     @AfterTest
     public void afterTest(){
         driver.quit();

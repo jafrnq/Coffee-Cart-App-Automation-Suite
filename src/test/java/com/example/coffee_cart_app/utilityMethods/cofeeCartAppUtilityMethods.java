@@ -77,6 +77,15 @@ public class cofeeCartAppUtilityMethods {
         assertTrue(driver.getTitle().equals("Coffee cart"));
         
     }
+    @AfterMethod
+    public void tearDown(){
+        insertHeadiingLines("Test Method completed");
+        
+        driver.manage().deleteAllCookies();
+        
+        totalOrderPrice = 0;
+    }
+
 
     @AfterTest
     public void afterTest(){

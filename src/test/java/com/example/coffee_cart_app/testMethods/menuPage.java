@@ -4,6 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.example.coffee_cart_app.utilityMethods.cofeeCartAppUtilityMethods;
@@ -29,6 +32,27 @@ public class menuPage {
     cofeeCartAppUtilityMethods utilityMethods = new cofeeCartAppUtilityMethods();
     WebDriver driver; // Declare WebDriver
     WebDriverWait wait; // Declare WebDriverWait
+
+    
+    @BeforeTest
+    public void beforeTest(){
+        utilityMethods.beforeTest();
+    }
+    @BeforeMethod
+    public void setUp(){
+        utilityMethods.setUp();
+    }
+
+    @AfterMethod
+    public void tearDown(){
+        utilityMethods.tearDown();
+    }
+
+    @AfterTest
+    public void afterTest(){
+        utilityMethods.afterTest();
+    }
+
 
     ////#region TEST METHODS=======================================================================================
     @Test //Done and working
