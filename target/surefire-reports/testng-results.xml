@@ -1,63 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="0" failed="14" skipped="0">
+<testng-results ignored="0" total="16" passed="9" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-12T21:59:00 PST" name="Surefire suite" finished-at="2024-10-12T21:59:02 PST" duration-ms="1742">
+  <suite started-at="2024-10-15T22:19:05 PST" name="All Test Suite" finished-at="2024-10-15T22:19:20 PST" duration-ms="15066">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-12T21:59:00 PST" name="Surefire test" finished-at="2024-10-12T21:59:02 PST" duration-ms="1742">
-      <class name="com.example.coffee_cart_app.testMethods.TestRunner">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:00 PST" name="beforeTest" finished-at="2024-10-12T21:59:02 PST" duration-ms="1306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="setUpClass" finished-at="2024-10-12T21:59:02 PST" duration-ms="130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c1dc8e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="44" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking the visibility of elements in the cart page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+    <test started-at="2024-10-15T22:19:05 PST" name="coffee-cart-app-testClasses" finished-at="2024-10-15T22:19:20 PST" duration-ms="15066">
+      <class name="com.example.coffee_cart_app.testClasses.menuPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -77,53 +42,35 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="3" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking Cart items using hover payContainer Div"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- setUp -->
+        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="acceptPromo" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -143,53 +90,39 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="3" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking Cart items using going to cart page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- acceptPromo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="addAllItemsToCart" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -209,53 +142,43 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="5" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking out without adding any items to cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- addAllItemsToCart -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="pickASingleItem" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -275,53 +198,43 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="5" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking out then modifying its quantity in the cart page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- pickASingleItem -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -341,53 +254,35 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking out all items"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- pickMultipleOfTheSameItem -->
+        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="pickDifferentItems" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -407,53 +302,51 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checkout with empty credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- pickDifferentItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="rejectPromo" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -473,53 +366,39 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checkout with incomplete email address"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+        </test-method> <!-- rejectPromo -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -539,425 +418,154 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["I check the visibility of main Menu page elements"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+        </test-method> <!-- testMenuPageElementsVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["I pick a Single Item"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Order the same item multiple times"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Picking three Items but refusing to accept promo"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="1" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Picking three Items and to accept promo"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-12T21:59:02 PST" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Picking All Items"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Pick Items Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
-            <message>
-              <![CDATA[Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.example.coffee_cart_app.testMethods.cartPage.assertCartPageElements() and com.example.coffee_cart_app.testMethods.menuPage.assertBuyButton(org.openqa.selenium.WebElement)
-at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="tearDownClass" finished-at="2024-10-12T21:59:02 PST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.coffee_cart_app.testMethods.TestRunner@79924b]" started-at="2024-10-12T21:59:02 PST" name="afterTest" finished-at="2024-10-12T21:59:02 PST" duration-ms="184" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@bd4dc25]" started-at="2024-10-15T22:19:20 PST" name="afterTest" finished-at="2024-10-15T22:19:20 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.example.coffee_cart_app.testMethods.TestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
+      <class name="com.example.coffee_cart_app.testClasses.cartPage">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:05 PST" name="beforeTest" finished-at="2024-10-15T22:19:07 PST" duration-ms="1736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:07 PST" name="setUp" finished-at="2024-10-15T22:19:07 PST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:07 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-15T22:19:09 PST" duration-ms="2428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartThenDecreaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:09 PST" name="tearDown" finished-at="2024-10-15T22:19:09 PST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:09 PST" name="setUp" finished-at="2024-10-15T22:19:09 PST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:09 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-15T22:19:11 PST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartThenIncreaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:11 PST" name="tearDown" finished-at="2024-10-15T22:19:11 PST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:11 PST" name="setUp" finished-at="2024-10-15T22:19:11 PST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:11 PST" name="assertCartPageElements" finished-at="2024-10-15T22:19:12 PST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertCartPageElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:12 PST" name="tearDown" finished-at="2024-10-15T22:19:12 PST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:12 PST" name="setUp" finished-at="2024-10-15T22:19:12 PST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:12 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-15T22:19:15 PST" duration-ms="3014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutAllItemsInMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:15 PST" name="tearDown" finished-at="2024-10-15T22:19:15 PST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:15 PST" name="setUp" finished-at="2024-10-15T22:19:15 PST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:15 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-15T22:19:16 PST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutOrdersUsingCheckoutPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:16 PST" name="tearDown" finished-at="2024-10-15T22:19:16 PST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:16 PST" name="setUp" finished-at="2024-10-15T22:19:16 PST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:16 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-15T22:19:18 PST" duration-ms="1430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutOrdersUsingPayContainerButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:18 PST" name="tearDown" finished-at="2024-10-15T22:19:18 PST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:18 PST" name="setUp" finished-at="2024-10-15T22:19:18 PST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:18 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-15T22:19:19 PST" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutWithEmptyPaymentDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:19 PST" name="tearDown" finished-at="2024-10-15T22:19:19 PST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:19 PST" name="setUp" finished-at="2024-10-15T22:19:19 PST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:19 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-15T22:19:20 PST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutWithIncompletePaymentDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:20 PST" name="setUp" finished-at="2024-10-15T22:19:20 PST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:20 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-15T22:19:20 PST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutWithNoItemInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:20 PST" name="tearDown" finished-at="2024-10-15T22:19:20 PST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@2a54a73f]" started-at="2024-10-15T22:19:20 PST" name="afterTest" finished-at="2024-10-15T22:19:20 PST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
+    </test> <!-- coffee-cart-app-testClasses -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeTest;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-
+//TODO LATER, FIX  MVN TEST NOT RUNNING TESTS, use chatgpt solution to include testngfile in pom.xml build
 public class baseTest {
     public WebDriver driver;
     public Actions actions;
@@ -60,13 +60,13 @@ public class baseTest {
         driver = new ChromeDriver();
         actions = new Actions(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.get("https://coffee-cart.app/");
         }
 
     
     
     @BeforeMethod
     public void setUp() {
-        insertHeadingLines("STARTING NEW TEST");
         driver.get("https://coffee-cart.app/");
         wait.until(ExpectedConditions.titleIs("Coffee cart"));
         assertTrue(driver.getTitle().equals("Coffee cart"));

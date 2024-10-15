@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" >
+
+    <test name="coffee-cart-app-testClasses" >
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    </test>
+
+</suite>

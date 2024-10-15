@@ -1,4 +1,4 @@
-package com.example.coffee_cart_app.testMethods;
+package com.example.coffee_cart_app.testClasses;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;

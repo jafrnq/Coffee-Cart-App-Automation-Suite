@@ -1,4 +1,4 @@
-package com.example.coffee_cart_app.testMethods;
+package com.example.coffee_cart_app.testClasses;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,6 +24,7 @@ public class menuPage extends baseTest{
     public void tearDown() {
         insertHeadingLines("Test Method completed");
         driver.manage().deleteAllCookies();
+        driver.get("https://coffee-cart.app/");
         totalOrderPrice = 0;
 
     }
