@@ -15,23 +15,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
-import io.cucumber.java.en.Then;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
-public class cofeeCartAppUtilityMethods {
+public class baseTest {
     public WebDriver driver;
-    public WebDriverWait wait;
     public Actions actions;
+    public WebDriverWait wait;
 
     //Global Variables
     float totalOrderPrice = 0;
@@ -59,39 +55,27 @@ public class cofeeCartAppUtilityMethods {
 
     //#region SETUP METHODS
     @BeforeTest
-    public void beforeTest(){
-        insertHeadiingLines("STARTING TEST");
+    public void beforeTest() {
+        insertHeadingLines("STARTING TEST");
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         actions = new Actions(driver);
-    }
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        }
 
-
+    
+    
     @BeforeMethod
-    @Given("I am in the menu page of the shop")
-    public void setUp(){
-        insertHeadiingLines("STARTING NEW TEST");
-        driver.manage().deleteAllCookies();
+    public void setUp() {
+        insertHeadingLines("STARTING NEW TEST");
         driver.get("https://coffee-cart.app/");
         wait.until(ExpectedConditions.titleIs("Coffee cart"));
         assertTrue(driver.getTitle().equals("Coffee cart"));
-        
-    }
-    @AfterMethod
-    public void tearDown(){
-        insertHeadiingLines("Test Method completed");
-        
-        driver.manage().deleteAllCookies();
-        
-        totalOrderPrice = 0;
     }
 
-
-    @AfterTest
-    public void afterTest(){
+    @AfterClass
+    public void afterTest() {
         driver.quit();
     }
-
     //#endregion
 
     //#region PAGE NAVIGATION ()METHODS==============================================================================================================
@@ -104,7 +88,6 @@ public class cofeeCartAppUtilityMethods {
         assertEquals(modalHeadingText, expectedModalHeader,"Modal header and expected header does not match");
         return modal;
     }
-    @Given("I am in the the cart page of the shop after picking items")    
     public void navigateToCartPage(){
         
         WebElement topMenuDiv = driver.findElement(topMenu);
@@ -120,7 +103,6 @@ public class cofeeCartAppUtilityMethods {
 
     //#endregion
     //#region OTHER METHODS======================================================================================================
-    @Then("The system should let me know that there's no any item in the cart")
     public void verifyCartMessage(){
         try{
             WebElement listDiv = driver.findElement(By.xpath("//div[@class='list']//p[text()='No coffee, go add some.']"));
@@ -128,12 +110,11 @@ public class cofeeCartAppUtilityMethods {
                     System.out.println(listDiv.getText());
                 }
         } catch(NoSuchElementException e){
-            insertHeadiingLines("navigateToCartPage");
+            insertHeadingLines("navigateToCartPage");
             System.out.println("Orders recognized, proceed");
         }
     }
     
-    @Then ("All items should be recorded in the cart and its total amount")
     public void assertCompareCartListfromPayContainerToManualOrdersList(List<String> ordersList){
 
         hoverOverPayContainer();
@@ -177,7 +158,7 @@ public class cofeeCartAppUtilityMethods {
 
 
 
-    public void insertHeadiingLines(String customString){
+    public void insertHeadingLines(String customString){
         System.out.println("\n(" + customString + ")" + "=========================================================================================== ");
     }
 
@@ -213,8 +194,6 @@ public class cofeeCartAppUtilityMethods {
     }
     
     
-    @Then("The promo amount should not be added to total order price")
-    @Then("The promo amount should be added to total order price")
     public float performPromoControls(String performMethod, float totalOrderPrice){
         WebElement promoContainerDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(promoContainer));
         String promoText = promoContainerDiv.findElement(By.tagName("span")).getText();
@@ -243,9 +222,8 @@ public class cofeeCartAppUtilityMethods {
         return totalOrderPrice;
     }
 
-    @Then ("All items should be recorded in the cart with its total cost")
     public void assertTotalPriceAndTotalBasedOnSite(float totalOrderPrice, float currentPriceBasedOnSite){
-        insertHeadiingLines("assertThuotalPriceAndTotalBasedOnSite");
+        insertHeadingLines("assertThuotalPriceAndTotalBasedOnSite");
         System.out.println("Total value based on manualCounter: " + totalOrderPrice);
         System.out.println("Total value based on site: " + currentPriceBasedOnSite);
         assertTrue(currentPriceBasedOnSite == totalOrderPrice, "TotalOrderPRice and PriceBasedOnSite does not match,");
@@ -253,10 +231,6 @@ public class cofeeCartAppUtilityMethods {
     }
 
     //#region Pay Container Methods
-    @Given("I am checking out in the cart page and filling up the Payment Details Modal")
-    @Then("I should be able to check out my orders without going to the cart page")
-    @Then("I should be able to check out my orders successfully")
-    @Then("I should be able to checkout all of the items succesfully")
     public String performCheckOutOnPayContainer(String name, String email){
         String validationMessage = null;
         WebElement checkoutButton = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(payContainerButton)));
@@ -279,7 +253,7 @@ public class cofeeCartAppUtilityMethods {
                 waitAndAssertSnackBarMessage(snackbarMessageElement, "Thanks for your purchase. Please check your email for payment.");
             
             } else { //Invalid Scenario
-                insertHeadiingLines("performCheckOutOnPayContainer");
+                insertHeadingLines("performCheckOutOnPayContainer");
                 System.out.println("Validation Error: " + validationMessage);
             }
         } catch (StaleElementReferenceException e){
@@ -288,8 +262,6 @@ public class cofeeCartAppUtilityMethods {
         return validationMessage;
     }
 
-    @Then("I should be notified to fill up the email field")
-    @Then("I should be notified to fill up the fields")
     public String getValidationMessage(WebElement field){
         String validationMessage = field.getAttribute("validationMessage"); 
         return validationMessage;
@@ -332,7 +304,6 @@ public class cofeeCartAppUtilityMethods {
     //#endregion
 
     //#region MENU PERFORM METHODS====================================================================================================
-    @Given("I am in the the menu page of the shop after picking items")
     
     public float performAddDifferentItemsToCart(List<String> ordersList, float totalOrderPrice){
         for (String item : ordersList){
@@ -353,7 +324,6 @@ public class cofeeCartAppUtilityMethods {
         return totalOrderPrice;
     }
 
-    @When("I add an item to cart multiple times")
     public float performAddSingleItemToCartMultipleTimes(String itemName, int orderCount, float totalOrderPrice ){
 
         for (int i = 0; i < orderCount; i++){
@@ -366,7 +336,6 @@ public class cofeeCartAppUtilityMethods {
     }
     
     //Default addtoCartFunction, rejects the promo
-    @When ("I click an item")
     public float performAddItemToCart(String item, float totalOrderPrice){
         
         try {
@@ -393,7 +362,6 @@ public class cofeeCartAppUtilityMethods {
     }
 
     //Override method of addToCartFunction, accepts the promo
-    @When ("I click an item")
     public float performAddItemToCart(String item, float totalOrderPrice, String promoChoice){
         
         try {

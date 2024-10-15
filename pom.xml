@@ -27,19 +27,6 @@
         <version>2.8</version>
     </dependency>
 
-      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-testng</artifactId>
-        <version>7.18.1</version>
-    </dependency>
-
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>7.11.0</version> <!-- Use the latest stable version -->
-    </dependency>
-
     <!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
     <dependency>
         <groupId>org.uncommons</groupId>
