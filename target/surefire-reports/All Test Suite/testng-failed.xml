@@ -2,22 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="coffee-cart-app-testClasses(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.example.coffee_cart_app.testClasses.menuPage">
+      <class name="com.example.coffee_cart_app.testClasses.cartPage">
         <methods>
-          <include name="acceptPromo"/>
-          <include name="beforeTest"/>
-          <include name="rejectPromo"/>
-          <include name="pickDifferentItems"/>
-          <include name="afterTest"/>
+          <include name="checkOutWithIncompletePaymentDetails"/>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
           <include name="setUp"/>
-          <include name="addAllItemsToCart"/>
-          <include name="testMenuPageElementsVisibility"/>
-          <include name="pickMultipleOfTheSameItem"/>
-          <include name="pickASingleItem"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
+      </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
     </classes>
   </test> <!-- coffee-cart-app-testClasses(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

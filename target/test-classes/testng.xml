@@ -1,11 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="All Test Suite" >
+<suite name="Coffee-Cart-App Cross browser Test Suite" parallel="tests" thread-count="2">
 
-    <test name="coffee-cart-app-testClasses" >
+    <test name="Chrome Tests" parallel="classes" thread-count="2">
+        <parameter name="browser" value="Chrome" /> 
+
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    
+    </test>
+
+    <test name="Edge Tests" parallel="classes" thread-count="2">
+        <parameter name="browser" value="Edge" /> 
+
         <packages>
             <package name="com.example.coffee_cart_app.testClasses"/>
         </packages>
     </test>
+    
+    <!-- <test name="Firefox Tests" >
+        <parameter name="browser" value="Firefox" /> 
+
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    </test> -->
+
 
 </suite>

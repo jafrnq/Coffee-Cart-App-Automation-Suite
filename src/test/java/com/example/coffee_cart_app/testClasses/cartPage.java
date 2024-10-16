@@ -18,7 +18,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class cartPage extends baseTest{
     //Global Variables
     float totalOrderPrice = 0;
-    
 
     @AfterMethod
     public void tearDown() {

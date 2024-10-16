@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>coffee-cart-app-testClasses</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/7</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 15 22:19:05 PST 2024</td>
+<td>Started on:</td><td>Wed Oct 16 21:57:49 PST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15066 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51718 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,21 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails()'><b>checkOutWithIncompletePaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:147)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276922182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace276922182'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace560165559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace560165559'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:147)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -118,87 +118,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 </pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.setUp()'><b>setUp</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.tearDown()'><b>tearDown</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.afterTest()'><b>afterTest</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -209,374 +130,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity()'><b>addToCartThenDecreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>2</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails()'><b>checkOutWithIncompletePaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage()'><b>checkOutOrdersUsingCheckoutPage</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.acceptPromo()'><b>acceptPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
 <td></td>
 <td>1</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart()'><b>addAllItemsToCart</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>3</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem()'><b>pickASingleItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>0</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility()'><b>testMenuPageElementsVisibility</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>0</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity()'><b>addToCartThenDecreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>8</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements()'><b>assertCartPageElements</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems()'><b>pickDifferentItems</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>2</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem()'><b>pickMultipleOfTheSameItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithNoItemInCart()'><b>checkOutWithNoItemInCart</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
 <td>0</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements()'><b>assertCartPageElements</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton()'><b>checkOutOrdersUsingPayContainerButton</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>1</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity()'><b>addToCartThenIncreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>1</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutAllItemsInMenu()'><b>checkOutAllItemsInMenu</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>3</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
+<td>4</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails()'><b>checkOutWithEmptyPaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@2a54a73f</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem()'><b>pickASingleItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653634548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1653634548'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.acceptPromo()'><b>acceptPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466148437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1466148437'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem()'><b>pickMultipleOfTheSameItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2027499247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2027499247'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage()'><b>checkOutOrdersUsingCheckoutPage</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>2</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.menuPage.rejectPromo()'><b>rejectPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1078783335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1078783335'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
+<td></td>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@16610890</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems()'><b>pickDifferentItems</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1436127733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1436127733'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton()'><b>checkOutOrdersUsingPayContainerButton</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>2</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart()'><b>addAllItemsToCart</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1444912530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1444912530'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility()'><b>testMenuPageElementsVisibility</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649096004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1649096004'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at com.example.coffee_cart_app.utilityMethods.baseTest.setUp(baseTest.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</pre></div></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@bd4dc25</td></tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity()'><b>addToCartThenIncreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>5</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@5fbdfdcf</td></tr>
 </table><p>
 </body>
 </html>

@@ -11,14 +11,20 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -54,17 +60,34 @@ public class baseTest {
 
 
     //#region SETUP METHODS
-    @BeforeTest
-    public void beforeTest() {
+    @BeforeClass
+    @Parameters("browser") // Parameter from the TestNG XML file
+    public void BeforeClass(String browser) {
+
+        // browser = "chrome";
+        switch (browser.toLowerCase()) {
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+            
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            
+            default:
+                driver = new ChromeDriver();
+                break;
+        }
         insertHeadingLines("STARTING TEST");
-        driver = new ChromeDriver();
         actions = new Actions(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get("https://coffee-cart.app/");
-        }
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
+    }
 
-    
-    
     @BeforeMethod
     public void setUp() {
         driver.get("https://coffee-cart.app/");
@@ -73,9 +96,12 @@ public class baseTest {
     }
 
     @AfterClass
-    public void afterTest() {
-        driver.quit();
+    public void AfterClass() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
+
     //#endregion
 
     //#region PAGE NAVIGATION ()METHODS==============================================================================================================
