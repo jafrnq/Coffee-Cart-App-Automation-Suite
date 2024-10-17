@@ -20,16 +20,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-//TODO LATER, FIX  MVN TEST NOT RUNNING TESTS, use chatgpt solution to include testngfile in pom.xml build
 public class baseTest {
     public WebDriver driver;
     public Actions actions;
@@ -58,11 +56,13 @@ public class baseTest {
 
     //#endregion
 
+    //TODO: Implement Allure html reports
 
+    
     //#region SETUP METHODS
     @BeforeClass
-    @Parameters("browser") // Parameter from the TestNG XML file
-    public void BeforeClass(String browser) {
+    @Parameters("browser") // Parameter defined in testng.xml
+    public void BeforeClass(@Optional("Chrome") String browser) {
 
         // browser = "chrome";
         switch (browser.toLowerCase()) {

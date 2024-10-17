@@ -2,7 +2,11 @@
 
 <suite name="Coffee-Cart-App Cross browser Test Suite" parallel="tests" thread-count="2">
 
-    <test name="Chrome Tests" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Chrome Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
         <parameter name="browser" value="Chrome" /> 
 
         <packages>
@@ -11,7 +15,7 @@
     
     </test>
 
-    <test name="Edge Tests" parallel="classes" thread-count="2">
+    <test name="Edge Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
         <parameter name="browser" value="Edge" /> 
 
         <packages>
@@ -19,13 +23,13 @@
         </packages>
     </test>
     
-    <!-- <test name="Firefox Tests" >
+    <test name="Firefox Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
         <parameter name="browser" value="Firefox" /> 
 
         <packages>
             <package name="com.example.coffee_cart_app.testClasses"/>
         </packages>
-    </test> -->
+    </test>
 
 
 </suite>
