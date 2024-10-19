@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Firefox Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 17 13:36:09 PST 2024</td>
+<td>Started on:</td><td>Sat Oct 19 11:37:19 PST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36315 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43971 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,65 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails()'><b>checkOutWithIncompletePaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:146)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div><a href='#' onClick='toggleBox("stack-trace511833292", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace511833292'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:146)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>1</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -135,9 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility()'><b>testMenuPageElementsVisibility</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.acceptPromo()'><b>acceptPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
 <td></td>
 <td>1</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart()'><b>addAllItemsToCart</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>3</td>
 <td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.menuPage.rejectPromo()'><b>rejectPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
@@ -145,14 +91,14 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails()'><b>checkOutWithEmptyPaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem()'><b>pickMultipleOfTheSameItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
 <td></td>
 <td>1</td>
-<td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
+<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton()'><b>checkOutOrdersUsingPayContainerButton</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity()'><b>addToCartThenIncreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>2</td>
+<td>5</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage()'><b>checkOutOrdersUsingCheckoutPage</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
@@ -160,24 +106,9 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem()'><b>pickMultipleOfTheSameItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity()'><b>addToCartThenDecreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>1</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.acceptPromo()'><b>acceptPromo</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>1</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem()'><b>pickASingleItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
-<td></td>
-<td>0</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
-<tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements()'><b>assertCartPageElements</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
-<td></td>
-<td>1</td>
+<td>9</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutAllItemsInMenu()'><b>checkOutAllItemsInMenu</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
@@ -185,30 +116,45 @@ function toggleAllBoxes() {
 <td>4</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity()'><b>addToCartThenDecreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements()'><b>assertCartPageElements</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>8</td>
+<td>1</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity()'><b>addToCartThenIncreaseQuantity</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems()'><b>pickDifferentItems</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
 <td></td>
-<td>5</td>
+<td>2</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton()'><b>checkOutOrdersUsingPayContainerButton</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>2</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails()'><b>checkOutWithEmptyPaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
+<td></td>
+<td>1</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
+<tr>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem()'><b>pickASingleItem</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td></td>
+<td>0</td>
+<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
 <tr>
 <td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithNoItemInCart()'><b>checkOutWithNoItemInCart</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
 <td>0</td>
 <td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart()'><b>addAllItemsToCart</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td title='com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility()'><b>testMenuPageElementsVisibility</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
 <tr>
-<td title='com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems()'><b>pickDifferentItems</b><br>Test class: com.example.coffee_cart_app.testClasses.menuPage</td>
+<td title='com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails()'><b>checkOutWithIncompletePaymentDetails</b><br>Test class: com.example.coffee_cart_app.testClasses.cartPage</td>
 <td></td>
-<td>2</td>
-<td>com.example.coffee_cart_app.testClasses.menuPage@18ece7f4</td></tr>
+<td>6</td>
+<td>com.example.coffee_cart_app.testClasses.cartPage@1f760b47</td></tr>
 </table><p>
 </body>
 </html>

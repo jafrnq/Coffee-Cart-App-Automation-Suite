@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="48" passed="47" failed="1" skipped="0">
+<testng-results ignored="0" total="48" passed="48" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-17T13:35:51 PST" name="Coffee-Cart-App Cross browser Test Suite" finished-at="2024-10-17T13:36:46 PST" duration-ms="54892">
+  <suite started-at="2024-10-19T11:37:19 PST" name="Coffee-Cart-App Cross browser Test Suite" finished-at="2024-10-19T11:38:03 PST" duration-ms="43971">
     <groups>
     </groups>
-    <test started-at="2024-10-17T13:35:51 PST" name="Chrome Tests" finished-at="2024-10-17T13:36:09 PST" duration-ms="18542">
+    <test started-at="2024-10-19T11:37:19 PST" name="Chrome Tests" finished-at="2024-10-19T11:37:47 PST" duration-ms="28060">
       <class name="com.example.coffee_cart_app.testClasses.menuPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:51 PST" name="BeforeClass" finished-at="2024-10-17T13:35:53 PST" duration-ms="1818" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:20 PST" duration-ms="1827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,97 +18,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:53 PST" name="setUp" finished-at="2024-10-17T13:35:53 PST" duration-ms="642" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:20 PST" name="setUp" finished-at="2024-10-19T11:37:21 PST" duration-ms="773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:53 PST" name="acceptPromo" finished-at="2024-10-17T13:35:55 PST" duration-ms="1591" status="PASS">
+        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:21 PST" name="acceptPromo" finished-at="2024-10-19T11:37:23 PST" duration-ms="1698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:55 PST" name="tearDown" finished-at="2024-10-17T13:35:55 PST" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:23 PST" name="tearDown" finished-at="2024-10-19T11:37:23 PST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:55 PST" name="setUp" finished-at="2024-10-17T13:35:56 PST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:23 PST" name="setUp" finished-at="2024-10-19T11:37:23 PST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:56 PST" name="addAllItemsToCart" finished-at="2024-10-17T13:35:59 PST" duration-ms="3920" status="PASS">
+        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:23 PST" name="addAllItemsToCart" finished-at="2024-10-19T11:37:29 PST" duration-ms="5975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllItemsToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:35:59 PST" name="tearDown" finished-at="2024-10-17T13:36:00 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:29 PST" name="tearDown" finished-at="2024-10-19T11:37:30 PST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:00 PST" name="setUp" finished-at="2024-10-17T13:36:00 PST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:30 PST" name="setUp" finished-at="2024-10-19T11:37:30 PST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:00 PST" name="pickASingleItem" finished-at="2024-10-17T13:36:00 PST" duration-ms="568" status="PASS">
+        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:30 PST" name="pickASingleItem" finished-at="2024-10-19T11:37:30 PST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickASingleItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:00 PST" name="tearDown" finished-at="2024-10-17T13:36:00 PST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:30 PST" name="tearDown" finished-at="2024-10-19T11:37:31 PST" duration-ms="1577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:00 PST" name="setUp" finished-at="2024-10-17T13:36:01 PST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:31 PST" name="setUp" finished-at="2024-10-19T11:37:32 PST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:01 PST" name="pickDifferentItems" finished-at="2024-10-17T13:36:02 PST" duration-ms="1077" status="PASS">
+        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:32 PST" name="pickDifferentItems" finished-at="2024-10-19T11:37:33 PST" duration-ms="1114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickDifferentItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:02 PST" name="tearDown" finished-at="2024-10-17T13:36:02 PST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:33 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:02 PST" name="setUp" finished-at="2024-10-17T13:36:02 PST" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:33 PST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:02 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-17T13:36:03 PST" duration-ms="858" status="PASS">
+        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:33 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-19T11:37:34 PST" duration-ms="892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickMultipleOfTheSameItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:03 PST" name="tearDown" finished-at="2024-10-17T13:36:03 PST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:34 PST" name="tearDown" finished-at="2024-10-19T11:37:34 PST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:03 PST" name="setUp" finished-at="2024-10-17T13:36:03 PST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:34 PST" name="setUp" finished-at="2024-10-19T11:37:34 PST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:03 PST" name="rejectPromo" finished-at="2024-10-17T13:36:04 PST" duration-ms="868" status="PASS">
+        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:34 PST" name="rejectPromo" finished-at="2024-10-19T11:37:35 PST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rejectPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:04 PST" name="tearDown" finished-at="2024-10-17T13:36:04 PST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:35 PST" name="tearDown" finished-at="2024-10-19T11:37:35 PST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:04 PST" name="setUp" finished-at="2024-10-17T13:36:04 PST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:35 PST" name="setUp" finished-at="2024-10-19T11:37:35 PST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:04 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-17T13:36:05 PST" duration-ms="1251" status="PASS">
+        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:35 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-19T11:37:36 PST" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMenuPageElementsVisibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:05 PST" name="tearDown" finished-at="2024-10-17T13:36:06 PST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:36 PST" name="tearDown" finished-at="2024-10-19T11:37:36 PST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-17T13:36:06 PST" name="AfterClass" finished-at="2024-10-17T13:36:06 PST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@60db1c0e]" started-at="2024-10-19T11:37:36 PST" name="AfterClass" finished-at="2024-10-19T11:37:37 PST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
       </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
       <class name="com.example.coffee_cart_app.testClasses.cartPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:51 PST" name="BeforeClass" finished-at="2024-10-17T13:35:53 PST" duration-ms="1819" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:20 PST" duration-ms="1739" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,123 +119,123 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:53 PST" name="setUp" finished-at="2024-10-17T13:35:54 PST" duration-ms="1008" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:20 PST" name="setUp" finished-at="2024-10-19T11:37:21 PST" duration-ms="845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:54 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-17T13:35:58 PST" duration-ms="4626" status="PASS">
+        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:21 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-19T11:37:29 PST" duration-ms="7968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenDecreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:58 PST" name="tearDown" finished-at="2024-10-17T13:35:58 PST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:29 PST" name="tearDown" finished-at="2024-10-19T11:37:29 PST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:58 PST" name="setUp" finished-at="2024-10-17T13:35:59 PST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:29 PST" name="setUp" finished-at="2024-10-19T11:37:29 PST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:35:59 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-17T13:36:00 PST" duration-ms="1253" status="PASS">
+        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:29 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-19T11:37:32 PST" duration-ms="3060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenIncreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:00 PST" name="tearDown" finished-at="2024-10-17T13:36:00 PST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:32 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:00 PST" name="setUp" finished-at="2024-10-17T13:36:00 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:33 PST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:00 PST" name="assertCartPageElements" finished-at="2024-10-17T13:36:01 PST" duration-ms="509" status="PASS">
+        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:33 PST" name="assertCartPageElements" finished-at="2024-10-19T11:37:33 PST" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertCartPageElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:01 PST" name="tearDown" finished-at="2024-10-17T13:36:01 PST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:33 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:01 PST" name="setUp" finished-at="2024-10-17T13:36:01 PST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:34 PST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:01 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-17T13:36:04 PST" duration-ms="3450" status="PASS">
+        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:34 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-19T11:37:37 PST" duration-ms="3740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutAllItemsInMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:04 PST" name="tearDown" finished-at="2024-10-17T13:36:04 PST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:37 PST" name="tearDown" finished-at="2024-10-19T11:37:37 PST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:04 PST" name="setUp" finished-at="2024-10-17T13:36:04 PST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:37 PST" name="setUp" finished-at="2024-10-19T11:37:37 PST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:04 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-17T13:36:05 PST" duration-ms="1217" status="PASS">
+        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:37 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-19T11:37:38 PST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingCheckoutPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:06 PST" name="tearDown" finished-at="2024-10-17T13:36:06 PST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:38 PST" name="tearDown" finished-at="2024-10-19T11:37:38 PST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:06 PST" name="setUp" finished-at="2024-10-17T13:36:06 PST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:38 PST" name="setUp" finished-at="2024-10-19T11:37:38 PST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:06 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-17T13:36:07 PST" duration-ms="1347" status="PASS">
+        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:38 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-19T11:37:39 PST" duration-ms="1208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingPayContainerButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:07 PST" name="tearDown" finished-at="2024-10-17T13:36:07 PST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:39 PST" name="tearDown" finished-at="2024-10-19T11:37:39 PST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:07 PST" name="setUp" finished-at="2024-10-17T13:36:07 PST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:39 PST" name="setUp" finished-at="2024-10-19T11:37:40 PST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:07 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-17T13:36:08 PST" duration-ms="771" status="PASS">
+        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:40 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-19T11:37:40 PST" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithEmptyPaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:08 PST" name="tearDown" finished-at="2024-10-17T13:36:08 PST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:40 PST" name="tearDown" finished-at="2024-10-19T11:37:40 PST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:08 PST" name="setUp" finished-at="2024-10-17T13:36:08 PST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:40 PST" name="setUp" finished-at="2024-10-19T11:37:40 PST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:08 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-17T13:36:09 PST" duration-ms="776" status="PASS">
+        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:40 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-19T11:37:46 PST" duration-ms="5852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithIncompletePaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:09 PST" name="tearDown" finished-at="2024-10-17T13:36:09 PST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:46 PST" name="tearDown" finished-at="2024-10-19T11:37:46 PST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:09 PST" name="setUp" finished-at="2024-10-17T13:36:09 PST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:46 PST" name="setUp" finished-at="2024-10-19T11:37:46 PST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:09 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-17T13:36:09 PST" duration-ms="67" status="PASS">
+        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:46 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-19T11:37:46 PST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithNoItemInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:09 PST" name="tearDown" finished-at="2024-10-17T13:36:09 PST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:46 PST" name="tearDown" finished-at="2024-10-19T11:37:46 PST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-17T13:36:09 PST" name="AfterClass" finished-at="2024-10-17T13:36:09 PST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@10289886]" started-at="2024-10-19T11:37:46 PST" name="AfterClass" finished-at="2024-10-19T11:37:47 PST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
       </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
     </test> <!-- Chrome Tests -->
-    <test started-at="2024-10-17T13:35:51 PST" name="Edge Tests" finished-at="2024-10-17T13:36:10 PST" duration-ms="19665">
+    <test started-at="2024-10-19T11:37:19 PST" name="Edge Tests" finished-at="2024-10-19T11:37:48 PST" duration-ms="29855">
       <class name="com.example.coffee_cart_app.testClasses.menuPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:51 PST" name="BeforeClass" finished-at="2024-10-17T13:35:55 PST" duration-ms="3811" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:23 PST" duration-ms="3964" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,97 +246,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:55 PST" name="setUp" finished-at="2024-10-17T13:35:55 PST" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:23 PST" name="setUp" finished-at="2024-10-19T11:37:23 PST" duration-ms="513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:55 PST" name="acceptPromo" finished-at="2024-10-17T13:35:56 PST" duration-ms="947" status="PASS">
+        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:23 PST" name="acceptPromo" finished-at="2024-10-19T11:37:25 PST" duration-ms="1423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:56 PST" name="tearDown" finished-at="2024-10-17T13:35:56 PST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:25 PST" name="tearDown" finished-at="2024-10-19T11:37:25 PST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:56 PST" name="setUp" finished-at="2024-10-17T13:35:56 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:25 PST" name="setUp" finished-at="2024-10-19T11:37:25 PST" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:35:56 PST" name="addAllItemsToCart" finished-at="2024-10-17T13:36:00 PST" duration-ms="3850" status="PASS">
+        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:25 PST" name="addAllItemsToCart" finished-at="2024-10-19T11:37:31 PST" duration-ms="5611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllItemsToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:00 PST" name="tearDown" finished-at="2024-10-17T13:36:00 PST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:31 PST" name="tearDown" finished-at="2024-10-19T11:37:31 PST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:00 PST" name="setUp" finished-at="2024-10-17T13:36:00 PST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:31 PST" name="setUp" finished-at="2024-10-19T11:37:31 PST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:00 PST" name="pickASingleItem" finished-at="2024-10-17T13:36:01 PST" duration-ms="134" status="PASS">
+        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:31 PST" name="pickASingleItem" finished-at="2024-10-19T11:37:32 PST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickASingleItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:01 PST" name="tearDown" finished-at="2024-10-17T13:36:01 PST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:32 PST" name="tearDown" finished-at="2024-10-19T11:37:32 PST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:01 PST" name="setUp" finished-at="2024-10-17T13:36:01 PST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:32 PST" name="setUp" finished-at="2024-10-19T11:37:32 PST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:01 PST" name="pickDifferentItems" finished-at="2024-10-17T13:36:02 PST" duration-ms="1124" status="PASS">
+        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:32 PST" name="pickDifferentItems" finished-at="2024-10-19T11:37:33 PST" duration-ms="1305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickDifferentItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:02 PST" name="tearDown" finished-at="2024-10-17T13:36:02 PST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:33 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:02 PST" name="setUp" finished-at="2024-10-17T13:36:02 PST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:33 PST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:02 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-17T13:36:03 PST" duration-ms="923" status="PASS">
+        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:33 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-19T11:37:34 PST" duration-ms="958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickMultipleOfTheSameItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:03 PST" name="tearDown" finished-at="2024-10-17T13:36:03 PST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:34 PST" name="tearDown" finished-at="2024-10-19T11:37:34 PST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:03 PST" name="setUp" finished-at="2024-10-17T13:36:03 PST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:34 PST" name="setUp" finished-at="2024-10-19T11:37:35 PST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:03 PST" name="rejectPromo" finished-at="2024-10-17T13:36:04 PST" duration-ms="995" status="PASS">
+        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:35 PST" name="rejectPromo" finished-at="2024-10-19T11:37:36 PST" duration-ms="960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rejectPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:04 PST" name="tearDown" finished-at="2024-10-17T13:36:05 PST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:36 PST" name="tearDown" finished-at="2024-10-19T11:37:36 PST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:05 PST" name="setUp" finished-at="2024-10-17T13:36:05 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:36 PST" name="setUp" finished-at="2024-10-19T11:37:36 PST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:05 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-17T13:36:06 PST" duration-ms="1495" status="PASS">
+        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:36 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-19T11:37:37 PST" duration-ms="1471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMenuPageElementsVisibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:06 PST" name="tearDown" finished-at="2024-10-17T13:36:06 PST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:37 PST" name="tearDown" finished-at="2024-10-19T11:37:37 PST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-17T13:36:06 PST" name="AfterClass" finished-at="2024-10-17T13:36:07 PST" duration-ms="1219" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@776a6d9b]" started-at="2024-10-19T11:37:37 PST" name="AfterClass" finished-at="2024-10-19T11:37:39 PST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
       </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
       <class name="com.example.coffee_cart_app.testClasses.cartPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:51 PST" name="BeforeClass" finished-at="2024-10-17T13:35:53 PST" duration-ms="1825" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:21 PST" duration-ms="1887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -347,123 +347,123 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:53 PST" name="setUp" finished-at="2024-10-17T13:35:54 PST" duration-ms="895" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:21 PST" name="setUp" finished-at="2024-10-19T11:37:21 PST" duration-ms="541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:54 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-17T13:35:58 PST" duration-ms="4495" status="PASS">
+        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:21 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-19T11:37:30 PST" duration-ms="8798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenDecreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:58 PST" name="tearDown" finished-at="2024-10-17T13:35:58 PST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:30 PST" name="tearDown" finished-at="2024-10-19T11:37:30 PST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:58 PST" name="setUp" finished-at="2024-10-17T13:35:58 PST" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:30 PST" name="setUp" finished-at="2024-10-19T11:37:30 PST" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:35:58 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-17T13:36:00 PST" duration-ms="1499" status="PASS">
+        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:30 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-19T11:37:32 PST" duration-ms="1601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenIncreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:00 PST" name="tearDown" finished-at="2024-10-17T13:36:00 PST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:32 PST" name="tearDown" finished-at="2024-10-19T11:37:32 PST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:00 PST" name="setUp" finished-at="2024-10-17T13:36:00 PST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:32 PST" name="setUp" finished-at="2024-10-19T11:37:32 PST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:00 PST" name="assertCartPageElements" finished-at="2024-10-17T13:36:01 PST" duration-ms="1159" status="PASS">
+        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:32 PST" name="assertCartPageElements" finished-at="2024-10-19T11:37:33 PST" duration-ms="864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertCartPageElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:01 PST" name="tearDown" finished-at="2024-10-17T13:36:01 PST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:33 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:01 PST" name="setUp" finished-at="2024-10-17T13:36:01 PST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:33 PST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:01 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-17T13:36:05 PST" duration-ms="3668" status="PASS">
+        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:33 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-19T11:37:37 PST" duration-ms="4018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutAllItemsInMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:05 PST" name="tearDown" finished-at="2024-10-17T13:36:05 PST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:37 PST" name="tearDown" finished-at="2024-10-19T11:37:37 PST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:05 PST" name="setUp" finished-at="2024-10-17T13:36:05 PST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:37 PST" name="setUp" finished-at="2024-10-19T11:37:37 PST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:05 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-17T13:36:06 PST" duration-ms="880" status="PASS">
+        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:37 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-19T11:37:38 PST" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingCheckoutPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:06 PST" name="tearDown" finished-at="2024-10-17T13:36:06 PST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:38 PST" name="tearDown" finished-at="2024-10-19T11:37:38 PST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:06 PST" name="setUp" finished-at="2024-10-17T13:36:06 PST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:38 PST" name="setUp" finished-at="2024-10-19T11:37:38 PST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:06 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-17T13:36:07 PST" duration-ms="957" status="PASS">
+        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:38 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-19T11:37:40 PST" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingPayContainerButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:07 PST" name="tearDown" finished-at="2024-10-17T13:36:07 PST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:40 PST" name="tearDown" finished-at="2024-10-19T11:37:40 PST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:07 PST" name="setUp" finished-at="2024-10-17T13:36:07 PST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:40 PST" name="setUp" finished-at="2024-10-19T11:37:40 PST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:07 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-17T13:36:08 PST" duration-ms="822" status="PASS">
+        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:40 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-19T11:37:41 PST" duration-ms="834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithEmptyPaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:08 PST" name="tearDown" finished-at="2024-10-17T13:36:08 PST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:41 PST" name="tearDown" finished-at="2024-10-19T11:37:41 PST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:08 PST" name="setUp" finished-at="2024-10-17T13:36:08 PST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:41 PST" name="setUp" finished-at="2024-10-19T11:37:41 PST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:08 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-17T13:36:09 PST" duration-ms="837" status="PASS">
+        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:41 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-19T11:37:47 PST" duration-ms="5922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithIncompletePaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:09 PST" name="tearDown" finished-at="2024-10-17T13:36:09 PST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:47 PST" name="tearDown" finished-at="2024-10-19T11:37:47 PST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:09 PST" name="setUp" finished-at="2024-10-17T13:36:09 PST" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:47 PST" name="setUp" finished-at="2024-10-19T11:37:47 PST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:09 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-17T13:36:09 PST" duration-ms="80" status="PASS">
+        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:47 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-19T11:37:47 PST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithNoItemInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:09 PST" name="tearDown" finished-at="2024-10-17T13:36:09 PST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:47 PST" name="tearDown" finished-at="2024-10-19T11:37:47 PST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-17T13:36:09 PST" name="AfterClass" finished-at="2024-10-17T13:36:10 PST" duration-ms="1212" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@47c81abf]" started-at="2024-10-19T11:37:47 PST" name="AfterClass" finished-at="2024-10-19T11:37:48 PST" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
       </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
     </test> <!-- Edge Tests -->
-    <test started-at="2024-10-17T13:36:09 PST" name="Firefox Tests" finished-at="2024-10-17T13:36:46 PST" duration-ms="36315">
+    <test started-at="2024-10-19T11:37:19 PST" name="Firefox Tests" finished-at="2024-10-19T11:38:03 PST" duration-ms="43971">
       <class name="com.example.coffee_cart_app.testClasses.menuPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:09 PST" name="BeforeClass" finished-at="2024-10-17T13:36:14 PST" duration-ms="4172" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:26 PST" duration-ms="6945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -474,97 +474,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:14 PST" name="setUp" finished-at="2024-10-17T13:36:15 PST" duration-ms="1386" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:26 PST" name="setUp" finished-at="2024-10-19T11:37:26 PST" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:15 PST" name="acceptPromo" finished-at="2024-10-17T13:36:16 PST" duration-ms="1145" status="PASS">
+        <test-method signature="acceptPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:26 PST" name="acceptPromo" finished-at="2024-10-19T11:37:28 PST" duration-ms="1905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:16 PST" name="tearDown" finished-at="2024-10-17T13:36:16 PST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:28 PST" name="tearDown" finished-at="2024-10-19T11:37:28 PST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:16 PST" name="setUp" finished-at="2024-10-17T13:36:16 PST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:28 PST" name="setUp" finished-at="2024-10-19T11:37:29 PST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:16 PST" name="addAllItemsToCart" finished-at="2024-10-17T13:36:20 PST" duration-ms="3785" status="PASS">
+        <test-method signature="addAllItemsToCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:29 PST" name="addAllItemsToCart" finished-at="2024-10-19T11:37:32 PST" duration-ms="3805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllItemsToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:20 PST" name="tearDown" finished-at="2024-10-17T13:36:20 PST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:32 PST" name="tearDown" finished-at="2024-10-19T11:37:33 PST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:20 PST" name="setUp" finished-at="2024-10-17T13:36:20 PST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:33 PST" name="setUp" finished-at="2024-10-19T11:37:33 PST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:20 PST" name="pickASingleItem" finished-at="2024-10-17T13:36:21 PST" duration-ms="748" status="PASS">
+        <test-method signature="pickASingleItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:33 PST" name="pickASingleItem" finished-at="2024-10-19T11:37:34 PST" duration-ms="754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickASingleItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:21 PST" name="tearDown" finished-at="2024-10-17T13:36:21 PST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:34 PST" name="tearDown" finished-at="2024-10-19T11:37:34 PST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:21 PST" name="setUp" finished-at="2024-10-17T13:36:21 PST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:34 PST" name="setUp" finished-at="2024-10-19T11:37:34 PST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:21 PST" name="pickDifferentItems" finished-at="2024-10-17T13:36:24 PST" duration-ms="2105" status="PASS">
+        <test-method signature="pickDifferentItems()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:34 PST" name="pickDifferentItems" finished-at="2024-10-19T11:37:36 PST" duration-ms="2188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickDifferentItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:24 PST" name="tearDown" finished-at="2024-10-17T13:36:24 PST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:36 PST" name="tearDown" finished-at="2024-10-19T11:37:36 PST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:24 PST" name="setUp" finished-at="2024-10-17T13:36:24 PST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:36 PST" name="setUp" finished-at="2024-10-19T11:37:36 PST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:24 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-17T13:36:26 PST" duration-ms="1944" status="PASS">
+        <test-method signature="pickMultipleOfTheSameItem()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:36 PST" name="pickMultipleOfTheSameItem" finished-at="2024-10-19T11:37:38 PST" duration-ms="1943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickMultipleOfTheSameItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:26 PST" name="tearDown" finished-at="2024-10-17T13:36:26 PST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:38 PST" name="tearDown" finished-at="2024-10-19T11:37:39 PST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:26 PST" name="setUp" finished-at="2024-10-17T13:36:26 PST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:39 PST" name="setUp" finished-at="2024-10-19T11:37:39 PST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:26 PST" name="rejectPromo" finished-at="2024-10-17T13:36:28 PST" duration-ms="1607" status="PASS">
+        <test-method signature="rejectPromo()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:39 PST" name="rejectPromo" finished-at="2024-10-19T11:37:40 PST" duration-ms="1560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rejectPromo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:28 PST" name="tearDown" finished-at="2024-10-17T13:36:28 PST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:40 PST" name="tearDown" finished-at="2024-10-19T11:37:40 PST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:28 PST" name="setUp" finished-at="2024-10-17T13:36:28 PST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:40 PST" name="setUp" finished-at="2024-10-19T11:37:40 PST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:28 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-17T13:36:29 PST" duration-ms="1014" status="PASS">
+        <test-method signature="testMenuPageElementsVisibility()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:41 PST" name="testMenuPageElementsVisibility" finished-at="2024-10-19T11:37:42 PST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMenuPageElementsVisibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:29 PST" name="tearDown" finished-at="2024-10-17T13:36:29 PST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:42 PST" name="tearDown" finished-at="2024-10-19T11:37:42 PST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-17T13:36:29 PST" name="AfterClass" finished-at="2024-10-17T13:36:30 PST" duration-ms="555" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.menuPage@18ece7f4]" started-at="2024-10-19T11:37:42 PST" name="AfterClass" finished-at="2024-10-19T11:37:42 PST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->
       </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
       <class name="com.example.coffee_cart_app.testClasses.cartPage">
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:09 PST" name="BeforeClass" finished-at="2024-10-17T13:36:14 PST" duration-ms="4966" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:19 PST" name="BeforeClass" finished-at="2024-10-19T11:37:25 PST" duration-ms="6428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,145 +575,115 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:14 PST" name="setUp" finished-at="2024-10-17T13:36:15 PST" duration-ms="746" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:25 PST" name="setUp" finished-at="2024-10-19T11:37:26 PST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:15 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-17T13:36:24 PST" duration-ms="8846" status="PASS">
+        <test-method signature="addToCartThenDecreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:26 PST" name="addToCartThenDecreaseQuantity" finished-at="2024-10-19T11:37:36 PST" duration-ms="9447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenDecreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:24 PST" name="tearDown" finished-at="2024-10-17T13:36:24 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:36 PST" name="tearDown" finished-at="2024-10-19T11:37:36 PST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:24 PST" name="setUp" finished-at="2024-10-17T13:36:24 PST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:36 PST" name="setUp" finished-at="2024-10-19T11:37:36 PST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:24 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-17T13:36:30 PST" duration-ms="5807" status="PASS">
+        <test-method signature="addToCartThenIncreaseQuantity()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:36 PST" name="addToCartThenIncreaseQuantity" finished-at="2024-10-19T11:37:42 PST" duration-ms="5973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartThenIncreaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:30 PST" name="tearDown" finished-at="2024-10-17T13:36:30 PST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:42 PST" name="tearDown" finished-at="2024-10-19T11:37:42 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:30 PST" name="setUp" finished-at="2024-10-17T13:36:30 PST" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:42 PST" name="setUp" finished-at="2024-10-19T11:37:42 PST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:30 PST" name="assertCartPageElements" finished-at="2024-10-17T13:36:32 PST" duration-ms="1578" status="PASS">
+        <test-method signature="assertCartPageElements()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:42 PST" name="assertCartPageElements" finished-at="2024-10-19T11:37:44 PST" duration-ms="1591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertCartPageElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:32 PST" name="tearDown" finished-at="2024-10-17T13:36:32 PST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:44 PST" name="tearDown" finished-at="2024-10-19T11:37:44 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:32 PST" name="setUp" finished-at="2024-10-17T13:36:32 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:44 PST" name="setUp" finished-at="2024-10-19T11:37:44 PST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:32 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-17T13:36:36 PST" duration-ms="4257" status="PASS">
+        <test-method signature="checkOutAllItemsInMenu()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:44 PST" name="checkOutAllItemsInMenu" finished-at="2024-10-19T11:37:48 PST" duration-ms="4259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutAllItemsInMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:36 PST" name="tearDown" finished-at="2024-10-17T13:36:36 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:48 PST" name="tearDown" finished-at="2024-10-19T11:37:48 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:36 PST" name="setUp" finished-at="2024-10-17T13:36:36 PST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:48 PST" name="setUp" finished-at="2024-10-19T11:37:48 PST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:36 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-17T13:36:39 PST" duration-ms="2567" status="PASS">
+        <test-method signature="checkOutOrdersUsingCheckoutPage()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:48 PST" name="checkOutOrdersUsingCheckoutPage" finished-at="2024-10-19T11:37:51 PST" duration-ms="2570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingCheckoutPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:39 PST" name="tearDown" finished-at="2024-10-17T13:36:39 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:51 PST" name="tearDown" finished-at="2024-10-19T11:37:51 PST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:39 PST" name="setUp" finished-at="2024-10-17T13:36:39 PST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:51 PST" name="setUp" finished-at="2024-10-19T11:37:51 PST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:39 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-17T13:36:42 PST" duration-ms="2637" status="PASS">
+        <test-method signature="checkOutOrdersUsingPayContainerButton()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:51 PST" name="checkOutOrdersUsingPayContainerButton" finished-at="2024-10-19T11:37:53 PST" duration-ms="2615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutOrdersUsingPayContainerButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:42 PST" name="tearDown" finished-at="2024-10-17T13:36:42 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:53 PST" name="tearDown" finished-at="2024-10-19T11:37:53 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:42 PST" name="setUp" finished-at="2024-10-17T13:36:42 PST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:53 PST" name="setUp" finished-at="2024-10-19T11:37:54 PST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:42 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-17T13:36:43 PST" duration-ms="1468" status="PASS">
+        <test-method signature="checkOutWithEmptyPaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:54 PST" name="checkOutWithEmptyPaymentDetails" finished-at="2024-10-19T11:37:55 PST" duration-ms="1440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithEmptyPaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:43 PST" name="tearDown" finished-at="2024-10-17T13:36:43 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:55 PST" name="tearDown" finished-at="2024-10-19T11:37:55 PST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:43 PST" name="setUp" finished-at="2024-10-17T13:36:43 PST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:55 PST" name="setUp" finished-at="2024-10-19T11:37:55 PST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:43 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-17T13:36:45 PST" duration-ms="1444" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:146)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="checkOutWithIncompletePaymentDetails()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:37:55 PST" name="checkOutWithIncompletePaymentDetails" finished-at="2024-10-19T11:38:02 PST" duration-ms="6420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithIncompletePaymentDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:45 PST" name="tearDown" finished-at="2024-10-17T13:36:45 PST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:38:02 PST" name="tearDown" finished-at="2024-10-19T11:38:02 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:45 PST" name="setUp" finished-at="2024-10-17T13:36:45 PST" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:38:02 PST" name="setUp" finished-at="2024-10-19T11:38:02 PST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:45 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-17T13:36:45 PST" duration-ms="234" status="PASS">
+        <test-method signature="checkOutWithNoItemInCart()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:38:02 PST" name="checkOutWithNoItemInCart" finished-at="2024-10-19T11:38:02 PST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithNoItemInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:45 PST" name="tearDown" finished-at="2024-10-17T13:36:45 PST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:38:02 PST" name="tearDown" finished-at="2024-10-19T11:38:02 PST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-17T13:36:45 PST" name="AfterClass" finished-at="2024-10-17T13:36:46 PST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.example.coffee_cart_app.testClasses.cartPage@1f760b47]" started-at="2024-10-19T11:38:02 PST" name="AfterClass" finished-at="2024-10-19T11:38:03 PST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->

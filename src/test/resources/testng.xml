@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Coffee-Cart-App Cross browser Test Suite" parallel="tests" thread-count="2">
+<suite name="Coffee-Cart-App Cross browser Test Suite" parallel="tests" thread-count="3">
 
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>

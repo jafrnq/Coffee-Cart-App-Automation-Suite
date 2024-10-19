@@ -55,9 +55,6 @@ public class baseTest {
     public By snackbarMessageElement = By.cssSelector(".snackbar");
 
     //#endregion
-
-    //TODO: Implement Allure html reports
-
     
     //#region SETUP METHODS
     @BeforeClass

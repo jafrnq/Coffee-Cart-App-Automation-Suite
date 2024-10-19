@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Coffee-Cart-App Cross browser Test Suite</span>
+              <span class="suite-name border-passed">Coffee-Cart-App Cross browser Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">48 methods, 1 failed,   47 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" class="hide-methods failed suite-Coffee_Cart_App_Cross_browser_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Coffee_Cart_App_Cross_browser_Test_Suite -->
-                      <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" class="show-methods failed suite-Coffee_Cart_App_Cross_browser_Test_Suite"> (show)</a> <!-- show-methods failed suite-Coffee_Cart_App_Cross_browser_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Coffee_Cart_App_Cross_browser_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" title="com.example.coffee_cart_app.testClasses.cartPage" class="method navigator-link" hash-for-method="checkOutWithIncompletePaymentDetails">checkOutWithIncompletePaymentDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Coffee_Cart_App_Cross_browser_Test_Suite -->
+                    <span class="method-stats">48 methods,   48 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -262,6 +248,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" title="com.example.coffee_cart_app.testClasses.cartPage" class="method navigator-link" hash-for-method="checkOutWithIncompletePaymentDetails">checkOutWithIncompletePaymentDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" title="com.example.coffee_cart_app.testClasses.cartPage" class="method navigator-link" hash-for-method="checkOutWithNoItemInCart">checkOutWithNoItemInCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -362,45 +353,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Coffee_Cart_App_Cross_browser_Test_Suite" class="panel Coffee_Cart_App_Cross_browser_Test_Suite">
-          <div class="suite-Coffee_Cart_App_Cross_browser_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.example.coffee_cart_app.testClasses.cartPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkOutWithIncompletePaymentDetails">
-                  </a> <!-- checkOutWithIncompletePaymentDetails -->
-                  <span class="method-name">checkOutWithIncompletePaymentDetails</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails(cartPage.java:146)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Coffee_Cart_App_Cross_browser_Test_Suite-class-failed -->
           <div class="suite-Coffee_Cart_App_Cross_browser_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -552,6 +504,13 @@
                   <a name="checkOutWithEmptyPaymentDetails">
                   </a> <!-- checkOutWithEmptyPaymentDetails -->
                   <span class="method-name">checkOutWithEmptyPaymentDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOutWithIncompletePaymentDetails">
+                  </a> <!-- checkOutWithIncompletePaymentDetails -->
+                  <span class="method-name">checkOutWithIncompletePaymentDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -755,7 +714,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Coffee-Cart-App Cross browser Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Coffee-Cart-App Cross browser Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
   &lt;/listeners&gt;
@@ -836,200 +795,200 @@ data.addRows(48);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addToCartThenDecreaseQuantity')
 data.setCell(0, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(0, 3, 8846);
+data.setCell(0, 3, 9447);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addToCartThenIncreaseQuantity')
+data.setCell(1, 1, 'addToCartThenDecreaseQuantity')
 data.setCell(1, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(1, 3, 5807);
+data.setCell(1, 3, 8798);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addToCartThenDecreaseQuantity')
 data.setCell(2, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(2, 3, 4626);
+data.setCell(2, 3, 7968);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addToCartThenDecreaseQuantity')
+data.setCell(3, 1, 'checkOutWithIncompletePaymentDetails')
 data.setCell(3, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(3, 3, 4495);
+data.setCell(3, 3, 6420);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkOutAllItemsInMenu')
-data.setCell(4, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(4, 3, 4257);
+data.setCell(4, 1, 'addAllItemsToCart')
+data.setCell(4, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(4, 3, 5975);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addAllItemsToCart')
-data.setCell(5, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(5, 3, 3920);
+data.setCell(5, 1, 'addToCartThenIncreaseQuantity')
+data.setCell(5, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(5, 3, 5973);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addAllItemsToCart')
-data.setCell(6, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(6, 3, 3850);
+data.setCell(6, 1, 'checkOutWithIncompletePaymentDetails')
+data.setCell(6, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(6, 3, 5922);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'addAllItemsToCart')
-data.setCell(7, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(7, 3, 3785);
+data.setCell(7, 1, 'checkOutWithIncompletePaymentDetails')
+data.setCell(7, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(7, 3, 5852);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkOutAllItemsInMenu')
-data.setCell(8, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(8, 3, 3668);
+data.setCell(8, 1, 'addAllItemsToCart')
+data.setCell(8, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(8, 3, 5611);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'checkOutAllItemsInMenu')
 data.setCell(9, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(9, 3, 3450);
+data.setCell(9, 3, 4259);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'checkOutOrdersUsingPayContainerButton')
+data.setCell(10, 1, 'checkOutAllItemsInMenu')
 data.setCell(10, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(10, 3, 2637);
+data.setCell(10, 3, 4018);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'checkOutOrdersUsingCheckoutPage')
-data.setCell(11, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(11, 3, 2567);
+data.setCell(11, 1, 'addAllItemsToCart')
+data.setCell(11, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(11, 3, 3805);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'pickDifferentItems')
-data.setCell(12, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(12, 3, 2105);
+data.setCell(12, 1, 'checkOutAllItemsInMenu')
+data.setCell(12, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(12, 3, 3740);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'pickMultipleOfTheSameItem')
-data.setCell(13, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(13, 3, 1944);
+data.setCell(13, 1, 'addToCartThenIncreaseQuantity')
+data.setCell(13, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(13, 3, 3060);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'rejectPromo')
-data.setCell(14, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(14, 3, 1607);
+data.setCell(14, 1, 'checkOutOrdersUsingPayContainerButton')
+data.setCell(14, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(14, 3, 2615);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'acceptPromo')
-data.setCell(15, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(15, 3, 1591);
+data.setCell(15, 1, 'checkOutOrdersUsingCheckoutPage')
+data.setCell(15, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(15, 3, 2570);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'assertCartPageElements')
-data.setCell(16, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(16, 3, 1578);
+data.setCell(16, 1, 'pickDifferentItems')
+data.setCell(16, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(16, 3, 2188);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'addToCartThenIncreaseQuantity')
-data.setCell(17, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(17, 3, 1499);
+data.setCell(17, 1, 'pickMultipleOfTheSameItem')
+data.setCell(17, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(17, 3, 1943);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testMenuPageElementsVisibility')
+data.setCell(18, 1, 'acceptPromo')
 data.setCell(18, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(18, 3, 1495);
+data.setCell(18, 3, 1905);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'checkOutWithEmptyPaymentDetails')
-data.setCell(19, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(19, 3, 1468);
+data.setCell(19, 1, 'acceptPromo')
+data.setCell(19, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(19, 3, 1698);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'checkOutWithIncompletePaymentDetails')
+data.setCell(20, 1, 'addToCartThenIncreaseQuantity')
 data.setCell(20, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(20, 3, 1444);
+data.setCell(20, 3, 1601);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'checkOutOrdersUsingPayContainerButton')
+data.setCell(21, 1, 'assertCartPageElements')
 data.setCell(21, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(21, 3, 1347);
+data.setCell(21, 3, 1591);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'addToCartThenIncreaseQuantity')
-data.setCell(22, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(22, 3, 1253);
+data.setCell(22, 1, 'rejectPromo')
+data.setCell(22, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(22, 3, 1560);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'testMenuPageElementsVisibility')
 data.setCell(23, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(23, 3, 1251);
+data.setCell(23, 3, 1471);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'checkOutOrdersUsingCheckoutPage')
+data.setCell(24, 1, 'checkOutWithEmptyPaymentDetails')
 data.setCell(24, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(24, 3, 1217);
+data.setCell(24, 3, 1440);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'assertCartPageElements')
-data.setCell(25, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(25, 3, 1159);
+data.setCell(25, 1, 'acceptPromo')
+data.setCell(25, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(25, 3, 1423);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'acceptPromo')
-data.setCell(26, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(26, 3, 1145);
+data.setCell(26, 1, 'checkOutOrdersUsingPayContainerButton')
+data.setCell(26, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(26, 3, 1372);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'pickDifferentItems')
 data.setCell(27, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(27, 3, 1124);
+data.setCell(27, 3, 1305);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'pickDifferentItems')
+data.setCell(28, 1, 'testMenuPageElementsVisibility')
 data.setCell(28, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(28, 3, 1077);
+data.setCell(28, 3, 1246);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'testMenuPageElementsVisibility')
-data.setCell(29, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(29, 3, 1014);
+data.setCell(29, 1, 'checkOutOrdersUsingPayContainerButton')
+data.setCell(29, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(29, 3, 1208);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'rejectPromo')
+data.setCell(30, 1, 'pickDifferentItems')
 data.setCell(30, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(30, 3, 995);
+data.setCell(30, 3, 1114);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'checkOutOrdersUsingPayContainerButton')
-data.setCell(31, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(31, 3, 957);
+data.setCell(31, 1, 'testMenuPageElementsVisibility')
+data.setCell(31, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(31, 3, 1037);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'acceptPromo')
+data.setCell(32, 1, 'rejectPromo')
 data.setCell(32, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(32, 3, 947);
+data.setCell(32, 3, 960);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'pickMultipleOfTheSameItem')
 data.setCell(33, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(33, 3, 923);
+data.setCell(33, 3, 958);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'checkOutOrdersUsingCheckoutPage')
-data.setCell(34, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(34, 3, 880);
+data.setCell(34, 1, 'pickMultipleOfTheSameItem')
+data.setCell(34, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(34, 3, 892);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'rejectPromo')
-data.setCell(35, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(35, 3, 868);
+data.setCell(35, 1, 'assertCartPageElements')
+data.setCell(35, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(35, 3, 864);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'pickMultipleOfTheSameItem')
-data.setCell(36, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(36, 3, 858);
+data.setCell(36, 1, 'checkOutWithEmptyPaymentDetails')
+data.setCell(36, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(36, 3, 834);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'checkOutWithIncompletePaymentDetails')
+data.setCell(37, 1, 'checkOutOrdersUsingCheckoutPage')
 data.setCell(37, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(37, 3, 837);
+data.setCell(37, 3, 764);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'checkOutWithEmptyPaymentDetails')
-data.setCell(38, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(38, 3, 822);
+data.setCell(38, 1, 'pickASingleItem')
+data.setCell(38, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(38, 3, 754);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'checkOutWithIncompletePaymentDetails')
+data.setCell(39, 1, 'checkOutWithEmptyPaymentDetails')
 data.setCell(39, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(39, 3, 776);
+data.setCell(39, 3, 747);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'checkOutWithEmptyPaymentDetails')
+data.setCell(40, 1, 'assertCartPageElements')
 data.setCell(40, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(40, 3, 771);
+data.setCell(40, 3, 670);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'pickASingleItem')
-data.setCell(41, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(41, 3, 748);
+data.setCell(41, 1, 'checkOutOrdersUsingCheckoutPage')
+data.setCell(41, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
+data.setCell(41, 3, 636);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'pickASingleItem')
+data.setCell(42, 1, 'rejectPromo')
 data.setCell(42, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(42, 3, 568);
+data.setCell(42, 3, 413);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'assertCartPageElements')
+data.setCell(43, 1, 'checkOutWithNoItemInCart')
 data.setCell(43, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(43, 3, 509);
+data.setCell(43, 3, 230);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'checkOutWithNoItemInCart')
-data.setCell(44, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(44, 3, 234);
+data.setCell(44, 1, 'pickASingleItem')
+data.setCell(44, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
+data.setCell(44, 3, 197);
 data.setCell(45, 0, 45)
 data.setCell(45, 1, 'pickASingleItem')
 data.setCell(45, 2, 'com.example.coffee_cart_app.testClasses.menuPage')
-data.setCell(45, 3, 134);
+data.setCell(45, 3, 91);
 data.setCell(46, 0, 46)
 data.setCell(46, 1, 'checkOutWithNoItemInCart')
 data.setCell(46, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(46, 3, 80);
+data.setCell(46, 3, 81);
 data.setCell(47, 0, 47)
 data.setCell(47, 1, 'checkOutWithNoItemInCart')
 data.setCell(47, 2, 'com.example.coffee_cart_app.testClasses.cartPage')
-data.setCell(47, 3, 67);
+data.setCell(47, 3, 59);
 window.suiteTableData['Coffee_Cart_App_Cross_browser_Test_Suite']= { tableData: data, tableDiv: 'times-div-Coffee_Cart_App_Cross_browser_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Coffee_Cart_App_Cross_browser_Test_Suite">
               </div> <!-- times-div-Coffee_Cart_App_Cross_browser_Test_Suite -->
             </div> <!-- times-div -->
@@ -1057,20 +1016,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">BeforeClass(Chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BeforeClass(Chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
                 <span class="method-name">BeforeClass(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
@@ -1084,720 +1029,756 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass(Firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass(Firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass(Chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass(Chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1827 ms</span>
+                <span class="method-start">1752 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1829 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1827 ms</span>
+                <span class="method-start">1888 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">1902 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToCartThenDecreaseQuantity</span>
+                <span class="method-start">2546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCartThenDecreaseQuantity</span>
+                <span class="method-start">2600 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">acceptPromo</span>
-                <span class="method-start">2608 ms</span>
+                <span class="method-start">2605 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addToCartThenDecreaseQuantity</span>
-                <span class="method-start">2739 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addToCartThenDecreaseQuantity</span>
-                <span class="method-start">2924 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3813 ms</span>
+                <span class="method-start">3964 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4212 ms</span>
+                <span class="method-start">4329 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">acceptPromo</span>
-                <span class="method-start">4277 ms</span>
+                <span class="method-start">4493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4523 ms</span>
+                <span class="method-start">4628 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addAllItemsToCart</span>
-                <span class="method-start">4726 ms</span>
+                <span class="method-start">4797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5237 ms</span>
+                <span class="method-start">5933 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5377 ms</span>
+                <span class="method-start">6244 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6428 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addAllItemsToCart</span>
+                <span class="method-start">6712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6947 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCartThenDecreaseQuantity</span>
+                <span class="method-start">7491 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">acceptPromo</span>
+                <span class="method-start">7603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addAllItemsToCart</span>
-                <span class="method-start">5510 ms</span>
+                <span class="method-start">9984 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7246 ms</span>
+                <span class="method-start">10581 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7264 ms</span>
+                <span class="method-start">10597 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addToCartThenIncreaseQuantity</span>
-                <span class="method-start">7415 ms</span>
+                <span class="method-start">10763 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7562 ms</span>
+                <span class="method-start">10774 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7577 ms</span>
+                <span class="method-start">10917 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pickASingleItem</span>
+                <span class="method-start">11076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11179 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11373 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addToCartThenIncreaseQuantity</span>
-                <span class="method-start">7776 ms</span>
+                <span class="method-start">11710 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8658 ms</span>
+                <span class="method-start">12336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8792 ms</span>
+                <span class="method-start">12488 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pickASingleItem</span>
-                <span class="method-start">8912 ms</span>
+                <span class="method-start">12642 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">8916 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8936 ms</span>
+                <span class="method-start">12774 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9042 ms</span>
+                <span class="method-start">12852 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">9058 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">assertCartPageElements</span>
-                <span class="method-start">9059 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">assertCartPageElements</span>
-                <span class="method-start">9190 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9372 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9495 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">9495 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">9618 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pickASingleItem</span>
-                <span class="method-start">9622 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9713 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">9730 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">pickDifferentItems</span>
-                <span class="method-start">9758 ms</span>
+                <span class="method-start">12893 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9759 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkOutAllItemsInMenu</span>
-                <span class="method-start">9864 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9896 ms</span>
+                <span class="method-start">12989 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pickDifferentItems</span>
-                <span class="method-start">10005 ms</span>
+                <span class="method-start">13116 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10229 ms</span>
+                <span class="method-start">13323 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10245 ms</span>
+                <span class="method-start">13338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkOutAllItemsInMenu</span>
-                <span class="method-start">10366 ms</span>
+                <span class="method-name">assertCartPageElements</span>
+                <span class="method-start">13474 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10848 ms</span>
+                <span class="method-start">13803 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">10977 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pickMultipleOfTheSameItem</span>
-                <span class="method-start">11097 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">11131 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11274 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pickMultipleOfTheSameItem</span>
-                <span class="method-start">11393 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">11967 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">12094 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">rejectPromo</span>
-                <span class="method-start">12212 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12327 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">12451 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">rejectPromo</span>
-                <span class="method-start">12563 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13092 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">13221 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13326 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">13343 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMenuPageElementsVisibility</span>
-                <span class="method-start">13343 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
-                <span class="method-start">13460 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13570 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">13693 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testMenuPageElementsVisibility</span>
                 <span class="method-start">13826 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13851 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14010 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">assertCartPageElements</span>
+                <span class="method-start">14040 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pickASingleItem</span>
+                <span class="method-start">14189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pickMultipleOfTheSameItem</span>
+                <span class="method-start">14299 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14046 ms</span>
+                <span class="method-start">14339 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14066 ms</span>
+                <span class="method-start">14358 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14422 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
-                <span class="method-start">14197 ms</span>
+                <span class="method-name">checkOutAllItemsInMenu</span>
+                <span class="method-start">14478 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">14607 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14578 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pickMultipleOfTheSameItem</span>
+                <span class="method-start">14697 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14690 ms</span>
+                <span class="method-start">14713 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14712 ms</span>
+                <span class="method-start">14739 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">AfterClass</span>
-                <span class="method-start">14732 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">checkOutOrdersUsingPayContainerButton</span>
+                <span class="method-name">checkOutAllItemsInMenu</span>
                 <span class="method-start">14855 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15090 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">15103 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutOrdersUsingPayContainerButton</span>
-                <span class="method-start">15241 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15333 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">AfterClass</span>
-                <span class="method-start">15458 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">16211 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">16211 ms</span>
+                <span class="method-start">14955 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16227 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">16228 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithEmptyPaymentDetails</span>
-                <span class="method-start">16333 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithEmptyPaymentDetails</span>
-                <span class="method-start">16334 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17116 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">17132 ms</span>
+                <span class="method-start">15112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17159 ms</span>
+                <span class="method-start">15193 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">17179 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithIncompletePaymentDetails</span>
-                <span class="method-start">17264 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithIncompletePaymentDetails</span>
-                <span class="method-start">17310 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18053 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">18078 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18159 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">18175 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithNoItemInCart</span>
-                <span class="method-start">18199 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18279 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">AfterClass</span>
-                <span class="method-start">18292 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="test-method">
-                <span class="method-name">checkOutWithNoItemInCart</span>
-                <span class="method-start">18314 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18406 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">AfterClass</span>
-                <span class="method-start">18420 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BeforeClass(Firefox)</span>
-                <span class="method-start">18546 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BeforeClass(Firefox)</span>
-                <span class="method-start">18546 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">22718 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">23513 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">acceptPromo</span>
-                <span class="method-start">24116 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addToCartThenDecreaseQuantity</span>
-                <span class="method-start">24262 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25273 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">25412 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addAllItemsToCart</span>
-                <span class="method-start">25564 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">29361 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">29513 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pickASingleItem</span>
-                <span class="method-start">29632 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">30393 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">30518 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pickDifferentItems</span>
-                <span class="method-start">30637 ms</span>
+                <span class="method-start">15253 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">32753 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32881 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">pickMultipleOfTheSameItem</span>
-                <span class="method-start">33009 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33122 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">33126 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addToCartThenIncreaseQuantity</span>
-                <span class="method-start">33265 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">34965 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">35095 ms</span>
+                <span class="method-start">15389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">rejectPromo</span>
-                <span class="method-start">35227 ms</span>
+                <span class="method-start">15513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36847 ms</span>
+                <span class="method-start">15668 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">36982 ms</span>
+                <span class="method-start">15799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testMenuPageElementsVisibility</span>
-                <span class="method-start">37104 ms</span>
+                <span class="method-name">rejectPromo</span>
+                <span class="method-start">15920 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38130 ms</span>
+                <span class="method-start">15930 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMenuPageElementsVisibility</span>
+                <span class="method-start">16183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16893 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16941 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16948 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17032 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCartThenIncreaseQuantity</span>
+                <span class="method-start">17135 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMenuPageElementsVisibility</span>
+                <span class="method-start">17145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17443 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">AfterClass</span>
-                <span class="method-start">38265 ms</span>
+                <span class="method-start">17574 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pickMultipleOfTheSameItem</span>
+                <span class="method-start">17781 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18509 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18525 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18607 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18619 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
+                <span class="method-start">18648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
+                <span class="method-start">18740 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">18740 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39083 ms</span>
+                <span class="method-start">19379 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39087 ms</span>
+                <span class="method-start">19399 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">assertCartPageElements</span>
-                <span class="method-start">39218 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40807 ms</span>
+                <span class="method-start">19413 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40812 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutAllItemsInMenu</span>
-                <span class="method-start">40946 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">45215 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">45220 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
-                <span class="method-start">45342 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">47921 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">47926 ms</span>
+                <span class="method-start">19429 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutOrdersUsingPayContainerButton</span>
-                <span class="method-start">48048 ms</span>
+                <span class="method-start">19515 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkOutOrdersUsingPayContainerButton</span>
+                <span class="method-start">19559 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50696 ms</span>
+                <span class="method-start">19736 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">50700 ms</span>
+                <span class="method-start">19875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">rejectPromo</span>
+                <span class="method-start">19997 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20735 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20749 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutWithEmptyPaymentDetails</span>
-                <span class="method-start">50821 ms</span>
+                <span class="method-start">20858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52302 ms</span>
+                <span class="method-start">20943 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">52306 ms</span>
+                <span class="method-start">21400 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">checkOutWithEmptyPaymentDetails</span>
+                <span class="method-start">21520 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21558 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21606 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21620 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21714 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">checkOutWithIncompletePaymentDetails</span>
-                <span class="method-start">52435 ms</span>
+                <span class="method-start">21745 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMenuPageElementsVisibility</span>
+                <span class="method-start">21839 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53894 ms</span>
+                <span class="method-start">22372 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">53897 ms</span>
+                <span class="method-start">22394 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkOutWithNoItemInCart</span>
-                <span class="method-start">54023 ms</span>
+                <span class="method-name">checkOutWithIncompletePaymentDetails</span>
+                <span class="method-start">22517 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.menuPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54270 ms</span>
+                <span class="method-start">22888 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">AfterClass</span>
-                <span class="method-start">54274 ms</span>
+                <span class="method-start">23017 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.coffee_cart_app.testClasses.cartPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">assertCartPageElements</span>
+                <span class="method-start">23300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutAllItemsInMenu</span>
+                <span class="method-start">25053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutWithNoItemInCart</span>
+                <span class="method-start">27763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">27835 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28451 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">28463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutWithNoItemInCart</span>
+                <span class="method-start">28589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">28694 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29323 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">29329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutOrdersUsingCheckoutPage</span>
+                <span class="method-start">29465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32036 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32039 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutOrdersUsingPayContainerButton</span>
+                <span class="method-start">32167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutWithEmptyPaymentDetails</span>
+                <span class="method-start">34938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">36394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutWithIncompletePaymentDetails</span>
+                <span class="method-start">36526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42958 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutWithNoItemInCart</span>
+                <span class="method-start">43104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">43350 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

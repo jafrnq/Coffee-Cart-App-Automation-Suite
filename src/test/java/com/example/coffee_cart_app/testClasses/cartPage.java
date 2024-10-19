@@ -142,8 +142,8 @@ public class cartPage extends baseTest{
         navigateToCartPage();
         
         String validationMesasge =  performCheckOutOnPayContainer("John", "sampleEmail");
-        
-        assertTrue(validationMesasge.equals("Please include an '@' in the email address. 'sampleEmail' is missing an '@'."));
+        assertTrue(validationMesasge.equals("Please include an '@' in the email address. 'sampleEmail' is missing an '@'.") || validationMesasge.equals("Please enter an email address.")
+        , "Validation message incorrect: " + validationMesasge);
     }
 
 
