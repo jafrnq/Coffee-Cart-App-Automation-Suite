@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Coffee-Cart-App Cross browser Test Suite" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Chrome Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
+        <parameter name="browser" value="Chrome" /> 
+
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    
+    </test>
+
+    <test name="Edge Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
+        <parameter name="browser" value="Edge" /> 
+
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    </test>
+    
+    <test name="Firefox Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
+        <parameter name="browser" value="Firefox" /> 
+
+        <packages>
+            <package name="com.example.coffee_cart_app.testClasses"/>
+        </packages>
+    </test>
+
+
+</suite>
