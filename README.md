@@ -25,6 +25,7 @@ The **Coffee Cart App Automation Practice** is designed to test the Coffee Cart 
 - **Browsers Supported**: Chrome, Firefox, Edge
 
 ## Project Structure
+```plaintext
 Coffee-Cart-App-AutomationPractice/
 ├── src/
 │   ├── test/
@@ -35,6 +36,7 @@ Coffee-Cart-App-AutomationPractice/
 │   │   │   └── listeners/
 ├── pom.xml
 └── README.md
+```
 
 
 - **Base**: Contains base classes like `BaseTest`, which is responsible for the test setup and teardown.
