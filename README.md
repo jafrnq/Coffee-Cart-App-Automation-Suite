@@ -71,7 +71,7 @@ mvn test
 
 To execute tests for specific browsers (Firefox/Opera), you can set the browser parameter in your TestNG suite XML or pass it through Maven as:
 
-##Allure Reports
+## Allure Reports
 
 This project uses Allure for reporting test results. After running the tests, generate the Allure report using:
 
@@ -82,10 +82,10 @@ mvn allure:serve
 
 This will automatically open the generated report in your default browser.
 
-##Contributing
+## Contributing
 If you would like to contribute, feel free to open an issue or submit a pull request. Please make sure to follow best practices for Java and Selenium projects.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ```vbnet 
