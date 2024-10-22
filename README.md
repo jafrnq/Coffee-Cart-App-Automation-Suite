@@ -66,7 +66,8 @@ Coffee-Cart-App-AutomationPractice/
 To run all tests using TestNG, use the following Maven command:
 
 ```bash
-mvn test ```
+mvn test
+```
 
 To execute tests for specific browsers (Firefox/Opera), you can set the browser parameter in your TestNG suite XML or pass it through Maven as:
 
@@ -75,7 +76,8 @@ To execute tests for specific browsers (Firefox/Opera), you can set the browser 
 This project uses Allure for reporting test results. After running the tests, generate the Allure report using:
 
 ```bash
-allure serve target/allure-results ```
+allure serve target/allure-results
+```
 
 This will automatically open the generated report in your default browser.
 
@@ -86,4 +88,5 @@ If you would like to contribute, feel free to open an issue or submit a pull req
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ```vbnet 
-Copy and paste this into your `README.md` file on GitHub. Let me know if you need any adjustments! ```
+Copy and paste this into your `README.md` file on GitHub. Let me know if you need any adjustments!
+```
