@@ -76,7 +76,8 @@ To execute tests for specific browsers (Firefox/Opera), you can set the browser 
 This project uses Allure for reporting test results. After running the tests, generate the Allure report using:
 
 ```bash
-allure serve target/allure-results
+mvn allure:report
+mvn allure:serve
 ```
 
 This will automatically open the generated report in your default browser.
