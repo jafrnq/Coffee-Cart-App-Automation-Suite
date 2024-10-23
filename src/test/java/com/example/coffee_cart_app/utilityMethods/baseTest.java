@@ -13,9 +13,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -64,20 +66,31 @@ public class baseTest {
         // browser = "chrome";
         switch (browser.toLowerCase()) {
             case "firefox":
-                driver = new FirefoxDriver();
-                break;
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless"); // Enable headless mode
+                driver = new FirefoxDriver(firefoxOptions);                
+            break;
             
             case "edge":
-                driver = new EdgeDriver();
-                break;
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("headless"); // Enable headless mode
+                edgeOptions.addArguments("disable-gpu"); // Recommended for headless mode
+                driver = new EdgeDriver(edgeOptions);                
+            break;
             
             case "chrome":
-                driver = new ChromeDriver();
-                break;
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless"); // Enable headless mode
+                chromeOptions.addArguments("--disable-gpu"); // Recommended for headless mode
+                driver = new ChromeDriver(chromeOptions);                
+            break;
             
             default:
-                driver = new ChromeDriver();
-                break;
+                ChromeOptions defaultOptions = new ChromeOptions();
+                defaultOptions.addArguments("--headless"); 
+                defaultOptions.addArguments("--disable-gpu");
+                driver = new ChromeDriver(defaultOptions);                
+            break;
         }
         insertHeadingLines("STARTING TEST");
         actions = new Actions(driver);
