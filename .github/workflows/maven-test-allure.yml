@@ -22,7 +22,7 @@ jobs:
         distribution: 'temurin'  # Install Temurin JDK (the Eclipse Adoptium distribution)
         java-version: '22'
 
-    # Cache Maven dependencies to speed up build
+    # Cache Maven dependencies to avoid redownloading packages every test run
     - name: Cache Maven packages
       uses: actions/cache@v3
       with:
