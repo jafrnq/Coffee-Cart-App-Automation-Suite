@@ -24,7 +24,7 @@ public class menuPage extends baseTest{
     public void tearDown() {
         insertHeadingLines("Test Method completed");
         driver.manage().deleteAllCookies();
-        driver.get("https://coffee-cart.app/");
+        // driver.get("https://coffee-cart.app/");
         totalOrderPrice = 0;
 
     }
@@ -157,7 +157,8 @@ public class menuPage extends baseTest{
         //asserting modal elements 
         WebElement nameField = paymentDetailsModal.findElement(By.cssSelector("input[id='name']"));
         WebElement emailField = paymentDetailsModal.findElement(By.cssSelector("input[id='email']"));
-        WebElement promotionCheckbox = paymentDetailsModal.findElement(By.cssSelector("div input[id='promotion']"));
+        // WebElement promotionCheckbox = paymentDetailsModal.findElement(By.cssSelector("div input[id='promotion']"));
+        WebElement promotionCheckbox = paymentDetailsModal.findElement(By.cssSelector("div[aria-label='Promotion agreement']"));
         WebElement submitButton = paymentDetailsModal.findElement(By.id("submit-payment"));
         assertTrue(nameField.isDisplayed() 
                 && emailField.isDisplayed() 
