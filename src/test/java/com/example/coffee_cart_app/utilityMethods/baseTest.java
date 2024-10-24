@@ -68,6 +68,7 @@ public class baseTest {
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments("--headless"); // Enable headless mode
+                firefoxOptions.addArguments("--window-size=1920,1080");
                 driver = new FirefoxDriver(firefoxOptions);                
             break;
             
@@ -75,6 +76,7 @@ public class baseTest {
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("headless"); // Enable headless mode
                 edgeOptions.addArguments("disable-gpu"); // Recommended for headless mode
+                edgeOptions.addArguments("--window-size=1920,1080");
                 driver = new EdgeDriver(edgeOptions);                
             break;
             
@@ -82,6 +84,7 @@ public class baseTest {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless"); // Enable headless mode
                 chromeOptions.addArguments("--disable-gpu"); // Recommended for headless mode
+                chromeOptions.addArguments("--window-size=1920,1080");
                 driver = new ChromeDriver(chromeOptions);                
             break;
             
@@ -89,6 +92,7 @@ public class baseTest {
                 ChromeOptions defaultOptions = new ChromeOptions();
                 defaultOptions.addArguments("--headless"); 
                 defaultOptions.addArguments("--disable-gpu");
+                defaultOptions.addArguments("--window-size=1920,1080");
                 driver = new ChromeDriver(defaultOptions);                
             break;
         }
