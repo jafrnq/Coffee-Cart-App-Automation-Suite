@@ -2,27 +2,31 @@ name: Maven Test with Allure Report
 
 on:
   schedule:
-    # Runs the workflow every hour
     - cron: '0 * * * *'
-  workflow_dispatch: # For manually triggering the workflow
+  workflow_dispatch:
+
+# Add permissions block
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Important for getting full history
 
-    # Set up JDK (Java 22)
     - name: Set up JDK 22
       uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
         java-version: '22'
 
-    # Cache Maven dependencies to avoid redownloading packages every test run
     - name: Cache Maven packages
       uses: actions/cache@v3
       with:
@@ -31,19 +35,19 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    # Install Maven dependencies and run tests
     - name: Run Maven tests
       run: mvn clean test
 
-    - name: Load test report history
+    - name: Get Allure history
       uses: actions/checkout@v3
       if: always()
       continue-on-error: true
       with:
         ref: gh-pages
-        path: gh-pages  
+        path: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build test report
+    - name: Generate Allure Report
       uses: simple-elf/allure-report-action@v1.7
       if: always()
       with:
@@ -51,10 +55,18 @@ jobs:
         allure_history: allure-history
         allure_results: allure-results
 
-    - name: Publish test report
+    - name: Configure Git
+      if: always()
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: always()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: allure-history
+        force_orphan: true  # This creates a single-commit history
+        full_commit_message: 'Update Allure report'
