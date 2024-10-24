@@ -92,7 +92,7 @@ public class baseTest {
                 ChromeOptions defaultOptions = new ChromeOptions();
                 defaultOptions.addArguments("--headless"); 
                 defaultOptions.addArguments("--disable-gpu");
-                defaultOptions.addArguments("--window-size=1920,1080");
+                // defaultOptions.addArguments("--window-size=1920,1080");
                 driver = new ChromeDriver(defaultOptions);                
             break;
         }
