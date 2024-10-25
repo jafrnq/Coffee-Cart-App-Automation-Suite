@@ -32,8 +32,13 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    - name: Run Maven tests
-      run: mvn clean test
+    - name: Run Maven tests and copy results
+      run: |
+        mvn clean test
+        mkdir -p allure-results
+        cp -r target/allure-results/* allure-results/ || true
+        echo "Test Results Contents:"
+        ls -la allure-results/
 
     - name: Get Allure history
       uses: actions/checkout@v3
@@ -50,6 +55,7 @@ jobs:
         gh_pages: gh-pages
         allure_history: allure-history
         allure_results: allure-results
+        keep_reports: 20
 
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
