@@ -1,6 +1,6 @@
 # Coffee Cart App - Automation Suite
 
-This project is a Selenium-based automation test suite developed for practicing automated UI testing on the Coffee Cart web application. It includes tests for various scenarios using Maven, TestNG, and Allure for reporting, with cross-browser capabilities implemented for Firefox and Opera.
+This project is a Selenium-based automation test suite developed for practicing automated UI testing on the Coffee Cart web application. It includes tests for various scenarios using Maven, TestNG, and Allure for reporting, with cross-browser capabilities implemented for Chrome, Edge, and Firefox.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,7 +14,7 @@ This project is a Selenium-based automation test suite developed for practicing 
 
 ## Project Overview
 
-The **Coffee Cart App Automation Practice** is designed to test the Coffee Cart web application. It covers multiple test cases to validate the cart functionality, including item addition, cart updating, and checkout processes. The test suite also implements cross-browser testing across Firefox and Opera.
+The **Coffee Cart App Automation Practice** is designed to test the Coffee Cart web application. It covers multiple test cases to validate the cart functionality, including item addition, cart updating, and checkout processes. The test suite also implements cross-browser testing across Chrome, Edge, and Firefox.
 
 ## Technologies Used
 - **Java**
@@ -71,7 +71,7 @@ To run all tests using TestNG, use the following Maven command:
 mvn test
 ```
 
-To execute tests for specific browsers (Firefox/Opera), you can set the browser parameter in your TestNG suite XML or pass it through Maven as:
+To execute tests for specific browsers (Edge/Firefox), you can set the browser parameter in your TestNG suite XML or pass it through Maven as:
 
 ## Allure Reports
 
