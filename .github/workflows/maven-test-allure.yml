@@ -1,4 +1,4 @@
-name: Maven Test with Allure Report
+name: Run Tests and Generate Allure Report
 
 on:
   schedule:
