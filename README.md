@@ -87,7 +87,7 @@ This will automatically open the generated report in your default browser.
 ## GitHub Actions CI/CD
 This project uses GitHub Actions for continuous integration and automated test execution. Every time you push changes to the repository, the workflow will automatically run your tests and generate Allure reports.
 
-## Running Tests via GitHub Actions
+### Running Tests via GitHub Actions
 1. Navigate to your repository on GitHub
 2. Click on the "Actions" tab at the top of your repository
 3. In the left sidebar, click on "Run Tests and Generate Allure Report"
