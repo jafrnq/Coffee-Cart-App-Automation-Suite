@@ -44,7 +44,7 @@ Coffee-Cart-App-AutomationPractice/
 - **Utilities**: Utility classes such as `CoffeeCartUtilityMethods` used for reusable test logic.
 - **Listeners**: Contains TestNG listeners for better test management and reporting.
 
-## Setup and Installation
+## Setup and Installation (For Local testing)
 
 1. Clone the repository:
     ```bash
@@ -63,7 +63,7 @@ Coffee-Cart-App-AutomationPractice/
 
 4. The Project uses Selenium 4 so browser drivers should be automatically installed.
 
-## Running Tests
+### Running Tests
 
 To run all tests using TestNG, use the following Maven command:
 
@@ -73,7 +73,7 @@ mvn test
 
 To execute tests for specific browsers (Edge/Firefox), you can set the browser parameter in your TestNG suite XML or pass it through Maven as:
 
-## Allure Reports
+### Allure Reports
 
 This project uses Allure for reporting test results. After running the tests, generate the Allure report using:
 
