@@ -1,0 +1,5 @@
+# Created at 2024-10-23T20:51:29.659
+Boot Manifest-JAR contains absolute paths in classpath 'G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

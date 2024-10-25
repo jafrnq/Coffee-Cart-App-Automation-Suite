@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Coffee-Cart-App Cross browser Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Chrome Tests(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.example.coffee_cart_app.testClasses.cartPage">
+        <methods>
+          <include name="checkOutOrdersUsingPayContainerButton"/>
+          <include name="addToCartThenDecreaseQuantity"/>
+          <include name="checkOutWithIncompletePaymentDetails"/>
+          <include name="checkOutAllItemsInMenu"/>
+          <include name="addToCartThenIncreaseQuantity"/>
+          <include name="AfterClass"/>
+          <include name="checkOutWithNoItemInCart"/>
+          <include name="setUp"/>
+          <include name="BeforeClass"/>
+          <include name="checkOutOrdersUsingCheckoutPage"/>
+          <include name="tearDown"/>
+          <include name="assertCartPageElements"/>
+          <include name="checkOutWithEmptyPaymentDetails"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
+      <class name="com.example.coffee_cart_app.testClasses.menuPage">
+        <methods>
+          <include name="acceptPromo"/>
+          <include name="rejectPromo"/>
+          <include name="pickDifferentItems"/>
+          <include name="AfterClass"/>
+          <include name="setUp"/>
+          <include name="BeforeClass"/>
+          <include name="testMenuPageElementsVisibility"/>
+          <include name="addAllItemsToCart"/>
+          <include name="pickMultipleOfTheSameItem"/>
+          <include name="pickASingleItem"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+  <test thread-count="5" parallel="classes" name="Edge Tests(failed)" verbose="0">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.example.coffee_cart_app.testClasses.cartPage">
+        <methods>
+          <include name="addToCartThenDecreaseQuantity"/>
+          <include name="checkOutOrdersUsingPayContainerButton"/>
+          <include name="checkOutWithIncompletePaymentDetails"/>
+          <include name="checkOutAllItemsInMenu"/>
+          <include name="addToCartThenIncreaseQuantity"/>
+          <include name="AfterClass"/>
+          <include name="checkOutWithNoItemInCart"/>
+          <include name="BeforeClass"/>
+          <include name="setUp"/>
+          <include name="checkOutOrdersUsingCheckoutPage"/>
+          <include name="tearDown"/>
+          <include name="assertCartPageElements"/>
+          <include name="checkOutWithEmptyPaymentDetails"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
+      <class name="com.example.coffee_cart_app.testClasses.menuPage">
+        <methods>
+          <include name="acceptPromo"/>
+          <include name="rejectPromo"/>
+          <include name="pickDifferentItems"/>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+          <include name="setUp"/>
+          <include name="testMenuPageElementsVisibility"/>
+          <include name="addAllItemsToCart"/>
+          <include name="pickMultipleOfTheSameItem"/>
+          <include name="pickASingleItem"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
+    </classes>
+  </test> <!-- Edge Tests(failed) -->
+  <test thread-count="5" parallel="classes" name="Firefox Tests(failed)" verbose="0">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.example.coffee_cart_app.testClasses.cartPage">
+        <methods>
+          <include name="addToCartThenDecreaseQuantity"/>
+          <include name="checkOutOrdersUsingPayContainerButton"/>
+          <include name="checkOutAllItemsInMenu"/>
+          <include name="checkOutWithIncompletePaymentDetails"/>
+          <include name="addToCartThenIncreaseQuantity"/>
+          <include name="checkOutWithNoItemInCart"/>
+          <include name="AfterClass"/>
+          <include name="setUp"/>
+          <include name="BeforeClass"/>
+          <include name="checkOutOrdersUsingCheckoutPage"/>
+          <include name="tearDown"/>
+          <include name="assertCartPageElements"/>
+          <include name="checkOutWithEmptyPaymentDetails"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.cartPage -->
+      <class name="com.example.coffee_cart_app.testClasses.menuPage">
+        <methods>
+          <include name="acceptPromo"/>
+          <include name="rejectPromo"/>
+          <include name="pickDifferentItems"/>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+          <include name="setUp"/>
+          <include name="testMenuPageElementsVisibility"/>
+          <include name="addAllItemsToCart"/>
+          <include name="pickMultipleOfTheSameItem"/>
+          <include name="pickASingleItem"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.coffee_cart_app.testClasses.menuPage -->
+    </classes>
+  </test> <!-- Firefox Tests(failed) -->
+</suite> <!-- Failed suite [Coffee-Cart-App Cross browser Test Suite] -->
