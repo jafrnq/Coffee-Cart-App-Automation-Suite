@@ -30,6 +30,10 @@ import org.testng.annotations.Parameters;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+
+
 public class baseTest {
     public WebDriver driver;
     public Actions actions;
@@ -63,39 +67,47 @@ public class baseTest {
     @Parameters("browser") // Parameter defined in testng.xml
     public void BeforeClass(@Optional("Chrome") String browser) {
 
+        Allure.parameter("browser", browser.toLowerCase());
+        
         // browser = "chrome";
         switch (browser.toLowerCase()) {
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.addArguments("--headless"); // Enable headless mode
+                firefoxOptions.addArguments("--headless"); 
                 firefoxOptions.addArguments("--window-size=1920,1080");
-                driver = new FirefoxDriver(firefoxOptions);                
+                driver = new FirefoxDriver(firefoxOptions);
+                Allure.label("browser", "firefox");
             break;
             
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("headless"); // Enable headless mode
-                edgeOptions.addArguments("disable-gpu"); // Recommended for headless mode
+                edgeOptions.addArguments("headless"); 
+                edgeOptions.addArguments("disable-gpu"); //For Headless
                 edgeOptions.addArguments("--window-size=1920,1080");
                 driver = new EdgeDriver(edgeOptions);                
+                Allure.label("browser", "edge");
             break;
             
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless"); // Enable headless mode
-                chromeOptions.addArguments("--disable-gpu"); // Recommended for headless mode
+                chromeOptions.addArguments("--headless"); 
+                chromeOptions.addArguments("--disable-gpu"); 
                 chromeOptions.addArguments("--window-size=1920,1080");
-                driver = new ChromeDriver(chromeOptions);                
+                driver = new ChromeDriver(chromeOptions);   
+                Allure.label("browser", "chrome");
             break;
             
             default:
                 ChromeOptions defaultOptions = new ChromeOptions();
                 defaultOptions.addArguments("--headless"); 
                 defaultOptions.addArguments("--disable-gpu");
-                // defaultOptions.addArguments("--window-size=1920,1080");
-                driver = new ChromeDriver(defaultOptions);                
+                defaultOptions.addArguments("--window-size=1920,1080");
+                driver = new ChromeDriver(defaultOptions);
+                Allure.label("browser", "chrome");
             break;
         }
+
+
         insertHeadingLines("STARTING TEST");
         actions = new Actions(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
