@@ -1,6 +1,14 @@
 # Coffee Cart App - Automation Suite
 
-This project is a Selenium-based automation test suite developed for practicing automated UI testing on the Coffee Cart web application. It includes tests for various scenarios using Maven, TestNG, and Allure for reporting, with cross-browser capabilities implemented for Chrome, Edge, and Firefox.
+This project is a Selenium-based automation test suite developed for conducting automated UI testing on the Coffee Cart web application. It features comprehensive test coverage using Maven, TestNG, and cross-browser testing capabilities for Chrome, Edge, and Firefox. The project is integrated with GitHub Actions for continuous integration, enabling automated test execution and reporting. The test suite validates various e-commerce scenarios including cart operations, checkout processes, and payment validations, ensuring robust functionality across different browsers.
+
+Key Features:
+- Automated cross-browser testing (Chrome and Edge)
+- Continuous Integration with GitHub Actions
+- Organized test structure with TestNG
+- Maven-based project management
+- Robust test scenarios covering cart and checkout functionality
+- Automated test execution on push events
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -22,6 +30,7 @@ The **Coffee Cart App Automation Practice** is designed to test the Coffee Cart 
 - **TestNG**
 - **Maven**
 - **Allure Reports**
+- **Github Actions**
 - **Browsers Supported**: Chrome, Firefox, Edge
 
 ## Project Structure
@@ -29,20 +38,18 @@ The **Coffee Cart App Automation Practice** is designed to test the Coffee Cart 
 Coffee-Cart-App-AutomationPractice/
 ├── src/
 │   ├── test/
-│   │   ├── java/
-│   │   │   ├── base/
-│   │   │   ├── tests/
-│   │   │   ├── utilities/
-│   │   │   └── listeners/
+│   │    ├── java/com/example/coffee_cart_app
+│   │       ├── testClasses
+│   │       ├── utilityMethods
+│   ├── resources
 ├── pom.xml
 └── README.md
 ```
 
 
-- **Base**: Contains base classes like `BaseTest`, which is responsible for the test setup and teardown.
-- **Tests**: All TestNG test classes related to the Coffee Cart app.
-- **Utilities**: Utility classes such as `CoffeeCartUtilityMethods` used for reusable test logic.
-- **Listeners**: Contains TestNG listeners for better test management and reporting.
+- **utilityMethods**: Contains base classes like `BaseTest`, which handles test setup and teardown.
+- **testClasses**: All Test classes.
+- **resources**: Contains allure properties and testng.xml .
 
 ## Setup and Installation (For Local testing)
 
