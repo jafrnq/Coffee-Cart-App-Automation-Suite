@@ -8,7 +8,7 @@
     </listeners>
 
     <test name="Chrome Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
-        <parameter name="browser" value="chrome" /> 
+        <parameter name="browser" value="Chrome" /> 
 
         <packages>
             <package name="com.example.coffee_cart_app.testClasses"/>
@@ -17,7 +17,7 @@
     </test>
 
     <test name="Edge Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
-        <parameter name="browser" value="edge" /> 
+        <parameter name="browser" value="Edge" /> 
 
         <packages>
             <package name="com.example.coffee_cart_app.testClasses"/>
@@ -25,7 +25,7 @@
     </test>
     
     <test name="Firefox Tests" verbose="2" preserve-order="true" parallel="classes" thread-count="2">
-        <parameter name="browser" value="firefox" /> 
+        <parameter name="browser" value="Firefox" /> 
 
         <packages>
             <package name="com.example.coffee_cart_app.testClasses"/>
