@@ -84,12 +84,26 @@ mvn allure:serve
 
 This will automatically open the generated report in your default browser.
 
+## GitHub Actions CI/CD
+This project uses GitHub Actions for continuous integration and automated test execution. Every time you push changes to the repository, the workflow will automatically run your tests and generate Allure reports.
+
+## Running Tests via GitHub Actions
+1. Navigate to your repository on GitHub
+2. Click on the "Actions" tab at the top of your repository
+3. In the left sidebar, click on "Run Tests and Generate Allure Report"
+4. Click the "Run workflow" button
+   - Select the branch you want to run the tests on
+   - Click "Run workflow" to start the execution
+5. A new workflow run will be initiated, and you can click on it to see the progress
+6. Once completed, you can view the test results and Allure report in the workflow artifacts
+
+### Viewing Test Results
+- The test results will be available in the Actions tab after each workflow run
+- Allure reports are automatically generated and published to GitHub Pages
+- You can access the latest Allure report by clicking on the GitHub Pages link in the latest "pages-build-deployment" build or in your repository settings.
+
 ## Contributing
 If you would like to contribute, feel free to open an issue or submit a pull request. Please make sure to follow best practices for Java and Selenium projects.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-```vbnet 
-Copy and paste this into your `README.md` file on GitHub. Let me know if you need any adjustments!
-```
