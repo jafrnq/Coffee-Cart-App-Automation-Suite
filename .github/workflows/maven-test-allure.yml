@@ -13,6 +13,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ALLURE_LOCALE: en-US  # Set time format to AM/PM
+
 
     steps:
     - name: Checkout repository
