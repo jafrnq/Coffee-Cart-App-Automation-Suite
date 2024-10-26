@@ -31,7 +31,6 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
 
 
 public class baseTest {
