@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="67.805" tests="48" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="40.261" tests="45" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App\target\test-classes;G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App\target\classes;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\jafrn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\jafrn\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\jafrn\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jafrn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jafrn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jafrn\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\jafrn\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\jafrn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\jafrn\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\jafrn\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jafrn\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\jafrn\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\3.3.1\maven-failsafe-plugin-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-api\3.3.1\surefire-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.3.1\surefire-logger-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-booter\3.3.1\surefire-booter-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.3.1\surefire-extensions-spi-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.3.1\surefire-extensions-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.1\surefire-shared-utils-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.3.1\maven-surefire-common-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\jafrn\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\jafrn\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jafrn\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;"/>
+    <property name="java.class.path" value="F:\Coding\TestAutomation\Coffee-Cart-App\target\test-classes;F:\Coding\TestAutomation\Coffee-Cart-App\target\classes;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\jafrn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\jafrn\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\jafrn\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jafrn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jafrn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jafrn\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\jafrn\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\jafrn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\jafrn\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\jafrn\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jafrn\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\jafrn\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\3.3.1\maven-failsafe-plugin-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-api\3.3.1\surefire-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.3.1\surefire-logger-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-booter\3.3.1\surefire-booter-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.3.1\surefire-extensions-spi-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.3.1\surefire-extensions-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.1\surefire-shared-utils-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.3.1\maven-surefire-common-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\jafrn\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\jafrn\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jafrn\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\jafrn\AppData\Local\Temp\surefire912816845578982862\surefirebooter-20241024153404428_3.jar C:\Users\jafrn\AppData\Local\Temp\surefire912816845578982862 2024-10-24T15-34-04_144-jvmRun1 surefire-20241024153404428_1tmp surefire_0-20241024153404428_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jafrn\AppData\Local\Temp\surefire6156712420015273360\surefirebooter-20250304214652347_3.jar C:\Users\jafrn\AppData\Local\Temp\surefire6156712420015273360 2025-03-04T21-46-52_087-jvmRun1 surefire-20250304214652347_1tmp surefire_0-20250304214652347_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App\target\test-classes;G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App\target\classes;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\jafrn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\jafrn\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\jafrn\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jafrn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jafrn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jafrn\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\jafrn\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\jafrn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\jafrn\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\jafrn\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jafrn\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\jafrn\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\3.3.1\maven-failsafe-plugin-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-api\3.3.1\surefire-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.3.1\surefire-logger-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-booter\3.3.1\surefire-booter-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.3.1\surefire-extensions-spi-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.3.1\surefire-extensions-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.1\surefire-shared-utils-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.3.1\maven-surefire-common-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\jafrn\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\jafrn\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jafrn\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;"/>
+    <property name="surefire.test.class.path" value="F:\Coding\TestAutomation\Coffee-Cart-App\target\test-classes;F:\Coding\TestAutomation\Coffee-Cart-App\target\classes;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\jafrn\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\jafrn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\jafrn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\jafrn\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\jafrn\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jafrn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jafrn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jafrn\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\jafrn\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\jafrn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\jafrn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\jafrn\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\jafrn\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\jafrn\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jafrn\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\jafrn\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\3.3.1\maven-failsafe-plugin-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-api\3.3.1\surefire-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.3.1\surefire-logger-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-booter\3.3.1\surefire-booter-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.3.1\surefire-extensions-spi-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.3.1\surefire-extensions-api-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.3.1\surefire-shared-utils-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.3.1\maven-surefire-common-3.3.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\jafrn\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\jafrn\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\jafrn\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jafrn\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\jafrn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\jafrn"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-04-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App"/>
+    <property name="basedir" value="F:\Coding\TestAutomation\Coffee-Cart-App"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jafrn\AppData\Local\Temp\surefire912816845578982862\surefirebooter-20241024153404428_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jafrn\AppData\Local\Temp\surefire6156712420015273360\surefirebooter-20250304214652347_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -45,12 +45,12 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\jafrn\AppData\Local\Temp\"/>
     <property name="java.version" value="22.0.1"/>
-    <property name="user.dir" value="G:\CODES SA SSD\Automation things\Selenium\Coffee-Cart-App"/>
+    <property name="user.dir" value="F:\Coding\TestAutomation\Coffee-Cart-App"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\AOMEI\AOMEI Backupper\7.4.0;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-22\bin;C:\Program Files\apache-maven-3.9.8\bin;C:\Users\jafrn\scoop\shims;C:\Users\jafrn\AppData\Local\Microsoft\WindowsApps;C:\Users\jafrn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jafrn\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\AOMEI\AOMEI Backupper\7.4.0;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-22\bin;C:\Program Files\apache-maven-3.9.8\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\jafrn\scoop\shims;C:\Users\jafrn\AppData\Local\Microsoft\WindowsApps;C:\Users\jafrn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jafrn\AppData\Local\GitHubDesktop\bin;C:\Users\jafrn\AppData\Roaming\npm;C:\Users\jafrn\AppData\Local\Programs\Windsurf\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -58,46 +58,106 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.61">
+  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.122">
     <system-out><![CDATA[
 (STARTING TEST)=========================================================================================== 
 
 (STARTING TEST)=========================================================================================== 
 Item added to cart: CafeLatte
-Item added to cart: Mocha
 Item Price: 16.0
-Item Price: 8.0
-Total spending: 8.0
-
 Total spending: 16.0
 
 Promo Element not visible as expected...
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item added to cart: FlatWhite
-Item Price: 18.0
-Item Price: 16.0
-Total spending: 26.0
 
+(STARTING TEST)=========================================================================================== 
+
+(STARTING TEST)=========================================================================================== 
+Item added to cart: CafeLatte
+Item Price: 16.0
 Total spending: 32.0
 
 Promo Element not visible as expected...
-Promo Element not visible as expected...
+
+(STARTING TEST)=========================================================================================== 
 Item added to cart: CafeLatte
-Item added to cart: CafeLatte
-Item Price: 16.0
 Item Price: 16.0
 Total spending: 48.0
 
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+
+(STARTING TEST)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 64.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 80.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 96.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
 Total spending: 42.0
 
 Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 32.0
+
+Item added to cart: FlatWhite
 Promo Appeared =>>>
 It's your lucky day! Get an extra cup of Mocha for $4.
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO ACCEPTED
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
 PROMO REJECTED
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+PROMO ACCEPTED
 Order total based on manual count: 46.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 112.0
+
+Promo Element not visible as expected...
 Curent cart container price: Total: $46.00
 
 (assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
@@ -105,251 +165,14 @@ Total value based on manualCounter: 46.0
 Total value based on site: 46.0
 Item added to cart: CafeLatte
 Item Price: 16.0
-Total spending: 64.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 96.0
-
-Cart list verified and matches the manual order list
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-]]></system-out>
-    <system-err><![CDATA[[main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[main] WARN org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
-[main] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
-Oct 24, 2024 3:34:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
-Oct 24, 2024 3:34:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
-]]></system-err>
-  </testcase>
-  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.58">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithNoItemInCart
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutAllItemsInMenu
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.acceptPromo
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.rejectPromo
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem
-
-===============================================
-    Chrome Tests
-    Tests run: 16, Failures: 0, Skips: 0
-===============================================
-
-
-(STARTING TEST)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
 Total spending: 48.0
 
 Promo Appeared =>>>
+Item added to cart: CafeLatte
 It's your lucky day! Get an extra cup of Mocha for $4.
-
-(STARTING TEST)=========================================================================================== 
-PROMO REJECTED
-Item added to cart: CafeLatte
 Item Price: 16.0
-Total spending: 64.0
+Total spending: 42.0
 
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 96.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 112.0
-
-Promo Element not visible as expected...
 Item added to cart: CafeLatte
 Item Price: 16.0
 Total spending: 128.0
@@ -357,20 +180,238 @@ Total spending: 128.0
 Promo Element not visible as expected...
 Item added to cart: CafeLatte
 Item Price: 16.0
-Total spending: 144.0
+Total spending: 42.0
 
 Promo Appeared =>>>
 It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
+PROMO REJECTED
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO ACCEPTED
+Order total based on manual count: 46.0
+Curent cart container price: Total: $46.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 46.0
+Total value based on site: 46.0
+Item added to cart: CafeLatte
+Cart list verified and matches the manual order list
+Item Price: 16.0
+Total spending: 144.0
+
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [ThreadUtil] Starting executor timeOut:2147483647ms workers:3 threadPoolSize:3
+[TestNG-tests-1] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[TestNG-tests-3] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[TestNG-tests-2] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[TestNG-tests-1] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
+[TestNG-tests-3] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
+[TestNG-tests-2] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
+[TestNG-test-Firefox Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 26f570a5-5bbb-4f11-a6b5-1bb5d76f71ff not found
+[TestNG-test-Edge Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 81e16e26-885a-46e4-8686-8eb943380f1e not found
+[TestNG-test-Edge Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 242f9631-6dd0-4991-b969-c1c80ad8f5ae not found
+[TestNG-test-Chrome Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4062e561-893c-4c00-857a-f0497a2d0edd not found
+[TestNG-test-Firefox Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid e424fedb-e5f0-49b1-bff4-f096667b3feb not found
+[TestNG-test-Chrome Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2b09badb-f6ef-4676-8168-410ec6ac68d6 not found
+Mar 04, 2025 9:46:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 133
+[TestNG-test-Edge Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 242f9631-6dd0-4991-b969-c1c80ad8f5ae not found
+Mar 04, 2025 9:46:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 133
+[TestNG-test-Edge Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 81e16e26-885a-46e4-8686-8eb943380f1e not found
+[TestNG-test-Firefox Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid e424fedb-e5f0-49b1-bff4-f096667b3feb not found
+Mar 04, 2025 9:46:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 133
+[TestNG-test-Chrome Tests-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2b09badb-f6ef-4676-8168-410ec6ac68d6 not found
+Mar 04, 2025 9:46:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 133
+[TestNG-test-Chrome Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4062e561-893c-4c00-857a-f0497a2d0edd not found
+[TestNG-test-Firefox Tests-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 26f570a5-5bbb-4f11-a6b5-1bb5d76f71ff not found
+]]></system-err>
+  </testcase>
+  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.268">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.43">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO ACCEPTED
+Order total based on manual count: 46.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 16.0
 
 Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
 PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 64.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 32.0
+
+Promo Element not visible as expected...
+Curent cart container price: Total: $46.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 46.0
+Total value based on site: 46.0
 Promo Element not visible as expected...
 Item added to cart: CafeLatte
 Item Price: 16.0
@@ -379,1490 +420,1299 @@ Total spending: 160.0
 Promo Element not visible as expected...
 Item added to cart: CafeLatte
 Item Price: 16.0
-Total spending: 42.0
+Total spending: 48.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Espresso
+Item Price: 10.0
+Total spending: 10.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 80.0
 
 Item added to cart: CafeLatte
 Item Price: 16.0
 Total spending: 176.0
 
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.899">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 176.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 49.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+Item added to cart: FlatWhite
+Item added to cart: CafeLatte
+Item Price: 18.0
+Item Price: 16.0
+Total spending: 67.0
+
+Total spending: 192.0
+
+Promo Element not visible as expected...
 Promo Appeared =>>>
 It's your lucky day! Get an extra cup of Mocha for $4.
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+PROMO REJECTED
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 90.0
+
 Promo Element not visible as expected...
-PROMO ACCEPTED
-Order total based on manual count: 46.0
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+PROMO REJECTED
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 40.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Item added to cart: Americano
+Item Price: 7.0
+Total spending: 74.0
+
+PROMO REJECTED
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Mocha
+Item added to cart: Mocha
+Item Price: 8.0
+Item Price: 8.0
+Total spending: 40.0
+
+Total spending: 48.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 119.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 48.0
+
+PROMO REJECTED
+PROMO REJECTED
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Order total based on manual count: 119.0
+Curent cart container price: Total: $119.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 119.0
+Total value based on site: 119.0
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 64.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 208.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 72.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 64.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.418">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 272.0
+
+Promo Element not visible as expected...
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 119.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 119.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Order total based on manual count: 119.0
+Curent cart container price: Total: $119.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 119.0
+Total value based on site: 119.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 288.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.05">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Order total based on manual count: 119.0
+
+(Starting assertMenuTopBar)=========================================================================================== 
+Curent cart container price: Total: $119.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 119.0
+Total value based on site: 119.0
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+All top menu bar elements Verified
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Items in cart
+Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
+Promo Element not visible as expected...
+Cart list verified and matches the manual order list
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+]]></system-out>
+  </testcase>
+  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.647">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 105.0
+
+Promo Element not visible as expected...
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 19.0
+
+Promo Element not visible as expected...
+Curent cart container price: Total: $19.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 19.0
+Total value based on site: 19.0
+]]></system-out>
+  </testcase>
+  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.155">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 19.0
+
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Promo Element not visible as expected...
+
+(Starting assertMenuTopBar)=========================================================================================== 
+Curent cart container price: Total: $19.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 19.0
+Total value based on site: 19.0
+]]></system-out>
+  </testcase>
+  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.106">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+Curent cart container price: Total: $71.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 71.0
+Total value based on site: 71.0
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 19.0
+
+Promo Element not visible as expected...
+Curent cart container price: Total: $19.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 19.0
+Total value based on site: 19.0
+]]></system-out>
+  </testcase>
+  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.01">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Items in cart
+Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 320.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Successfully ordered: 20 Cafe Latte
+Order total based on manual count: 320.0
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.221">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.197">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 105.0
+
+Promo Element not visible as expected...
+Cart list verified and matches the manual order list
+]]></system-out>
+  </testcase>
+  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.47">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Espresso
+Item Price: 10.0
+Total spending: 10.0
+
+Promo Element not visible as expected...
+Item added to cart: EspressoMacchiato
+Item Price: 12.0
+Total spending: 22.0
+
+Promo Element not visible as expected...
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 41.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 49.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+Item added to cart: Espresso
+Item Price: 10.0
+Total spending: 10.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 67.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: EspressoMacchiato
+Item Price: 12.0
+Total spending: 22.0
+
+Promo Element not visible as expected...
+Item added to cart: Americano
+Item Price: 7.0
+Total spending: 74.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 41.0
+
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 40.0
+
+Promo Element not visible as expected...
+Successfully ordered: 5 Mocha
+Order total based on manual count: 40.0
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Curent cart container price: Total: $40.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 40.0
+Total value based on site: 40.0
+]]></system-out>
+  </testcase>
+  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.455">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 49.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+
+(Starting assertMenuTopBar)=========================================================================================== 
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 67.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+All top menu bar elements Verified
+
+(Starting assertMenuItems)=========================================================================================== 
+Item added to cart: Americano
+Item Price: 7.0
+Total spending: 74.0
+
+Item name: Espresso
+Item price: 10.0
+
+All Menu Items Verified 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+Item name: EspressoMacchiato
+Item price: 12.0
+
+All Menu Items Verified 
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item name: Cappuccino
+Item price: 19.0
+
+All Menu Items Verified 
+PROMO REJECTED
+PROMO REJECTED
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+Item name: Mocha
+Item price: 8.0
+
+All Menu Items Verified 
+Item name: FlatWhite
+Item price: 18.0
+
+All Menu Items Verified 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+Promo Element not visible as expected...
+Item name: Americano
+Item price: 7.0
+
+All Menu Items Verified 
+Item name: CafeLatte
+Item price: 16.0
+
+All Menu Items Verified 
+Item name: EspressoConPanna
+Item price: 14.0
+
+All Menu Items Verified 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 40.0
+
+Promo Element not visible as expected...
+Successfully ordered: 5 Mocha
+Order total based on manual count: 40.0
+Curent cart container price: Total: $40.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 40.0
+Total value based on site: 40.0
+]]></system-out>
+  </testcase>
+  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.481">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 40.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 32.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 48.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 40.0
+
+Promo Element not visible as expected...
+Successfully ordered: 5 Mocha
+Order total based on manual count: 40.0
+Curent cart container price: Total: $40.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 40.0
+Total value based on site: 40.0
+]]></system-out>
+  </testcase>
+  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.088">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item name: CafeLatte
+Item price: 16.0
+
+All Menu Items Verified 
+Item name: EspressoConPanna
+Item price: 14.0
+
+All Menu Items Verified 
+Item name: CafeBreve
+Item price: 15.0
+
+All Menu Items Verified 
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+Curent cart container price: Total: $71.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 71.0
+Total value based on site: 71.0
+]]></system-out>
+  </testcase>
+  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.41">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 105.0
+
+Promo Element not visible as expected...
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+]]></system-out>
+  </testcase>
+  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.309">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+]]></system-out>
+  </testcase>
+  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.009">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: EspressoMacchiato
+Item Price: 12.0
+Total spending: 22.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 96.0
+
 Item added to cart: CafeLatte
 Item Price: 16.0
 Total spending: 192.0
 
-Curent cart container price: Total: $46.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 46.0
-Total value based on site: 46.0
+PROMO REJECTED
 Promo Appeared =>>>
 It's your lucky day! Get an extra cup of Mocha for $4.
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 41.0
+
+Promo Appeared =>>>
+PROMO REJECTED
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 64.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 112.0
+
+PROMO REJECTED
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 208.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item added to cart: Mocha
+Item Price: 16.0
+Item Price: 8.0
+Total spending: 128.0
+
+Total spending: 49.0
+
+Promo Element not visible as expected...
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 224.0
+
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 67.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 144.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 80.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 240.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Americano
+Item Price: 7.0
+Total spending: 74.0
+
+PROMO REJECTED
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 160.0
+
+PROMO REJECTED
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 96.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 256.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 176.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 272.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 192.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 288.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+PROMO REJECTED
 PROMO REJECTED
 Item added to cart: CafeLatte
 Item Price: 16.0
 Total spending: 208.0
 
 Promo Element not visible as expected...
-Cart list verified and matches the manual order list
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 304.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 224.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 320.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 240.0
+
+Promo Element not visible as expected...
+Successfully ordered: 20 Cafe Latte
+Order total based on manual count: 320.0
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 112.0
+
+Promo Element not visible as expected...
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Curent cart container price: Total: $320.00
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 256.0
+
+Item name: Cafe Latte
+Promo Element not visible as expected...
+Item quantity: 20
+Item name: Cafe Latte
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 272.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 90.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 288.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 128.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Espresso
+Item Price: 10.0
+Total spending: 10.0
+
+Promo Element not visible as expected...
+Item added to cart: Espresso
+Item Price: 10.0
+Total spending: 10.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: EspressoMacchiato
+Item Price: 12.0
+Total spending: 22.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 304.0
+
+Promo Element not visible as expected...
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 41.0
+
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 320.0
+
+Promo Element not visible as expected...
+Successfully ordered: 20 Cafe Latte
+Order total based on manual count: 320.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 144.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: EspressoMacchiato
+Item Price: 12.0
+Total spending: 22.0
+
+Promo Element not visible as expected...
+Order quantity after operation: 10
+PROMO REJECTED
+Curent cart container price: Total: $160.00
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Curent cart container price: Total: $320.00
+Item name: Cafe Latte
+Item quantity: 10
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 0 ms.
-[main] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
-Oct 24, 2024 3:34:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
-Oct 24, 2024 3:34:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
-]]></system-err>
   </testcase>
-  <testcase name="acceptPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="1.151">
+  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.269">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.rejectPromo
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity
+Item name: Cafe Latte
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 49.0
+
+Item quantity: 20
+Promo Element not visible as expected...
+Item name: Cafe Latte
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 67.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+Item added to cart: Cappuccino
+Item Price: 19.0
+Total spending: 41.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Americano
+Item Price: 7.0
+Total spending: 74.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 105.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 160.0
+
+Promo Element not visible as expected...
+Order quantity after operation: 10
+PROMO REJECTED
+Curent cart container price: Total: $160.00
+Item name: Cafe Latte
+Item quantity: 10
+]]></system-out>
+  </testcase>
+  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.368">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item name: CafeBreve
+Item price: 15.0
+
+All Menu Items Verified 
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 90.0
+
+Promo Element not visible as expected...
+
+(Starting assertMenuTopBar)=========================================================================================== 
+PROMO REJECTED
+All top menu bar elements Verified
+
+(Starting assertMenuItems)=========================================================================================== 
+Item name: Espresso
+Item price: 10.0
+
+All Menu Items Verified 
+Item name: EspressoMacchiato
+Item price: 12.0
+
+All Menu Items Verified 
+Item name: Cappuccino
+Item price: 19.0
+
+All Menu Items Verified 
+Item name: Mocha
+Item price: 8.0
+
+All Menu Items Verified 
+Item name: FlatWhite
+Item price: 18.0
+
+All Menu Items Verified 
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Order quantity after operation: 10
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 90.0
+
+Curent cart container price: Total: $160.00
+Item name: Americano
+Item price: 7.0
+
+All Menu Items Verified 
+Promo Element not visible as expected...
+Item name: Cafe Latte
+Item quantity: 10
+]]></system-out>
+  </testcase>
+  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.515">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 72.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 80.0
+
+Promo Element not visible as expected...
+Successfully ordered: 10 Mocha
+Order total based on manual count: 80.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 224.0
+
+Promo Element not visible as expected...
+PROMO REJECTED
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Curent cart container price: Total: $80.00
+Item name: Mocha
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 80.0
+
+Item quantity: 10
+Promo Element not visible as expected...
+Successfully ordered: 10 Mocha
+Order total based on manual count: 80.0
+Item name: Mocha
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 90.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 105.0
+
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Promo Element not visible as expected...
+Curent cart container price: Total: $80.00
+Item name: Mocha
+Item quantity: 10
+Item name: Mocha
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 240.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Order quantity after operation: 20
+Curent cart container price: Total: $160.00
+Item name: Mocha
+Item quantity: 20
+]]></system-out>
+  </testcase>
+  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.076">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Order quantity after operation: 20
+Curent cart container price: Total: $160.00
+Item name: Mocha
+Item quantity: 20
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 256.0
+
+]]></system-out>
+  </testcase>
+  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.125">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Order quantity after operation: 20
+Curent cart container price: Total: $160.00
+Item name: Mocha
+Item quantity: 20
+]]></system-out>
+  </testcase>
+  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.085">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 304.0
+
+Promo Element not visible as expected...
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+All top menu bar elements Verified
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+Curent cart container price: Total: $71.00
+
+(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
+Total value based on manualCounter: 71.0
+Total value based on site: 71.0
+No Validation Error found as expected...
+Cart page elements verified
+]]></system-out>
+  </testcase>
+  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Curent cart container price: Total: $320.00
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item name: Cafe Latte
+Item quantity: 20
+Item name: Cafe Latte
+PROMO REJECTED
+No Validation Error found as expected...
+Cart page elements verified
+]]></system-out>
+  </testcase>
+  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.905">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+
+(Starting assertMenuTopBar)=========================================================================================== 
+All top menu bar elements Verified
+Items in cart
+Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
+No Validation Error found as expected...
+Cart page elements verified
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.076">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 119.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Order total based on manual count: 119.0
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 119.0
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 16.0
+
+Promo Element not visible as expected...
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Order total based on manual count: 119.0
+No Validation Error found as expected...
+Checking out all items verified
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.133">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+PROMO REJECTED
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 24.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+No Validation Error found as expected...
+Checking out all items verified
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="4.364">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
 PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems
 PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton
 PASSED: com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility
 PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage
-PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem
-PASSED: com.example.coffee_cart_app.testClasses.menuPage.acceptPromo
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity
 PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutAllItemsInMenu
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements
 PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithNoItemInCart
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.acceptPromo
 
 ===============================================
     Edge Tests
-    Tests run: 16, Failures: 0, Skips: 0
+    Tests run: 15, Failures: 0, Skips: 0
 ===============================================
 
-
-(STARTING TEST)=========================================================================================== 
-
-(STARTING TEST)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 48.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-PROMO REJECTED
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 64.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-PROMO ACCEPTED
-Order total based on manual count: 46.0
-Curent cart container price: Total: $46.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 46.0
-Total value based on site: 46.0
-Cart list verified and matches the manual order list
-]]></system-out>
-    <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 0 ms.
-[main] INFO org.testng.internal.Utils - [TestTaskExecutor] Starting executor test 2147483647 with time out: 2147483647 milliseconds.
-]]></system-err>
-  </testcase>
-  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.196">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 119.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 119.0
-Curent cart container price: Total: $119.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 119.0
-Total value based on site: 119.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.766">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 119.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 119.0
-Curent cart container price: Total: $119.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 119.0
-Total value based on site: 119.0
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Cart list verified and matches the manual order list
-
-(Starting assertMenuTopBar)=========================================================================================== 
-]]></system-out>
-  </testcase>
-  <testcase name="addAllItemsToCart" classname="com.example.coffee_cart_app.testClasses.menuPage" time="3.732">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 96.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 112.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 128.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 144.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: Espresso
-Item Price: 10.0
-Total spending: 10.0
-
-Promo Element not visible as expected...
-PROMO REJECTED
-Item added to cart: EspressoMacchiato
-Item Price: 12.0
-Total spending: 22.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 160.0
-
-Promo Element not visible as expected...
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 41.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 176.0
-
-Promo Element not visible as expected...
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 192.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 49.0
-
-Promo Element not visible as expected...
-PROMO REJECTED
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 67.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 208.0
-
-Promo Element not visible as expected...
-Item added to cart: Americano
-Item Price: 7.0
-Total spending: 74.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 224.0
-
-Promo Element not visible as expected...
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 240.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 90.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 256.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 105.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 272.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 288.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 119.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-PROMO REJECTED
-Order total based on manual count: 119.0
-Curent cart container price: Total: $119.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 119.0
-Total value based on site: 119.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.58">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 19.0
-
-Promo Element not visible as expected...
-Curent cart container price: Total: $19.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 19.0
-Total value based on site: 19.0
-]]></system-out>
-  </testcase>
-  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.333">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 19.0
-
-Promo Element not visible as expected...
-Curent cart container price: Total: $19.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 19.0
-Total value based on site: 19.0
-]]></system-out>
-  </testcase>
-  <testcase name="pickASingleItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.748">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 304.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 320.0
-
-Promo Element not visible as expected...
-Successfully ordered: 20 Cafe Latte
-Order total based on manual count: 320.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $320.00
-Item name: Cafe Latte
-Item quantity: 20
-Item name: Cafe Latte
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 19.0
-
-Promo Element not visible as expected...
-Curent cart container price: Total: $19.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 19.0
-Total value based on site: 19.0
-]]></system-out>
-  </testcase>
-  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="1.021">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Espresso
-Item Price: 10.0
-Total spending: 10.0
-
-Promo Element not visible as expected...
-Item added to cart: EspressoMacchiato
-Item Price: 12.0
-Total spending: 22.0
-
-Promo Element not visible as expected...
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 41.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 49.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 67.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: Americano
-Item Price: 7.0
-Total spending: 74.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-PROMO REJECTED
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-Curent cart container price: Total: $71.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 71.0
-Total value based on site: 71.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="1.038">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Espresso
-Item Price: 10.0
-Total spending: 10.0
-
-Promo Element not visible as expected...
-Item added to cart: EspressoMacchiato
-Item Price: 12.0
-Total spending: 22.0
-
-Promo Element not visible as expected...
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 41.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 49.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 67.0
-
-Promo Element not visible as expected...
-Item added to cart: Americano
-Item Price: 7.0
-Total spending: 74.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-Curent cart container price: Total: $71.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 71.0
-Total value based on site: 71.0
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 90.0
-
-Promo Element not visible as expected...
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="pickDifferentItems" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.604">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-PROMO REJECTED
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-Curent cart container price: Total: $71.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 71.0
-Total value based on site: 71.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.879">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 90.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 105.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Successfully ordered: 5 Mocha
-Order total based on manual count: 40.0
-Curent cart container price: Total: $40.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 40.0
-Total value based on site: 40.0
-]]></system-out>
-  </testcase>
-  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.879">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 105.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 119.0
-
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Successfully ordered: 5 Mocha
-Order total based on manual count: 40.0
-Curent cart container price: Total: $40.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 40.0
-Total value based on site: 40.0
-]]></system-out>
-  </testcase>
-  <testcase name="pickMultipleOfTheSameItem" classname="com.example.coffee_cart_app.testClasses.menuPage" time="1.925">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 48.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 64.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Successfully ordered: 5 Mocha
-Order total based on manual count: 40.0
-Curent cart container price: Total: $40.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 40.0
-Total value based on site: 40.0
-]]></system-out>
-  </testcase>
-  <testcase name="rejectPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.176">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 42.0
-Curent cart container price: Total: $42.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 42.0
-Total value based on site: 42.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="rejectPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.795">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 42.0
-Curent cart container price: Total: $42.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Item added to cart: FlatWhite
-Total value based on manualCounter: 42.0
-Total value based on site: 42.0
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="rejectPromo" classname="com.example.coffee_cart_app.testClasses.menuPage" time="1.574">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 72.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-Successfully ordered: 10 Mocha
-Order total based on manual count: 80.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $80.00
-Item name: Mocha
-Item quantity: 10
-Item name: Mocha
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 42.0
-Curent cart container price: Total: $42.00
-
-(assertThuotalPriceAndTotalBasedOnSite)=========================================================================================== 
-Total value based on manualCounter: 42.0
-Total value based on site: 42.0
-Cart list verified and matches the manual order list
-]]></system-out>
-  </testcase>
-  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.414">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-]]></system-out>
-  </testcase>
-  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.96">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-All top menu bar elements Verified
-
-(Starting assertMenuItems)=========================================================================================== 
-Item name: Espresso
-Item price: 10.0
-
-All Menu Items Verified 
-Item name: EspressoMacchiato
-Item price: 12.0
-
-All Menu Items Verified 
-Item name: Cappuccino
-Item price: 19.0
-
-All Menu Items Verified 
-Item name: Mocha
-Item price: 8.0
-
-All Menu Items Verified 
-Item name: FlatWhite
-Item price: 18.0
-
-All Menu Items Verified 
-Item name: Americano
-Item price: 7.0
-
-All Menu Items Verified 
-Item name: CafeLatte
-Item price: 16.0
-
-All Menu Items Verified 
-Item name: EspressoConPanna
-Item price: 14.0
-
-All Menu Items Verified 
-Item name: CafeBreve
-Item price: 15.0
-
-All Menu Items Verified 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-]]></system-out>
-  </testcase>
-  <testcase name="testMenuPageElementsVisibility" classname="com.example.coffee_cart_app.testClasses.menuPage" time="0.969">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.13">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 112.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 128.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 144.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 160.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 176.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 192.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 208.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 224.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 240.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 256.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 272.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 288.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Espresso
-Item Price: 10.0
-Total spending: 10.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 304.0
-
-Promo Element not visible as expected...
-Item added to cart: EspressoMacchiato
-Item Price: 12.0
-Total spending: 22.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 320.0
-
-Promo Element not visible as expected...
-Successfully ordered: 20 Cafe Latte
-Order total based on manual count: 320.0
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 41.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $320.00
-PROMO REJECTED
-Item name: Cafe Latte
-Item quantity: 20
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 49.0
-
-Promo Element not visible as expected...
-Item name: Cafe Latte
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 67.0
-
-Promo Element not visible as expected...
-Item added to cart: Americano
-Item Price: 7.0
-Total spending: 74.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order quantity after operation: 10
-Curent cart container price: Total: $160.00
-Item name: Cafe Latte
-Item quantity: 10
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.675">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 224.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 240.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 256.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 272.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 288.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 304.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 320.0
-
-Promo Element not visible as expected...
-Successfully ordered: 20 Cafe Latte
-Order total based on manual count: 320.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $320.00
-Item name: Cafe Latte
-Item quantity: 20
-Item name: Cafe Latte
-Item added to cart: Espresso
-Item Price: 10.0
-Total spending: 10.0
-
-Promo Element not visible as expected...
-Order quantity after operation: 10
-Curent cart container price: Total: $160.00
-Item added to cart: EspressoMacchiato
-Item Price: 12.0
-Total spending: 22.0
-
-Promo Element not visible as expected...
-Item name: Cafe Latte
-Item quantity: 10
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenDecreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.267">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-Order quantity after operation: 10
-Curent cart container price: Total: $160.00
-Item name: Cafe Latte
-Item quantity: 10
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.661">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 90.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 48.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 105.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 64.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 72.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-Successfully ordered: 10 Mocha
-Order total based on manual count: 80.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $80.00
-Item name: Mocha
-Item quantity: 10
-Item name: Mocha
-Order quantity after operation: 20
-Curent cart container price: Total: $160.00
-Item name: Mocha
-Item quantity: 20
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.977">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Cappuccino
-Item Price: 19.0
-Total spending: 41.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 49.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 67.0
-
-Promo Element not visible as expected...
-Item added to cart: Americano
-Item Price: 7.0
-Total spending: 74.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 16.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 24.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 90.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 32.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 40.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 48.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 64.0
-
-Promo Element not visible as expected...
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 72.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 80.0
-
-Promo Element not visible as expected...
-Successfully ordered: 10 Mocha
-Order total based on manual count: 80.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Curent cart container price: Total: $80.00
-Item name: Mocha
-Item quantity: 10
-Item name: Mocha
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 105.0
-
-Promo Element not visible as expected...
-Order quantity after operation: 20
-Curent cart container price: Total: $160.00
-Item name: Mocha
-Item quantity: 20
-]]></system-out>
-  </testcase>
-  <testcase name="addToCartThenIncreaseQuantity" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.826">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-
-(Starting assertMenuTopBar)=========================================================================================== 
-All top menu bar elements Verified
-
-(Starting assertMenuItems)=========================================================================================== 
-Item name: Espresso
-Item price: 10.0
-
-All Menu Items Verified 
-Item name: EspressoMacchiato
-Item price: 12.0
-
-All Menu Items Verified 
-Item name: Cappuccino
-Item price: 19.0
-
-All Menu Items Verified 
-Item name: Mocha
-Item price: 8.0
-
-All Menu Items Verified 
-Item name: FlatWhite
-Item price: 18.0
-
-All Menu Items Verified 
-Item name: Americano
-Item price: 7.0
-
-All Menu Items Verified 
-Item name: CafeLatte
-Item price: 16.0
-
-All Menu Items Verified 
-Item name: EspressoConPanna
-Item price: 14.0
-
-All Menu Items Verified 
-Item name: CafeBreve
-Item price: 15.0
-
-All Menu Items Verified 
-Order quantity after operation: 20
-Curent cart container price: Total: $160.00
-Item name: Mocha
-Item quantity: 20
-]]></system-out>
-  </testcase>
-  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.478">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-
-(Starting assertMenuTopBar)=========================================================================================== 
-All top menu bar elements Verified
-Items in cart
-Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
-No Validation Error found as expected...
-Cart page elements verified
-]]></system-out>
-  </testcase>
-  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.102">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-All top menu bar elements Verified
-Items in cart
-Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
-No Validation Error found as expected...
-Cart page elements verified
-]]></system-out>
-  </testcase>
-  <testcase name="assertCartPageElements" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.575">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-
-(Starting assertMenuTopBar)=========================================================================================== 
-All top menu bar elements Verified
-Items in cart
-Item: Mocha, Price and quantity: $8.00 x 1, TOTAL: $8.00
-No Validation Error found as expected...
-Cart page elements verified
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.621">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 119.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 119.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-No Validation Error found as expected...
-Checking out all items verified
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.199">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Order total based on manual count: 119.0
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-No Validation Error found as expected...
-Checking out all items verified
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutAllItemsInMenu" classname="com.example.coffee_cart_app.testClasses.cartPage" time="4.216">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
 Item added to cart: Espresso
 Item Price: 10.0
 Total spending: 10.0
@@ -1922,24 +1772,45 @@ No Validation Error found as expected...
 Checking out all items verified
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.589">
+  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.339">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
+PROMO REJECTED
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
 
-(Starting assertMenuTopBar)=========================================================================================== 
+Promo Element not visible as expected...
 Item added to cart: Mocha
 Item Price: 8.0
 Total spending: 8.0
 
 Promo Element not visible as expected...
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+PROMO REJECTED
 Item added to cart: FlatWhite
 Item Price: 18.0
 Total spending: 26.0
 
 Promo Element not visible as expected...
+
+(Starting assertMenuTopBar)=========================================================================================== 
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
 All top menu bar elements Verified
 
 (Starting assertMenuItems)=========================================================================================== 
+
+(assertCompareCartListFromSiteToManualOrdersList)=========================================================================================== 
+Items from page: [Cafe Breve, Cafe Latte, Espresso Con Panna, Flat White, Mocha]
+Items from orderList[Mocha, Flat White, Cafe Latte, Espresso Con Panna, Cafe Breve]
+Cart list verified and matches the manual order list
 Item added to cart: CafeLatte
 Item Price: 16.0
 Total spending: 42.0
@@ -1954,17 +1825,17 @@ Item name: EspressoMacchiato
 Item price: 12.0
 
 All Menu Items Verified 
-PROMO REJECTED
 Item name: Cappuccino
 Item price: 19.0
 
 All Menu Items Verified 
+PROMO REJECTED
 Item name: Mocha
 Item price: 8.0
 
 All Menu Items Verified 
-Item added to cart: EspressoConPanna
-Item Price: 14.0
+Item added to cart: Mocha
+Item Price: 8.0
 Total spending: 56.0
 
 Promo Element not visible as expected...
@@ -1976,65 +1847,60 @@ Item name: Americano
 Item price: 7.0
 
 All Menu Items Verified 
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Item name: CafeLatte
+Item price: 16.0
+
+All Menu Items Verified 
+No Validation Error found as expected...
+Checking out using cart page verified
+Item name: EspressoConPanna
+Item price: 14.0
+
+All Menu Items Verified 
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.234">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
 Item added to cart: CafeBreve
 Item Price: 15.0
 Total spending: 71.0
 
 Promo Element not visible as expected...
 Order total based on manual count: 71.0
-Item name: CafeLatte
-Item price: 16.0
-
-All Menu Items Verified 
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-Item name: EspressoConPanna
-Item price: 14.0
-
-All Menu Items Verified 
 Item name: CafeBreve
 Item price: 15.0
 
 All Menu Items Verified 
 
-(assertCompareCartListFromSiteToManualOrdersList)=========================================================================================== 
-Items from page: [Cafe Breve, Cafe Latte, Espresso Con Panna, Flat White, Mocha]
-Items from orderList[Mocha, Flat White, Cafe Latte, Espresso Con Panna, Cafe Breve]
-Cart list verified and matches the manual order list
-No Validation Error found as expected...
-Checking out using cart page verified
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.104">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-
 (navigateToCartPage)=========================================================================================== 
 Orders recognized, proceed
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 64.0
+
+Promo Element not visible as expected...
 
 (assertCompareCartListFromSiteToManualOrdersList)=========================================================================================== 
 Items from page: [Cafe Breve, Cafe Latte, Espresso Con Panna, Flat White, Mocha]
 Items from orderList[Mocha, Flat White, Cafe Latte, Espresso Con Panna, Cafe Breve]
 Cart list verified and matches the manual order list
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 72.0
 
-(Starting assertMenuTopBar)=========================================================================================== 
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
 No Validation Error found as expected...
 Checking out using cart page verified
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="2.586">
+  <testcase name="checkOutOrdersUsingCheckoutPage" classname="com.example.coffee_cart_app.testClasses.cartPage" time="2.703">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2077,7 +1943,85 @@ No Validation Error found as expected...
 Checking out using cart page verified
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.281">
+  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.019">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 80.0
+
+Promo Element not visible as expected...
+Successfully ordered: 10 Mocha
+Order total based on manual count: 80.0
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+PROMO REJECTED
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+Curent cart container price: Total: $80.00
+Item name: Mocha
+Item quantity: 10
+Item name: Mocha
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
+Item added to cart: FlatWhite
+Item Price: 18.0
+Total spending: 26.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeLatte
+Item Price: 16.0
+Total spending: 42.0
+
+Promo Appeared =>>>
+It's your lucky day! Get an extra cup of Mocha for $4.
+Cart list verified and matches the manual order list
+PROMO REJECTED
+Item added to cart: EspressoConPanna
+Item Price: 14.0
+Total spending: 56.0
+
+Promo Element not visible as expected...
+Item added to cart: CafeBreve
+Item Price: 15.0
+Total spending: 71.0
+
+Promo Element not visible as expected...
+Order total based on manual count: 71.0
+
+(performCheckOutOnPayContainer)=========================================================================================== 
+Validation Error: Please fill out this field.Please fill out this field.
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.29">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+Cart list verified and matches the manual order list
+
+(performCheckOutOnPayContainer)=========================================================================================== 
+Validation Error: Please fill out this field.Please fill out this field.
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="2.789">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2114,53 +2058,7 @@ Cart list verified and matches the manual order list
 Validation Error: Please fill out this field.Please fill out this field.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.304">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Cart list verified and matches the manual order list
-
-(performCheckOutOnPayContainer)=========================================================================================== 
-Validation Error: Please fill out this field.Please fill out this field.
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutOrdersUsingPayContainerButton" classname="com.example.coffee_cart_app.testClasses.cartPage" time="2.602">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-Item added to cart: FlatWhite
-Item Price: 18.0
-Total spending: 26.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeLatte
-Item Price: 16.0
-Total spending: 42.0
-
-Promo Appeared =>>>
-It's your lucky day! Get an extra cup of Mocha for $4.
-PROMO REJECTED
-Item added to cart: EspressoConPanna
-Item Price: 14.0
-Total spending: 56.0
-
-Promo Element not visible as expected...
-Item added to cart: CafeBreve
-Item Price: 15.0
-Total spending: 71.0
-
-Promo Element not visible as expected...
-Order total based on manual count: 71.0
-Cart list verified and matches the manual order list
-
-(performCheckOutOnPayContainer)=========================================================================================== 
-Validation Error: Please fill out this field.Please fill out this field.
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.77">
+  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.347">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2176,7 +2074,7 @@ Orders recognized, proceed
 Validation Error: Please fill out this field.Please fill out this field.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.78">
+  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.316">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2192,7 +2090,7 @@ Orders recognized, proceed
 Validation Error: Please fill out this field.Please fill out this field.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.434">
+  <testcase name="checkOutWithEmptyPaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.484">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2208,7 +2106,18 @@ Orders recognized, proceed
 Validation Error: Please fill out this field.Please fill out this field.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.758">
+  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.026">
+    <system-out><![CDATA[
+(Test Method completed)=========================================================================================== 
+
+(navigateToCartPage)=========================================================================================== 
+Orders recognized, proceed
+
+(performCheckOutOnPayContainer)=========================================================================================== 
+Validation Error: Please include an '@' in the email address. 'sampleEmail' is missing an '@'.
+]]></system-out>
+  </testcase>
+  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.372">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2224,23 +2133,7 @@ Orders recognized, proceed
 Validation Error: Please include an '@' in the email address. 'sampleEmail' is missing an '@'.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.828">
-    <system-out><![CDATA[
-(Test Method completed)=========================================================================================== 
-Item added to cart: Mocha
-Item Price: 8.0
-Total spending: 8.0
-
-Promo Element not visible as expected...
-
-(navigateToCartPage)=========================================================================================== 
-Orders recognized, proceed
-
-(performCheckOutOnPayContainer)=========================================================================================== 
-Validation Error: Please include an '@' in the email address. 'sampleEmail' is missing an '@'.
-]]></system-out>
-  </testcase>
-  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.516">
+  <testcase name="checkOutWithIncompletePaymentDetails" classname="com.example.coffee_cart_app.testClasses.cartPage" time="1.481">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 Item added to cart: Mocha
@@ -2256,19 +2149,45 @@ Orders recognized, proceed
 Validation Error: Please enter an email address.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.065">
+  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.072">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 No coffee, go add some.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.082">
+  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.098">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.acceptPromo
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingCheckoutPage
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.assertCartPageElements
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenDecreaseQuantity
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.addAllItemsToCart
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickDifferentItems
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.testMenuPageElementsVisibility
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickMultipleOfTheSameItem
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.addToCartThenIncreaseQuantity
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithNoItemInCart
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithIncompletePaymentDetails
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutWithEmptyPaymentDetails
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutAllItemsInMenu
+PASSED: com.example.coffee_cart_app.testClasses.menuPage.pickASingleItem
+PASSED: com.example.coffee_cart_app.testClasses.cartPage.checkOutOrdersUsingPayContainerButton
+
+===============================================
+    Chrome Tests
+    Tests run: 15, Failures: 0, Skips: 0
+===============================================
+
+Item added to cart: Mocha
+Item Price: 8.0
+Total spending: 8.0
+
+Promo Element not visible as expected...
 No coffee, go add some.
 ]]></system-out>
   </testcase>
-  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.249">
+  <testcase name="checkOutWithNoItemInCart" classname="com.example.coffee_cart_app.testClasses.cartPage" time="0.255">
     <system-out><![CDATA[
 (Test Method completed)=========================================================================================== 
 No coffee, go add some.

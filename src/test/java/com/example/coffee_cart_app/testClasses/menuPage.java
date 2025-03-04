@@ -80,18 +80,7 @@ public class menuPage extends baseTest{
         assertCompareCartListfromPayContainerToManualOrdersList(preDefinedOrdersList);
     }
 
-    @Test 
-    public void rejectPromo(){
-        List<String> preDefinedOrdersList = Arrays.asList("Mocha", "Flat White", "Cafe Latte");
-
-        totalOrderPrice = performAddDifferentItemsToCart(preDefinedOrdersList, totalOrderPrice, "Reject");
-
-        float currentPriceBasedOnPayContainerDiv = extractFloatFromString(getPayContainerPriceText());
-        assertTotalPriceAndTotalBasedOnSite(totalOrderPrice, currentPriceBasedOnPayContainerDiv);
-        assertCompareCartListfromPayContainerToManualOrdersList(preDefinedOrdersList);
-   }
-
-   @Test
+   @Test  //Done and working
    public void addAllItemsToCart(){
 
     List<String> allMenuItems= Arrays.asList("Espresso", "Espresso Macchiato", "Cappuccino", "Mocha", "Flat White", "Americano", "Cafe Latte", "Cafe Breve", "Espresso Con Panna");

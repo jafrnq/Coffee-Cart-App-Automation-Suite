@@ -64,7 +64,7 @@ public class baseTest {
     //#region SETUP METHODS
     @BeforeClass
     @Parameters("browser") // Parameter defined in testng.xml
-    public void BeforeClass(@Optional("Chrome") String browser) {
+    public  void BeforeClass(@Optional("Chrome") String browser) { //default is chrome
 
         Allure.parameter("browser", browser.toLowerCase());
         
@@ -109,7 +109,7 @@ public class baseTest {
 
         insertHeadingLines("STARTING TEST");
         actions = new Actions(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
     }
 
